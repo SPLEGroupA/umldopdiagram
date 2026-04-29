@@ -1,0 +1,1415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_NT_CD01" type="PapyrusUMLClassDiagram" name="DOP Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_NT_VM01" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_VM01_name" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NT_VM01_cmp" type="Package_PackagedElementCompartment">
+      <!-- ========== Module 1: MKatalogProduk ========== -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_MOD01" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_MOD01_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_MOD01_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_PRD" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PRD_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PRD_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_PRD_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PRD_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PRD_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PRD_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PRD_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PRD_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PRD_ops" type="Interface_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PRD_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PRD_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PRD_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PRD_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PRD_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PRD_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PRD_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PRD_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PRD_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_PRD"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PRD_lc" x="14" y="30" width="200"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PRD_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PRD_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PRD_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a2" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a3" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a3_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a4" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a4"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a4_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a5" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a5"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a5_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a6" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a6"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a6_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a7" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a7"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a7_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PRD_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PRD_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PRD_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PRD_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PRD_ops" type="Class_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PRD_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PRD_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PRD_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PRD_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PRD_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PRD_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PRD_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PRD_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PRD_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_PRD"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PRD_lc" x="250" y="30" width="220"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_MOD01_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD01_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_MOD01"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD01_lc" x="14" y="30" width="520" height="280"/>
+      </children>
+      <!-- ========== Module 2: MKeranjangBelanja ========== -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_MOD02" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_MOD02_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_MOD02_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_KRJ" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_KRJ_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_KRJ_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_KRJ_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_KRJ_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_KRJ_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_KRJ_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_KRJ_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_KRJ_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_KRJ_ops" type="Interface_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_IF_KRJ_op1" type="Operation_InterfaceOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_IF_KRJ_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_KRJ_op1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_IF_KRJ_op2" type="Operation_InterfaceOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_IF_KRJ_op2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_KRJ_op2_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_KRJ_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_KRJ_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_KRJ_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_KRJ_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_KRJ_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_KRJ_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_KRJ_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_KRJ_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_KRJ_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_KRJ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_KRJ_lc" x="14" y="30" width="220"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_KRJ" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_KRJ_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_KRJ_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_KRJ_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_KRJ_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_KRJ_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_KRJ_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_KRJ_a1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_KRJ_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_KRJ_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_KRJ_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_KRJ_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_KRJ_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_KRJ_op2" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_M_KRJ_op2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_KRJ_op2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_KRJ_op3" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_M_KRJ_op3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_KRJ_op3_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_KRJ_op4" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_M_KRJ_op4"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_KRJ_op4_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_KRJ_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_KRJ_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_KRJ_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_KRJ_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_KRJ_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_KRJ_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_KRJ_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_KRJ_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_KRJ_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_KRJ"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_KRJ_lc" x="270" y="30" width="220"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_CI" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_CI_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_CI_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_CI_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_CI_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_CI_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_CI_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_CI_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_CI_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_CI_ops" type="Interface_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_IF_CI_op1" type="Operation_InterfaceOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_IF_CI_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_CI_op1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_IF_CI_op2" type="Operation_InterfaceOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_IF_CI_op2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_CI_op2_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_CI_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_CI_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_CI_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_CI_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_CI_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_CI_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_CI_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_CI_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_CI_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_CI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_CI_lc" x="530" y="30" width="220"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_CI" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_CI_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_CI_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_CI_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_CI_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_CI_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_CI_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_CI_a1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_CI_a2" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_CI_a2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_CI_a2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_CI_a3" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_CI_a3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_CI_a3_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_CI_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_CI_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_CI_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_CI_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_CI_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_CI_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_M_CI_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_CI_op1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_CI_op2" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_M_CI_op2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_CI_op2_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_CI_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_CI_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_CI_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_CI_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_CI_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_CI_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_CI_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_CI_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_CI_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_CI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_CI_lc" x="790" y="30" width="220"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_MOD02_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD02_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_MOD02"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD02_lc" x="14" y="330" width="1060" height="280"/>
+      </children>
+      <!-- ========== Module 3: MAkunPengguna ========== -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_MOD03" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_MOD03_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_MOD03_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_AKN" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_AKN_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_AKN_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_AKN_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_AKN_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_AKN_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_AKN_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_AKN_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_AKN_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_AKN_ops" type="Interface_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_AKN_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_AKN_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_AKN_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_AKN_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_AKN_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_AKN_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_AKN_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_AKN_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_AKN_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_AKN"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_AKN_lc" x="14" y="30" width="200"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_AKN" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_AKN_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_AKN_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_AKN_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_AKN_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_AKN_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_AKN_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_AKN_a1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_AKN_a2" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_AKN_a2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_AKN_a2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_AKN_a3" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_AKN_a3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_AKN_a3_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_AKN_a5" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_AKN_a5"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_AKN_a5_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_AKN_a6" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_AKN_a6"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_AKN_a6_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_AKN_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_AKN_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_AKN_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_AKN_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_AKN_ops" type="Class_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_AKN_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_AKN_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_AKN_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_AKN_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_AKN_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_AKN_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_AKN_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_AKN_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_AKN_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_AKN"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_AKN_lc" x="250" y="30" width="220"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_MOD03_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD03_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_MOD03"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD03_lc" x="14" y="630" width="520" height="280"/>
+      </children>
+      <!-- ========== Module 4: MPembayaran ========== -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_MOD04" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_MOD04_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_MOD04_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_PAY" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PAY_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PAY_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_PAY_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PAY_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PAY_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PAY_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PAY_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PAY_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PAY_ops" type="Interface_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PAY_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PAY_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PAY_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PAY_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PAY_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PAY_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PAY_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PAY_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PAY_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_PAY"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PAY_lc" x="14" y="30" width="200"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PAY" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PAY_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PAY_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PAY_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PAY_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PAY_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PAY_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PAY_a1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PAY_a2" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PAY_a2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PAY_a2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PAY_a3" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PAY_a3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PAY_a3_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PAY_a4" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PAY_a4"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PAY_a4_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PAY_a5" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PAY_a5"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PAY_a5_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PAY_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PAY_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PAY_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PAY_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PAY_ops" type="Class_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PAY_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PAY_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PAY_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PAY_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PAY_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PAY_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PAY_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PAY_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PAY_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_PAY"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PAY_lc" x="250" y="30" width="220"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_MOD04_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD04_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_MOD04"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD04_lc" x="560" y="630" width="520" height="280"/>
+      </children>
+      <!-- ========== Module 5: MManajemenPesanan ========== -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_MOD05" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_MOD05_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_MOD05_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_PSN" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PSN_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PSN_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_PSN_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PSN_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PSN_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PSN_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PSN_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PSN_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PSN_ops" type="Interface_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_IF_PSN_op1" type="Operation_InterfaceOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_IF_PSN_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_PSN_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PSN_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PSN_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PSN_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PSN_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PSN_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PSN_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PSN_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PSN_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PSN_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_PSN"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PSN_lc" x="14" y="30" width="200"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PSN" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PSN_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PSN_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PSN_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PSN_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PSN_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PSN_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PSN_a1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PSN_a2" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PSN_a2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PSN_a2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PSN_a3" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PSN_a3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PSN_a3_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PSN_a4" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PSN_a4"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PSN_a4_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PSN_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PSN_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PSN_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PSN_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PSN_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PSN_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_M_PSN_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PSN_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PSN_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PSN_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PSN_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PSN_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PSN_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PSN_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PSN_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PSN_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PSN_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_PSN"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PSN_lc" x="250" y="30" width="220"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_OI" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_OI_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_OI_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_OI_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_OI_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_OI_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_OI_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_OI_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_OI_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_OI_ops" type="Interface_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_IF_OI_op1" type="Operation_InterfaceOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_IF_OI_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_OI_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_OI_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_OI_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_OI_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_OI_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_OI_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_OI_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_OI_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_OI_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_OI_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_OI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_OI_lc" x="530" y="30" width="200"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_OI" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_OI_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_OI_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_OI_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_OI_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_OI_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_OI_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_OI_a1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_OI_a2" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_OI_a2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_OI_a2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_OI_a3" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_OI_a3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_OI_a3_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_OI_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_OI_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_OI_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_OI_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_OI_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_OI_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_M_OI_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_OI_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_OI_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_OI_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_OI_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_OI_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_OI_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_OI_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_OI_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_OI_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_OI_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_OI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_OI_lc" x="770" y="30" width="220"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_MOD05_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD05_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_MOD05"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD05_lc" x="14" y="930" width="1060" height="280"/>
+      </children>
+      <!-- ========== Module 6: MPreOrder ========== -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_MOD06" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_MOD06_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_MOD06_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_IF_PO" type="Interface_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PO_name" type="Interface_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_IF_PO_float" type="Interface_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IF_PO_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PO_attr" type="Interface_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PO_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PO_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PO_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PO_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PO_ops" type="Interface_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PO_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PO_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PO_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PO_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_IF_PO_nest" visible="false" type="Interface_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_IF_PO_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_IF_PO_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_IF_PO_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PO_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Interface" href="toko-online-anime.uml#_TOA_IF_PO"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_IF_PO_lc" x="14" y="30" width="200"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PO" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PO_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_CLS_PO_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PO_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PO_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PO_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PO_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PO_a1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PO_a2" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PO_a2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PO_a2_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PO_a3" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PO_a3"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PO_a3_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PO_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PO_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PO_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PO_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PO_ops" type="Class_OperationCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PO_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PO_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PO_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PO_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PO_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_CLS_PO_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_CLS_PO_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_CLS_PO_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PO_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_M_PO"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_CLS_PO_lc" x="250" y="30" width="220"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_MOD06_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD06_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_MOD06"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_MOD06_lc" x="14" y="1230" width="520" height="280"/>
+      </children>
+      <!-- ========== Delta Packages ========== -->
+      <!-- DE01: DKatalogProdukEksklusif -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_DE01" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE01_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE01_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_DE01_cls" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE01_cls_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE01_cls_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE01_cls_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE01_cls_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE01_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_DE01_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE01_a1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE01_cls_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE01_cls_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE01_cls_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE01_cls_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE01_cls_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE01_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE01_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE01_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE01_cls_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE01_cls_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE01_cls_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE01_cls_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE01_cls_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE01_cls_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE01_cls_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE01_cls_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE01_cls_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_DE01_cls"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE01_cls_lc" x="14" y="27" width="250"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE01_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE01_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_DE01"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE01_lc" x="1120" y="30" width="320" height="200"/>
+      </children>
+      <!-- DE02-DE07: same pattern, different positions -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_DE02" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE02_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE02_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_DE02_cls" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE02_cls_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE02_cls_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE02_cls_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE02_cls_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE02_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_DE02_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE02_a1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE02_cls_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE02_cls_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE02_cls_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE02_cls_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE02_cls_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE02_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE02_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE02_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE02_cls_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE02_cls_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE02_cls_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE02_cls_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE02_cls_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE02_cls_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE02_cls_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE02_cls_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE02_cls_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_DE02_cls"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE02_cls_lc" x="14" y="27" width="250"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE02_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE02_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_DE02"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE02_lc" x="1120" y="260" width="320" height="200"/>
+      </children>
+      <!-- DE03: DPembayaranEWallet -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_DE03" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE03_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE03_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_DE03_cls" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE03_cls_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE03_cls_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE03_cls_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE03_cls_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE03_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_DE03_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE03_a1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE03_cls_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE03_cls_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE03_cls_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE03_cls_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE03_cls_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE03_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE03_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE03_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE03_cls_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE03_cls_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE03_cls_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE03_cls_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE03_cls_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE03_cls_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE03_cls_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE03_cls_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE03_cls_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_DE03_cls"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE03_cls_lc" x="14" y="27" width="250"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE03_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE03_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_DE03"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE03_lc" x="1120" y="490" width="320" height="200"/>
+      </children>
+      <!-- DE04: DWishlist -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_DE04" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE04_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE04_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_DE04_cls" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE04_cls_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE04_cls_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE04_cls_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE04_cls_attr" type="Class_AttributeCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE04_cls_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE04_cls_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE04_cls_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE04_cls_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE04_cls_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE04_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE04_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE04_op1_lc"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE04_op2" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE04_op2"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE04_op2_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE04_cls_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE04_cls_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE04_cls_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE04_cls_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE04_cls_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE04_cls_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE04_cls_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE04_cls_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE04_cls_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_DE04_cls"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE04_cls_lc" x="14" y="27" width="250"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE04_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE04_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_DE04"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE04_lc" x="1480" y="30" width="320" height="200"/>
+      </children>
+      <!-- DE05: DReviewDanRating -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_DE05" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE05_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE05_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_DE05_cls" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE05_cls_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE05_cls_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE05_cls_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE05_cls_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE05_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_DE05_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE05_a1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE05_cls_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE05_cls_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE05_cls_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE05_cls_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE05_cls_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE05_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE05_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE05_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE05_cls_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE05_cls_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE05_cls_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE05_cls_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE05_cls_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE05_cls_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE05_cls_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE05_cls_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE05_cls_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_DE05_cls"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE05_cls_lc" x="14" y="27" width="250"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE05_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE05_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_DE05"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE05_lc" x="1480" y="260" width="320" height="200"/>
+      </children>
+      <!-- DE06: DSistemMembership -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_DE06" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE06_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE06_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_DE06_cls" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE06_cls_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE06_cls_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE06_cls_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE06_cls_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE06_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_DE06_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE06_a1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE06_cls_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE06_cls_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE06_cls_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE06_cls_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE06_cls_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE06_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE06_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE06_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE06_cls_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE06_cls_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE06_cls_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE06_cls_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE06_cls_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE06_cls_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE06_cls_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE06_cls_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE06_cls_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_DE06_cls"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE06_cls_lc" x="14" y="27" width="250"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE06_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE06_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_DE06"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE06_lc" x="1480" y="490" width="320" height="200"/>
+      </children>
+      <!-- DE07: DSistemPoinLoyalitas -->
+      <children xmi:type="notation:Shape" xmi:id="_NT_DE07" type="Package_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE07_name" type="Package_NameLabel"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE07_cmp" type="Package_PackagedElementCompartment">
+          <children xmi:type="notation:Shape" xmi:id="_NT_DE07_cls" type="Class_Shape_CN">
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE07_cls_name" type="Class_NameLabel_CN"/>
+            <children xmi:type="notation:DecorationNode" xmi:id="_NT_DE07_cls_float" type="Class_FloatingNameLabel_CN">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE07_cls_float_lc" y="15"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE07_cls_attr" type="Class_AttributeCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE07_a1" type="Property_ClassAttributeLabel">
+                <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_DE07_a1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE07_a1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE07_cls_attr_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE07_cls_attr_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE07_cls_attr_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE07_cls_attr_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE07_cls_ops" type="Class_OperationCompartment_CN">
+              <children xmi:type="notation:Shape" xmi:id="_NT_DE07_op1" type="Operation_ClassOperationLabel">
+                <element xmi:type="uml:Operation" href="toko-online-anime.uml#_TOA_DE07_op1"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_DE07_op1_lc"/>
+              </children>
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE07_cls_ops_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE07_cls_ops_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE07_cls_ops_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE07_cls_ops_lc"/>
+            </children>
+            <children xmi:type="notation:BasicCompartment" xmi:id="_NT_DE07_cls_nest" visible="false" type="Class_NestedClassifierCompartment_CN">
+              <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE07_cls_nest_ts"/>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_NT_DE07_cls_nest_ss"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_NT_DE07_cls_nest_fs"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE07_cls_nest_lc"/>
+            </children>
+            <element xmi:type="uml:Class" href="toko-online-anime.uml#_TOA_DE07_cls"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE07_cls_lc" x="14" y="27" width="250"/>
+          </children>
+          <styles xmi:type="notation:TitleStyle" xmi:id="_NT_DE07_cmp_ts"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE07_cmp_lc"/>
+        </children>
+        <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_DE07"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_DE07_lc" x="1480" y="720" width="320" height="200"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_NT_VM01_cmp_ts"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_VM01_cmp_lc"/>
+    </children>
+    <element xmi:type="uml:Package" href="toko-online-anime.uml#_TOA_VM01"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NT_VM01_lc" x="20" y="20" width="1860" height="1560"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_NT_CD01_sv" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_NT_CD01_ds"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_NT_CD01_ps" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="toko-online-anime.uml#_TOA00001"/>
+  </styles>
+  <element xmi:type="uml:Model" href="toko-online-anime.uml#_TOA00001"/>
+  <!-- ========== InterfaceRealization Edges ========== -->
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_PRD" type="InterfaceRealization_Edge" source="_NT_CLS_PRD" target="_NT_IF_PRD">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PRD_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PRD_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PRD_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PRD_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_PRD_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_PRD_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_PRD_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_KRJ" type="InterfaceRealization_Edge" source="_NT_CLS_KRJ" target="_NT_IF_KRJ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_KRJ_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_KRJ_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_KRJ_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_KRJ_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_KRJ_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_KRJ_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_KRJ_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_CI" type="InterfaceRealization_Edge" source="_NT_CLS_CI" target="_NT_IF_CI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_CI_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_CI_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_CI_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_CI_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_CI_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_CI_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_CI_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_AKN" type="InterfaceRealization_Edge" source="_NT_CLS_AKN" target="_NT_IF_AKN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_AKN_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_AKN_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_AKN_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_AKN_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_AKN_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_AKN_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_AKN_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_PAY" type="InterfaceRealization_Edge" source="_NT_CLS_PAY" target="_NT_IF_PAY">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PAY_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PAY_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PAY_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PAY_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_PAY_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_PAY_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_PAY_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_PSN" type="InterfaceRealization_Edge" source="_NT_CLS_PSN" target="_NT_IF_PSN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PSN_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PSN_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PSN_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PSN_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_PSN_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_PSN_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_PSN_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_OI" type="InterfaceRealization_Edge" source="_NT_CLS_OI" target="_NT_IF_OI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_OI_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_OI_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_OI_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_OI_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_OI_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_OI_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_OI_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_IR_PO" type="InterfaceRealization_Edge" source="_NT_CLS_PO" target="_NT_IF_PO">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PO_st" type="InterfaceRealization_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PO_st_lc" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_IR_PO_nl" type="InterfaceRealization_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_IR_PO_nl_lc" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_IR_PO_fs"/>
+    <element xmi:type="uml:InterfaceRealization" href="toko-online-anime.uml#_TOA_M_PO_ir"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_IR_PO_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <!-- ========== Association Edges (between module classes) ========== -->
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_KA" type="Association_Edge" source="_NT_CLS_KRJ" target="_NT_CLS_AKN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_KA_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_KA_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_KA_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_KA_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_KA_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_KA_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_KA_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_KA_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_KA_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_KA_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_KA_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_KA_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_KA_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_KA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_KA_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_CK" type="Association_Edge" source="_NT_CLS_CI" target="_NT_CLS_KRJ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CK_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CK_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CK_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CK_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CK_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CK_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CK_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CK_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CK_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CK_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CK_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CK_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_CK_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_CK"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_CK_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_CP" type="Association_Edge" source="_NT_CLS_CI" target="_NT_CLS_PRD">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CP_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CP_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CP_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CP_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CP_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CP_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CP_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CP_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CP_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CP_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_CP_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_CP_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_CP_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_CP"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_CP_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_PA" type="Association_Edge" source="_NT_CLS_PSN" target="_NT_CLS_AKN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PA_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PA_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PA_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PA_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PA_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PA_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PA_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PA_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PA_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PA_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PA_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PA_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_PA_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_PA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_PA_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_PP" type="Association_Edge" source="_NT_CLS_PO" target="_NT_CLS_PRD">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PP_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PP_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PP_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PP_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PP_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PP_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PP_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PP_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PP_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PP_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_PP_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_PP_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_PP_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_PP"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_PP_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_POA" type="Association_Edge" source="_NT_CLS_PO" target="_NT_CLS_AKN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_POA_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_POA_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_POA_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_POA_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_POA_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_POA_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_POA_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_POA_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_POA_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_POA_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_POA_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_POA_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_POA_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_POA"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_POA_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_OP" type="Association_Edge" source="_NT_CLS_OI" target="_NT_CLS_PSN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OP_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OP_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OP_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OP_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OP_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OP_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OP_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OP_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OP_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OP_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OP_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OP_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_OP_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_OP"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_OP_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_AE_OPR" type="Association_Edge" source="_NT_CLS_OI" target="_NT_CLS_PRD">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OPR_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OPR_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OPR_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OPR_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OPR_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OPR_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OPR_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OPR_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OPR_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OPR_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_AE_OPR_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_AE_OPR_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_AE_OPR_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS_OPR"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_AE_OPR_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <!-- ========== Association Edges (delta -> module) ========== -->
+  <edges xmi:type="notation:Connector" xmi:id="_NT_MA01" type="Association_Edge" source="_NT_DE01_cls" target="_NT_CLS_PRD">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA01_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA01_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA01_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA01_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA01_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA01_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA01_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA01_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA01_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA01_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA01_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA01_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_MA01_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS01"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_MA01_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_MA02" type="Association_Edge" source="_NT_DE02_cls" target="_NT_CLS_PRD">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA02_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA02_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA02_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA02_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA02_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA02_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA02_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA02_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA02_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA02_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA02_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA02_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_MA02_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS02"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_MA02_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_MA03" type="Association_Edge" source="_NT_DE03_cls" target="_NT_CLS_PAY">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA03_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA03_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA03_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA03_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA03_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA03_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA03_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA03_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA03_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA03_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA03_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA03_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_MA03_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS03"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_MA03_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_MA04" type="Association_Edge" source="_NT_DE04_cls" target="_NT_CLS_AKN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA04_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA04_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA04_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA04_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA04_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA04_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA04_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA04_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA04_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA04_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA04_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA04_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_MA04_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS04"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_MA04_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_MA05" type="Association_Edge" source="_NT_DE05_cls" target="_NT_CLS_PRD">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA05_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA05_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA05_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA05_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA05_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA05_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA05_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA05_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA05_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA05_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA05_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA05_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_MA05_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS05"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_MA05_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_MA06" type="Association_Edge" source="_NT_DE06_cls" target="_NT_CLS_AKN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA06_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA06_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA06_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA06_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA06_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA06_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA06_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA06_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA06_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA06_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA06_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA06_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_MA06_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS06"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_MA06_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NT_MA07" type="Association_Edge" source="_NT_DE07_cls" target="_NT_CLS_AKN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA07_st" type="Association_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA07_st_lc" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA07_nl" visible="false" type="Association_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA07_nl_lc" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA07_trl" visible="false" type="Association_TargetRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA07_trl_lc" x="40" y="-20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA07_srl" visible="false" type="Association_SourceRoleLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA07_srl_lc" x="-41" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA07_sml" visible="false" type="Association_SourceMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA07_sml_lc" x="40" y="20"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NT_MA07_tml" visible="false" type="Association_TargetMultiplicityLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_MA07_tml_lc" x="-41" y="-20"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NT_MA07_fs"/>
+    <element xmi:type="uml:Association" href="toko-online-anime.uml#_TOA_AS07"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NT_MA07_bp" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>

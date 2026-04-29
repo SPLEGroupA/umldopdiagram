@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XJZvsJOyEfCDfaGUJJSFbQ">
+  <uml:Model xmi:id="_TOA00001" name="toko-online-anime-uml-vm">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_TOA00002">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <!-- Associations: Delta -> Module -->
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS01" memberEnd="_TOA_DE01_aa _TOA_AS01_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS01_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS01_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS01_end" name="produkImpl" type="_TOA_DE01_cls" association="_TOA_AS01"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS02" memberEnd="_TOA_DE02_aa _TOA_AS02_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS02_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS02_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS02_end" name="produkImpl" type="_TOA_DE02_cls" association="_TOA_AS02"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS03" memberEnd="_TOA_DE03_aa _TOA_AS03_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS03_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS03_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS03_end" name="pembayaranImpl" type="_TOA_DE03_cls" association="_TOA_AS03"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS04" memberEnd="_TOA_DE04_aa _TOA_AS04_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS04_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS04_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS04_end" name="akunPenggunaImpl" type="_TOA_DE04_cls" association="_TOA_AS04"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS05" memberEnd="_TOA_DE05_aa _TOA_AS05_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS05_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS05_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS05_end" name="produkImpl" type="_TOA_DE05_cls" association="_TOA_AS05"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS06" memberEnd="_TOA_DE06_aa _TOA_AS06_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS06_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS06_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS06_end" name="akunPenggunaImpl" type="_TOA_DE06_cls" association="_TOA_AS06"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS07" memberEnd="_TOA_DE07_aa _TOA_AS07_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS07_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS07_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS07_end" name="akunPenggunaImpl" type="_TOA_DE07_cls" association="_TOA_AS07"/>
+    </packagedElement>
+    <!-- Associations: Module internal -->
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_KA" memberEnd="_TOA_M_KRJ_aa _TOA_AS_KA_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_KA_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_KA_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_KA_end" name="keranjangBelanja" type="_TOA_M_KRJ" association="_TOA_AS_KA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_CK" memberEnd="_TOA_M_CI_aa_krj _TOA_AS_CK_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_CK_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_CK_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_CK_end" name="cartItem" type="_TOA_M_CI" association="_TOA_AS_CK"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_CP" memberEnd="_TOA_M_CI_aa_prd _TOA_AS_CP_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_CP_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_CP_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_CP_end" name="cartItem" type="_TOA_M_CI" association="_TOA_AS_CP"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_PA" memberEnd="_TOA_M_PSN_aa _TOA_AS_PA_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_PA_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_PA_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_PA_end" name="pesanan" type="_TOA_M_PSN" association="_TOA_AS_PA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_PP" memberEnd="_TOA_M_PO_aa_prd _TOA_AS_PP_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_PP_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_PP_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_PP_end" name="preOrder" type="_TOA_M_PO" association="_TOA_AS_PP"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_POA" memberEnd="_TOA_M_PO_aa_akn _TOA_AS_POA_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_POA_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_POA_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_POA_end" name="preOrder" type="_TOA_M_PO" association="_TOA_AS_POA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_OP" memberEnd="_TOA_M_OI_aa_psn _TOA_AS_OP_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_OP_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_OP_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_OP_end" name="orderItem" type="_TOA_M_OI" association="_TOA_AS_OP"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOA_AS_OPR" memberEnd="_TOA_M_OI_aa_prd _TOA_AS_OPR_end">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_AS_OPR_an" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_AS_OPR_dt" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TOA_AS_OPR_end" name="orderItem" type="_TOA_M_OI" association="_TOA_AS_OPR"/>
+    </packagedElement>
+    <!-- VM Package -->
+    <packagedElement xmi:type="uml:Package" xmi:id="_TOA_VM01" name="tokoonlineanimepl">
+      <!-- Module 1: MKatalogProduk -->
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_MOD01" name="MKatalogProduk">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_PRD" name="Produk"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_PRD" name="ProdukImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PRD_a1" name="id_produk" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PRD_a2" name="nama" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PRD_a3" name="harga" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_PRD_a3_dv"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PRD_a4" name="kategori" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PRD_a5" name="deskripsi" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PRD_a6" name="stok" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PRD_a7" name="gambar_url" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_PRD_ir" client="_TOA_M_PRD" supplier="_TOA_IF_PRD" contract="_TOA_IF_PRD"/>
+        </packagedElement>
+      </packagedElement>
+      <!-- Module 2: MKeranjangBelanja -->
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_MOD02" name="MKeranjangBelanja">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_KRJ" name="KeranjangBelanja">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_IF_KRJ_op1" name="getByUser" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_KRJ_op1_p1" name="email">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_KRJ_op1_r" name="result" type="_TOA_M_KRJ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_IF_KRJ_op2" name="checkout" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_KRJ_op2_r" name="result" type="_TOA_M_PSN" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_KRJ" name="KeranjangBelanjaImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_KRJ_a1" name="id_keranjang" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_KRJ_aa" name="akunPengguna" type="_TOA_M_AKN" association="_TOA_AS_KA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_KRJ_aa_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_KRJ_aa_uv" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_KRJ_ir" client="_TOA_M_KRJ" supplier="_TOA_IF_KRJ" contract="_TOA_IF_KRJ"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_M_KRJ_op2" name="getByUser">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_KRJ_op2_p1" name="email">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_KRJ_op2_r" name="result" type="_TOA_M_KRJ" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_M_KRJ_op3" name="addItem">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_KRJ_op3_p1" name="id_cart_item">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_KRJ_op3_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_M_KRJ_op4" name="checkout">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_KRJ_op4_r" name="result" type="_TOA_M_PSN" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_CI" name="CartItem">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_IF_CI_op1" name="setProduct" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_CI_op1_p1" name="id_produk">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_CI_op1_p2" name="quantity">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_CI_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_IF_CI_op2" name="getByKeranjang" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_CI_op2_p1" name="id_keranjang">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_CI_op2_r" name="result" type="_TOA_M_CI" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_IF_CI_op2_r_uv" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_CI" name="CartItemImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_CI_a1" name="id_cart_item" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_CI_a2" name="quantity" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_CI_a3" name="harga_satuan" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_CI_aa_krj" name="keranjangBelanja" type="_TOA_M_KRJ" association="_TOA_AS_CK">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_CI_aa_krj_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_CI_aa_krj_uv" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_CI_aa_prd" name="produk" type="_TOA_M_PRD" association="_TOA_AS_CP">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_CI_aa_prd_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_CI_aa_prd_uv" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_CI_ir" client="_TOA_M_CI" supplier="_TOA_IF_CI" contract="_TOA_IF_CI"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_M_CI_op1" name="setProduct">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_CI_op1_p1" name="id_produk">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_CI_op1_p2" name="quantity">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_CI_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_M_CI_op2" name="getByKeranjang">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_CI_op2_p1" name="id_keranjang">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_CI_op2_r" name="result" type="_TOA_M_CI" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_CI_op2_r_uv" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <!-- Module 3: MAkunPengguna -->
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_MOD03" name="MAkunPengguna">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_AKN" name="AkunPengguna"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_AKN" name="AkunPenggunaImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_AKN_a1" name="id_akun" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_AKN_a2" name="email" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_AKN_a3" name="nama" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_AKN_a5" name="alamat" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_AKN_a6" name="no_telepon" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_AKN_ir" client="_TOA_M_AKN" supplier="_TOA_IF_AKN" contract="_TOA_IF_AKN"/>
+        </packagedElement>
+      </packagedElement>
+      <!-- Module 4: MPembayaran -->
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_MOD04" name="MPembayaran">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_PAY" name="Pembayaran"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_PAY" name="PembayaranImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PAY_a1" name="id_pembayaran" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PAY_a2" name="metode" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PAY_a3" name="jumlah" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_PAY_a3_dv"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PAY_a4" name="status" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PAY_a5" name="id_pesanan" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_PAY_ir" client="_TOA_M_PAY" supplier="_TOA_IF_PAY" contract="_TOA_IF_PAY"/>
+        </packagedElement>
+      </packagedElement>
+      <!-- Module 5: MManajemenPesanan -->
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_MOD05" name="MManajemenPesanan">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_PSN" name="Order">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_IF_PSN_op1" name="getByUser" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_PSN_op1_p1" name="email">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_PSN_op1_r" name="result" type="_TOA_M_PSN" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_IF_PSN_op1_r_uv" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_PSN" name="OrderImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PSN_a1" name="id_pesanan" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PSN_a2" name="status" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PSN_a3" name="tanggal_pesan" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PSN_a4" name="total_harga" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PSN_aa" name="akunPengguna" type="_TOA_M_AKN" association="_TOA_AS_PA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_PSN_aa_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_PSN_aa_uv" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_PSN_ir" client="_TOA_M_PSN" supplier="_TOA_IF_PSN" contract="_TOA_IF_PSN"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_M_PSN_op1" name="getByUser">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_PSN_op1_p1" name="email">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_PSN_op1_r" name="result" type="_TOA_M_PSN" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_PSN_op1_r_uv" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_OI" name="OrderItem">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_IF_OI_op1" name="getByPesanan" visibility="public">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_OI_op1_p1" name="id_pesanan">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_IF_OI_op1_r" name="result" type="_TOA_M_OI" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_IF_OI_op1_r_uv" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_OI" name="OrderItemImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_OI_a1" name="id_order_item" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_OI_a2" name="quantity" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_OI_a3" name="harga_satuan" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_OI_aa_psn" name="pesanan" type="_TOA_M_PSN" association="_TOA_AS_OP">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_OI_aa_psn_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_OI_aa_psn_uv" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_OI_aa_prd" name="produk" type="_TOA_M_PRD" association="_TOA_AS_OPR">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_OI_aa_prd_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_OI_aa_prd_uv" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_OI_ir" client="_TOA_M_OI" supplier="_TOA_IF_OI" contract="_TOA_IF_OI"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_M_OI_op1" name="getByPesanan">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_OI_op1_p1" name="id_pesanan">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_M_OI_op1_r" name="result" type="_TOA_M_OI" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_OI_op1_r_uv" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <!-- Module 6: MPreOrder -->
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_MOD06" name="MPreOrder">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TOA_IF_PO" name="PreOrder"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_M_PO" name="PreOrderImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a1" name="id_preorder" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a2" name="tanggal_rilis" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a3" name="status" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_aa_prd" name="produk" type="_TOA_M_PRD" association="_TOA_AS_PP">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_PO_aa_prd_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_PO_aa_prd_uv" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_aa_akn" name="akunPengguna" type="_TOA_M_AKN" association="_TOA_AS_POA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_M_PO_aa_akn_lv" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_M_PO_aa_akn_uv" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_PO_ir" client="_TOA_M_PO" supplier="_TOA_IF_PO" contract="_TOA_IF_PO"/>
+        </packagedElement>
+      </packagedElement>
+      <!-- Delta Packages (unchanged) -->
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE01" name="DKatalogProdukEksklusif">
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE01_cls" name="ProdukImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE01_a1" name="is_eksklusif" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE01_aa" name="produk" type="_TOA_M_PRD" association="_TOA_AS01">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE01_aa_lv"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE01_aa_uv" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE01_op1" name="checkEksklusif" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE01_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE02" name="DKatalogProdukPreOwned">
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE02_cls" name="ProdukImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE02_a1" name="kondisi" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE02_aa" name="produk" type="_TOA_M_PRD" association="_TOA_AS02">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE02_aa_lv"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE02_aa_uv" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE02_op1" name="checkPreOwned" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE02_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE03" name="DPembayaranEWallet">
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE03_cls" name="PembayaranImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE03_a1" name="ewallet_provider" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE03_aa" name="pembayaran" type="_TOA_M_PAY" association="_TOA_AS03">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE03_aa_lv"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE03_aa_uv" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE03_op1" name="payWithEWallet" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE03_op1_p1" name="amount">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE03_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE04" name="DWishlist">
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE04_cls" name="AkunPenggunaImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE04_aa" name="akunPengguna" type="_TOA_M_AKN" association="_TOA_AS04">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE04_aa_lv"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE04_aa_uv" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE04_op1" name="addToWishlist" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE04_op1_p1" name="id_produk">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE04_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE04_op2" name="removeFromWishlist" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE04_op2_p1" name="id_produk">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE04_op2_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE05" name="DReviewDanRating">
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE05_cls" name="ProdukImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE05_a1" name="average_rating" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE05_a1_dv"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE05_aa" name="produk" type="_TOA_M_PRD" association="_TOA_AS05">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE05_aa_lv"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE05_aa_uv" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE05_op1" name="addReview" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE05_op1_p1" name="rating">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE05_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE06" name="DSistemMembership">
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE06_cls" name="AkunPenggunaImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE06_a1" name="membership_level" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE06_aa" name="akunPengguna" type="_TOA_M_AKN" association="_TOA_AS06">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE06_aa_lv"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE06_aa_uv" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE06_op1" name="checkMembership" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE06_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE07" name="DSistemPoinLoyalitas">
+        <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE07_cls" name="AkunPenggunaImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE07_a1" name="poin" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE07_a1_dv"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE07_aa" name="akunPengguna" type="_TOA_M_AKN" association="_TOA_AS07">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE07_aa_lv"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE07_aa_uv" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE07_op1" name="redeemPoin" visibility="protected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE07_op1_p1" name="jumlah_poin">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE07_op1_r" name="result" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TOA_PA01">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_PA01_an1" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_PA01_d1" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_PA01_d2" key="Comment" value="uml-dop profile complete"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_PA01_d3" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_PA01_d4" key="Date" value="2022-03-01"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TOA_PA01_d5" key="Author" value="mra"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOA_PA01_an2" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="uml-vm-profile.profile.uml#_cw4jwJksEeyPP7xacetQkQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_uH7PgUI-EfGn8fWb9GfitQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uH9EsEI-EfGn8fWb9GfitQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XJZvsJOyEfCDfaGUJJSFbQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+  </uml:Model>
+  <umlvmprofile:vm xmi:id="_TOA_ST_vm01" base_Package="_TOA_VM01"/>
+  <umlvmprofile:module xmi:id="_TOA_ST_mod01" base_Package="_TOA_MOD01"/>
+  <umlvmprofile:module xmi:id="_TOA_ST_mod02" base_Package="_TOA_MOD02"/>
+  <umlvmprofile:module xmi:id="_TOA_ST_mod03" base_Package="_TOA_MOD03"/>
+  <umlvmprofile:module xmi:id="_TOA_ST_mod04" base_Package="_TOA_MOD04"/>
+  <umlvmprofile:module xmi:id="_TOA_ST_mod05" base_Package="_TOA_MOD05"/>
+  <umlvmprofile:module xmi:id="_TOA_ST_mod06" base_Package="_TOA_MOD06"/>
+  <umlvmprofile:delta xmi:id="_TOA_ST_de01" base_Package="_TOA_DE01"/>
+  <umlvmprofile:delta xmi:id="_TOA_ST_de02" base_Package="_TOA_DE02"/>
+  <umlvmprofile:delta xmi:id="_TOA_ST_de03" base_Package="_TOA_DE03"/>
+  <umlvmprofile:delta xmi:id="_TOA_ST_de04" base_Package="_TOA_DE04"/>
+  <umlvmprofile:delta xmi:id="_TOA_ST_de05" base_Package="_TOA_DE05"/>
+  <umlvmprofile:delta xmi:id="_TOA_ST_de06" base_Package="_TOA_DE06"/>
+  <umlvmprofile:delta xmi:id="_TOA_ST_de07" base_Package="_TOA_DE07"/>
+  <umlvmprofile:modifiedClass xmi:id="_TOA_ST_mc01" base_Class="_TOA_DE01_cls"/>
+  <umlvmprofile:modifiedClass xmi:id="_TOA_ST_mc02" base_Class="_TOA_DE02_cls"/>
+  <umlvmprofile:modifiedClass xmi:id="_TOA_ST_mc03" base_Class="_TOA_DE03_cls"/>
+  <umlvmprofile:modifiedClass xmi:id="_TOA_ST_mc04" base_Class="_TOA_DE04_cls"/>
+  <umlvmprofile:modifiedClass xmi:id="_TOA_ST_mc05" base_Class="_TOA_DE05_cls"/>
+  <umlvmprofile:modifiedClass xmi:id="_TOA_ST_mc06" base_Class="_TOA_DE06_cls"/>
+  <umlvmprofile:modifiedClass xmi:id="_TOA_ST_mc07" base_Class="_TOA_DE07_cls"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ad01" base_Property="_TOA_DE01_a1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ad02" base_Property="_TOA_DE02_a1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ad03" base_Property="_TOA_DE03_a1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ad04" base_Property="_TOA_DE05_a1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ad05" base_Property="_TOA_DE06_a1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ad06" base_Property="_TOA_DE07_a1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao01" base_Operation="_TOA_DE01_op1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao02" base_Operation="_TOA_DE02_op1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao03" base_Operation="_TOA_DE03_op1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao04" base_Operation="_TOA_DE04_op1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao05" base_Operation="_TOA_DE04_op2"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao06" base_Operation="_TOA_DE05_op1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao07" base_Operation="_TOA_DE06_op1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ao08" base_Operation="_TOA_DE07_op1"/>
+  <umlvmprofile:modifies xmi:id="_TOA_ST_ma01" base_Association="_TOA_AS01"/>
+  <umlvmprofile:modifies xmi:id="_TOA_ST_ma02" base_Association="_TOA_AS02"/>
+  <umlvmprofile:modifies xmi:id="_TOA_ST_ma03" base_Association="_TOA_AS03"/>
+  <umlvmprofile:modifies xmi:id="_TOA_ST_ma04" base_Association="_TOA_AS04"/>
+  <umlvmprofile:modifies xmi:id="_TOA_ST_ma05" base_Association="_TOA_AS05"/>
+  <umlvmprofile:modifies xmi:id="_TOA_ST_ma06" base_Association="_TOA_AS06"/>
+  <umlvmprofile:modifies xmi:id="_TOA_ST_ma07" base_Association="_TOA_AS07"/>
+</xmi:XMI>
