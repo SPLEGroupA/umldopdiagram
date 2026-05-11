@@ -16,7 +16,7 @@ public abstract class OrderItemServiceDecorator extends OrderItemServiceComponen
 		return record.createOrderItem(requestBody);
 	}
 	
-	public OrderItem createOrderItem(Map<String, Object> requestBody, int id){
+    public OrderItem createOrderItem(Map<String, Object> requestBody, UUID id){
 		return record.createOrderItem(requestBody, id);
 	}
 
@@ -40,11 +40,11 @@ public abstract class OrderItemServiceDecorator extends OrderItemServiceComponen
 		return record.deleteOrderItem(requestBody);
 	}
 
-	public HashMap<String, Object> getOrderItemById(int id){
+	public HashMap<String, Object> getOrderItemById(UUID id){	
         return record.getOrderItemById(id);
     }
 
-	public OrderItemImpl getByPesanan(int id_pesanan) {
+	public OrderItemImpl getByPesanan(UUID id_pesanan) {
 		return record.getByPesanan(id_pesanan);
 	}
 }

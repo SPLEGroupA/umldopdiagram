@@ -16,7 +16,7 @@ public abstract class OrderServiceDecorator extends OrderServiceComponent{
 		return record.createOrder(requestBody);
 	}
 	
-	public Order createOrder(Map<String, Object> requestBody, int id){
+    public Order createOrder(Map<String, Object> requestBody, UUID id){
 		return record.createOrder(requestBody, id);
 	}
 
@@ -40,7 +40,7 @@ public abstract class OrderServiceDecorator extends OrderServiceComponent{
 		return record.deleteOrder(requestBody);
 	}
 
-	public HashMap<String, Object> getOrderById(int id){
+	public HashMap<String, Object> getOrderById(UUID id){	
         return record.getOrderById(id);
     }
 

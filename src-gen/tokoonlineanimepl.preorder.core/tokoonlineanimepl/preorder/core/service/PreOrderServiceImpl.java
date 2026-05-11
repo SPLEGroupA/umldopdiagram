@@ -23,21 +23,18 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class PreOrderServiceImpl extends PreOrderServiceComponent{
 
     public PreOrder createPreOrder(Map<String, Object> requestBody){
-		String id_preorderStr = (String) requestBody.get("id_preorder");
-		int id_preorder = Integer.parseInt(id_preorderStr);
 		String tanggal_rilis = (String) requestBody.get("tanggal_rilis");
 		String status = (String) requestBody.get("status");
 		
 		//to do: fix association attributes
 		
-		PreOrder preorder = PreOrderFactory.createPreOrder("tokoonlineanimepl.preorder.core.model.PreOrderImpl", id_preorder, tanggal_rilis, status, produk, akunPengguna);
+		PreOrder preorder = PreOrderFactory.createPreOrder("tokoonlineanimepl.preorder.core.model.PreOrderImpl", tanggal_rilis, status, produk, akunPengguna);
 		Repository.saveObject(preorder);
 		return preorder;
 	}
 
-	public PreOrder createPreOrder(Map<String, Object> requestBody, int id){
-		String id_preorderStr = (String) requestBody.get("id_preorder");
-		int id_preorder = Integer.parseInt(id_preorderStr);
+    public PreOrder createPreOrder(Map<String, Object> requestBody, UUID id){	
+		UUID id_preorder = id;
 		String tanggal_rilis = (String) requestBody.get("tanggal_rilis");
 		String status = (String) requestBody.get("status");
 		
@@ -48,12 +45,9 @@ public class PreOrderServiceImpl extends PreOrderServiceComponent{
 	}
 
     public HashMap<String, Object> updatePreOrder(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_preorder");
+		UUID id = UUID.fromString(idStr);		
 		PreOrder preorder = Repository.getObject(id);
-		
-		String id_preorderStr = (String) requestBody.get("id_preorder");
-		preorder.setId_preorder(Integer.parseInt(id_preorderStr));
 		
 		preorder.setTanggal_rilis((String) requestBody.get("tanggal_rilis"));
 		preorder.setStatus((String) requestBody.get("status"));
@@ -67,16 +61,16 @@ public class PreOrderServiceImpl extends PreOrderServiceComponent{
 	}
 
     public HashMap<String, Object> getPreOrder(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		PreOrder preorder = Repository.getObject(id);
 		return preorder.toHashMap();
 	}
 
-	public HashMap<String, Object> getPreOrderById(int id){
+	public HashMap<String, Object> getPreOrderById(UUID id){
 		List<HashMap<String, Object>> preorderList = getAllPreOrder();
 		for (HashMap<String, Object> preorder : preorderList){
-			int record_id = ((Double) preorder.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) preorder.get("id_preorder"));
+			if (record_id.equals(id)){
 				return preorder;
 			}
 		}
@@ -98,8 +92,8 @@ public class PreOrderServiceImpl extends PreOrderServiceComponent{
 	}
 
     public List<HashMap<String,Object>> deletePreOrder(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_preorder"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllPreOrder();
 	}

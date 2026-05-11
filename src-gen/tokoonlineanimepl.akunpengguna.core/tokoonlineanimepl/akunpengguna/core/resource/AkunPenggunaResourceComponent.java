@@ -12,7 +12,7 @@ public abstract class AkunPenggunaResourceComponent implements AkunPenggunaResou
  
     public abstract List<HashMap<String,Object>> saveAkunPengguna(VMJExchange vmjExchange);
     public abstract AkunPengguna createAkunPengguna(VMJExchange vmjExchange);
-	public abstract AkunPengguna createAkunPengguna(VMJExchange vmjExchange, int id);
+	public abstract AkunPengguna createAkunPengguna(VMJExchange vmjExchange, UUID id);
 	public abstract HashMap<String, Object> updateAkunPengguna(VMJExchange vmjExchange);
     public abstract HashMap<String, Object> getAkunPengguna(VMJExchange vmjExchange);
     public abstract List<HashMap<String,Object>> getAllAkunPengguna(VMJExchange vmjExchange);

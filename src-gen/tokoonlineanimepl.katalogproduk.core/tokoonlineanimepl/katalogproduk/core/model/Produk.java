@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface Produk {
-	    public int getId_produk();
-	    public void setId_produk(int id_produk);
+	    public UUID getId_produk();
+	    public void setId_produk(UUID id_produk);
 	    public String getNama();
 	    public void setNama(String nama);
 	    public int getHarga();

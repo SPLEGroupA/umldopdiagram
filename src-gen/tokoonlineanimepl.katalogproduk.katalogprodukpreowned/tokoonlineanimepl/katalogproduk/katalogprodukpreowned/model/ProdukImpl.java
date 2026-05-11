@@ -20,8 +20,7 @@ public class ProdukImpl extends ProdukDecorator {
 	protected String kondisi;
 	public ProdukImpl() {
         super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_produk = UUID.randomUUID();
         this.objectName = ProdukImpl.class.getName();
     }
 
@@ -39,14 +38,14 @@ public class ProdukImpl extends ProdukDecorator {
 		this.kondisi = kondisi;
 	}
 
-	protected boolean checkPreOwned() {
+	protected boolean checkPreOwned(UUID id_produk) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
-        map.put("", );
+        map.put("id_produk", id_produk);
 		map.put("kondisi", getKondisi());
 
         return map;

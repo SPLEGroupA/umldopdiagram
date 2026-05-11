@@ -23,19 +23,16 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponent{
 
     public KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody){
-		String id_keranjangStr = (String) requestBody.get("id_keranjang");
-		int id_keranjang = Integer.parseInt(id_keranjangStr);
 		
 		//to do: fix association attributes
 		
-		KeranjangBelanja keranjangbelanja = KeranjangBelanjaFactory.createKeranjangBelanja("tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaImpl", id_keranjang, akunPengguna);
+		KeranjangBelanja keranjangbelanja = KeranjangBelanjaFactory.createKeranjangBelanja("tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaImpl", akunPengguna);
 		Repository.saveObject(keranjangbelanja);
 		return keranjangbelanja;
 	}
 
-	public KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody, int id){
-		String id_keranjangStr = (String) requestBody.get("id_keranjang");
-		int id_keranjang = Integer.parseInt(id_keranjangStr);
+    public KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody, UUID id){	
+		UUID id_keranjang = id;
 		
 		//to do: fix association attributes
 		KeranjangBelanja keranjangbelanja = KeranjangBelanjaFactory.createKeranjangBelanja("tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaImpl",id_keranjang, akunPengguna);
@@ -44,12 +41,9 @@ public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponen
 	}
 
     public HashMap<String, Object> updateKeranjangBelanja(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_keranjang");
+		UUID id = UUID.fromString(idStr);		
 		KeranjangBelanja keranjangbelanja = Repository.getObject(id);
-		
-		String id_keranjangStr = (String) requestBody.get("id_keranjang");
-		keranjangbelanja.setId_keranjang(Integer.parseInt(id_keranjangStr));
 		
 		
 		Repository.updateObject(keranjangbelanja);
@@ -61,16 +55,16 @@ public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponen
 	}
 
     public HashMap<String, Object> getKeranjangBelanja(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		KeranjangBelanja keranjangbelanja = Repository.getObject(id);
 		return keranjangbelanja.toHashMap();
 	}
 
-	public HashMap<String, Object> getKeranjangBelanjaById(int id){
+	public HashMap<String, Object> getKeranjangBelanjaById(UUID id){
 		List<HashMap<String, Object>> keranjangbelanjaList = getAllKeranjangBelanja();
 		for (HashMap<String, Object> keranjangbelanja : keranjangbelanjaList){
-			int record_id = ((Double) keranjangbelanja.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) keranjangbelanja.get("id_keranjang"));
+			if (record_id.equals(id)){
 				return keranjangbelanja;
 			}
 		}
@@ -92,8 +86,8 @@ public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponen
 	}
 
     public List<HashMap<String,Object>> deleteKeranjangBelanja(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_keranjang"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllKeranjangBelanja();
 	}
@@ -103,7 +97,7 @@ public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponen
 		throw new UnsupportedOperationException();
 	}
 
-	public boolean addItem(int id_cart_item) {
+	public boolean addItem(UUID id_cart_item) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

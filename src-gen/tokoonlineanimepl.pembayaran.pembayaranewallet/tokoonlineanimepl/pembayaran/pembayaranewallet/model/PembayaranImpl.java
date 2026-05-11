@@ -20,8 +20,7 @@ public class PembayaranImpl extends PembayaranDecorator {
 	protected String ewallet_provider;
 	public PembayaranImpl() {
         super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_pembayaran = UUID.randomUUID();
         this.objectName = PembayaranImpl.class.getName();
     }
 
@@ -39,14 +38,14 @@ public class PembayaranImpl extends PembayaranDecorator {
 		this.ewallet_provider = ewallet_provider;
 	}
 
-	protected boolean payWithEWallet(int amount) {
+	protected boolean payWithEWallet(UUID id_pembayaran, int amount) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
-        map.put("", );
+        map.put("id_pembayaran", id_pembayaran);
 		map.put("ewallet_provider", getEwallet_provider());
 
         return map;

@@ -34,7 +34,7 @@ public class ProdukResourceImpl extends ProdukResourceComponent{
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 	
-	public Produk createProduk(VMJExchange vmjExchange, int id){
+    public Produk createProduk(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
 			Produk result = produkServiceImpl.createProduk(requestBody, id);
@@ -57,7 +57,7 @@ public class ProdukResourceImpl extends ProdukResourceComponent{
 	
     @Route(url="call/katalogproduk/detail")
     public HashMap<String, Object> getProduk(VMJExchange vmjExchange){
-		String idStr = vmjExchange.getGETParam("");
+		String idStr = vmjExchange.getGETParam("id_produk");
 		return produkServiceImpl.getProduk(idStr);
 	}
 

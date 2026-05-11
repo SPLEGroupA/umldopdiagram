@@ -20,7 +20,7 @@ public abstract class OrderResourceDecorator extends OrderResourceComponent{
 		return record.createOrder(vmjExchange);
 	}
 	
-	public Order createOrder(VMJExchange vmjExchange, int id){
+	public Order createOrder(VMJExchange vmjExchange, UUID id){
 		return record.createOrder(vmjExchange, id);
 	}
 

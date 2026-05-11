@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface Order {
-	    public int getId_pesanan();
-	    public void setId_pesanan(int id_pesanan);
+	    public UUID getId_pesanan();
+	    public void setId_pesanan(UUID id_pesanan);
 	    public String getStatus();
 	    public void setStatus(String status);
 	    public String getTanggal_pesan();

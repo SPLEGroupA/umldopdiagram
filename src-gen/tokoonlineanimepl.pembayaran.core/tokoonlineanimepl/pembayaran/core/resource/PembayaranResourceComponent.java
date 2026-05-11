@@ -12,7 +12,7 @@ public abstract class PembayaranResourceComponent implements PembayaranResource{
  
     public abstract List<HashMap<String,Object>> savePembayaran(VMJExchange vmjExchange);
     public abstract Pembayaran createPembayaran(VMJExchange vmjExchange);
-	public abstract Pembayaran createPembayaran(VMJExchange vmjExchange, int id);
+	public abstract Pembayaran createPembayaran(VMJExchange vmjExchange, UUID id);
 	public abstract HashMap<String, Object> updatePembayaran(VMJExchange vmjExchange);
     public abstract HashMap<String, Object> getPembayaran(VMJExchange vmjExchange);
     public abstract List<HashMap<String,Object>> getAllPembayaran(VMJExchange vmjExchange);

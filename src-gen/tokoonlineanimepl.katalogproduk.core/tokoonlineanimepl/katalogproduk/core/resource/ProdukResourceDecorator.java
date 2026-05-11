@@ -20,7 +20,7 @@ public abstract class ProdukResourceDecorator extends ProdukResourceComponent{
 		return record.createProduk(vmjExchange);
 	}
 	
-	public Produk createProduk(VMJExchange vmjExchange, int id){
+	public Produk createProduk(VMJExchange vmjExchange, UUID id){
 		return record.createProduk(vmjExchange, id);
 	}
 

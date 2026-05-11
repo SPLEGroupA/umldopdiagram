@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="pembayaran_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class PembayaranComponent implements Pembayaran{
+	@Id
+	protected UUID id_pembayaran; 
 	protected String metode;
 	protected int jumlah;
 	protected String status;
@@ -25,7 +27,7 @@ public abstract class PembayaranComponent implements Pembayaran{
 	} 
 
 	public PembayaranComponent(
-        int id_pembayaran, String metode, int jumlah, String status, int id_pesanan
+        UUID id_pembayaran, String metode, int jumlah, String status, int id_pesanan
     ) {
         this.id_pembayaran = id_pembayaran;
         this.metode = metode;
@@ -34,11 +36,11 @@ public abstract class PembayaranComponent implements Pembayaran{
         this.id_pesanan = id_pesanan;
     }
 
-	public int getId_pembayaran() {
+	public UUID getId_pembayaran() {
 		return this.id_pembayaran;
 	}
 
-	public void setId_pembayaran(int id_pembayaran) {
+	public void setId_pembayaran(UUID id_pembayaran) {
 		this.id_pembayaran = id_pembayaran;
 	}
 	public String getMetode() {

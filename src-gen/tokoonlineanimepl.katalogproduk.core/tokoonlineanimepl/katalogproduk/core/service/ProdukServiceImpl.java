@@ -23,8 +23,6 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class ProdukServiceImpl extends ProdukServiceComponent{
 
     public Produk createProduk(Map<String, Object> requestBody){
-		String id_produkStr = (String) requestBody.get("id_produk");
-		int id_produk = Integer.parseInt(id_produkStr);
 		String nama = (String) requestBody.get("nama");
 		String hargaStr = (String) requestBody.get("harga");
 		int harga = Integer.parseInt(hargaStr);
@@ -36,14 +34,13 @@ public class ProdukServiceImpl extends ProdukServiceComponent{
 		
 		//to do: fix association attributes
 		
-		Produk produk = ProdukFactory.createProduk("tokoonlineanimepl.katalogproduk.core.model.ProdukImpl", id_produk, nama, harga, kategori, deskripsi, stok, gambar_url);
+		Produk produk = ProdukFactory.createProduk("tokoonlineanimepl.katalogproduk.core.model.ProdukImpl", nama, harga, kategori, deskripsi, stok, gambar_url);
 		Repository.saveObject(produk);
 		return produk;
 	}
 
-	public Produk createProduk(Map<String, Object> requestBody, int id){
-		String id_produkStr = (String) requestBody.get("id_produk");
-		int id_produk = Integer.parseInt(id_produkStr);
+    public Produk createProduk(Map<String, Object> requestBody, UUID id){	
+		UUID id_produk = id;
 		String nama = (String) requestBody.get("nama");
 		String hargaStr = (String) requestBody.get("harga");
 		int harga = Integer.parseInt(hargaStr);
@@ -60,12 +57,9 @@ public class ProdukServiceImpl extends ProdukServiceComponent{
 	}
 
     public HashMap<String, Object> updateProduk(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_produk");
+		UUID id = UUID.fromString(idStr);		
 		Produk produk = Repository.getObject(id);
-		
-		String id_produkStr = (String) requestBody.get("id_produk");
-		produk.setId_produk(Integer.parseInt(id_produkStr));
 		
 		produk.setNama((String) requestBody.get("nama"));
 		String hargaStr = (String) requestBody.get("harga");
@@ -87,16 +81,16 @@ public class ProdukServiceImpl extends ProdukServiceComponent{
 	}
 
     public HashMap<String, Object> getProduk(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		Produk produk = Repository.getObject(id);
 		return produk.toHashMap();
 	}
 
-	public HashMap<String, Object> getProdukById(int id){
+	public HashMap<String, Object> getProdukById(UUID id){
 		List<HashMap<String, Object>> produkList = getAllProduk();
 		for (HashMap<String, Object> produk : produkList){
-			int record_id = ((Double) produk.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) produk.get("id_produk"));
+			if (record_id.equals(id)){
 				return produk;
 			}
 		}
@@ -118,8 +112,8 @@ public class ProdukServiceImpl extends ProdukServiceComponent{
 	}
 
     public List<HashMap<String,Object>> deleteProduk(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_produk"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllProduk();
 	}

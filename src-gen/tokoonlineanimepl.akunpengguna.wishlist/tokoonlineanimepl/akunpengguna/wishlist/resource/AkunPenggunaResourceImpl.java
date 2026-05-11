@@ -14,11 +14,11 @@ import tokoonlineanimepl.akunpengguna.core.service.AkunPenggunaServiceComponent;
 import tokoonlineanimepl.akunpengguna.wishlist.service.AkunPenggunaServiceImpl;
 
 public class AkunPenggunaResourceImpl extends AkunPenggunaResourceDecorator {
-	protected AkunPenggunaServiceComponent recordComponent;
-	private AkunPenggunaServiceImpl akunpenggunawishlistServiceImpl = new AkunPenggunaServiceImpl(recordComponent);
+	private AkunPenggunaServiceComponent akunpenggunawishlistServiceImpl;
 
-    public AkunPenggunaResourceImpl (AkunPenggunaResourceComponent record) {
+    public AkunPenggunaResourceImpl (AkunPenggunaResourceComponent record, AkunPenggunaServiceComponent recordService) {
         super(record);
+		this.akunpenggunawishlistServiceImpl = new AkunPenggunaServiceImpl(recordService);
     }
 
     
@@ -92,12 +92,12 @@ public class AkunPenggunaResourceImpl extends AkunPenggunaResourceDecorator {
 		return akunpenggunawishlistServiceImpl.deleteAkunPengguna(requestBody);
 	}
 
-	protected boolean addToWishlist(int id_produk) {
+	protected boolean addToWishlist(UUID id_akun, UUID id_produk) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
-	protected boolean removeFromWishlist(int id_produk) {
+	protected boolean removeFromWishlist(UUID id_akun, UUID id_produk) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

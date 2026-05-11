@@ -20,7 +20,7 @@ public abstract class OrderItemResourceDecorator extends OrderItemResourceCompon
 		return record.createOrderItem(vmjExchange);
 	}
 	
-	public OrderItem createOrderItem(VMJExchange vmjExchange, int id){
+	public OrderItem createOrderItem(VMJExchange vmjExchange, UUID id){
 		return record.createOrderItem(vmjExchange, id);
 	}
 
@@ -40,7 +40,7 @@ public abstract class OrderItemResourceDecorator extends OrderItemResourceCompon
 		return record.deleteOrderItem(vmjExchange);
 	}
 
-	public OrderItemImpl getByPesanan(int id_pesanan) {
+	public OrderItemImpl getByPesanan(UUID id_pesanan) {
 		return record.getByPesanan(id_pesanan);
 	}
 }

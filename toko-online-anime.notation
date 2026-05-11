@@ -40,6 +40,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PRD_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PRD_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_PRD_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PRD_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PRD_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PRD_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PRD_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PRD_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PRD_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PRD_a1_lc"/>
               </children>
@@ -138,6 +145,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_KRJ_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_KRJ_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_KRJ_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_KRJ_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_KRJ_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_KRJ_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_KRJ_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_KRJ_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_KRJ_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_KRJ_a1_lc"/>
               </children>
@@ -214,6 +228,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_CI_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_CI_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_CI_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_CI_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_CI_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_CI_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_CI_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_CI_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_CI_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_CI_a1_lc"/>
               </children>
@@ -296,6 +317,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_AKN_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_AKN_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_AKN_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_AKN_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_AKN_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_AKN_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_AKN_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_AKN_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_AKN_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_AKN_a1_lc"/>
               </children>
@@ -378,6 +406,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PAY_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PAY_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_PAY_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PAY_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PAY_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PAY_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PAY_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PAY_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PAY_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PAY_a1_lc"/>
               </children>
@@ -464,6 +499,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PSN_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PSN_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_PSN_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PSN_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PSN_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PSN_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PSN_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PSN_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PSN_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PSN_a1_lc"/>
               </children>
@@ -540,6 +582,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_OI_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_OI_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_OI_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_OI_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_OI_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_OI_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_OI_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_OI_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_OI_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_OI_a1_lc"/>
               </children>
@@ -618,6 +667,13 @@
             </children>
             <children xmi:type="notation:BasicCompartment" xmi:id="_NT_CLS_PO_attr" type="Class_AttributeCompartment_CN">
               <children xmi:type="notation:Shape" xmi:id="_NT_CLS_PO_a1" type="Property_ClassAttributeLabel">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NT_CLS_PO_a1_sa" source="Stereotype_Annotation">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PO_a1_sa_d1" key="StereotypeWithQualifiedNameList" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PO_a1_sa_d2" key="StereotypeList" value="uml-vm-profile::pk"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PO_a1_sa_d3" key="Stereotype_Presentation_Kind" value="Text"/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PO_a1_sa_d4" key="PropStereoDisplay" value=""/>
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NT_CLS_PO_a1_sa_d5" key="StereotypePropertyLocation" value="Compartment"/>
+                </eAnnotations>
                 <element xmi:type="uml:Property" href="toko-online-anime.uml#_TOA_M_PO_a1"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NT_CLS_PO_a1_lc"/>
               </children>

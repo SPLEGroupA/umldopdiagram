@@ -34,7 +34,7 @@ public class KeranjangBelanjaResourceImpl extends KeranjangBelanjaResourceCompon
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 	
-	public KeranjangBelanja createKeranjangBelanja(VMJExchange vmjExchange, int id){
+    public KeranjangBelanja createKeranjangBelanja(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
 			KeranjangBelanja result = keranjangbelanjaServiceImpl.createKeranjangBelanja(requestBody, id);
@@ -57,7 +57,7 @@ public class KeranjangBelanjaResourceImpl extends KeranjangBelanjaResourceCompon
 	
     @Route(url="call/keranjangbelanja/detail")
     public HashMap<String, Object> getKeranjangBelanja(VMJExchange vmjExchange){
-		String idStr = vmjExchange.getGETParam("");
+		String idStr = vmjExchange.getGETParam("id_keranjang");
 		return keranjangbelanjaServiceImpl.getKeranjangBelanja(idStr);
 	}
 
@@ -87,7 +87,7 @@ public class KeranjangBelanjaResourceImpl extends KeranjangBelanjaResourceCompon
 	}
 
 	
-	public boolean addItem(int id_cart_item) {
+	public boolean addItem(UUID id_cart_item) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

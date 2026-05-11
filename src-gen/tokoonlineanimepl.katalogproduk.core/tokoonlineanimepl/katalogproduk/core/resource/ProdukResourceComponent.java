@@ -12,7 +12,7 @@ public abstract class ProdukResourceComponent implements ProdukResource{
  
     public abstract List<HashMap<String,Object>> saveProduk(VMJExchange vmjExchange);
     public abstract Produk createProduk(VMJExchange vmjExchange);
-	public abstract Produk createProduk(VMJExchange vmjExchange, int id);
+	public abstract Produk createProduk(VMJExchange vmjExchange, UUID id);
 	public abstract HashMap<String, Object> updateProduk(VMJExchange vmjExchange);
     public abstract HashMap<String, Object> getProduk(VMJExchange vmjExchange);
     public abstract List<HashMap<String,Object>> getAllProduk(VMJExchange vmjExchange);

@@ -34,7 +34,7 @@ public class CartItemResourceImpl extends CartItemResourceComponent{
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 	
-	public CartItem createCartItem(VMJExchange vmjExchange, int id){
+    public CartItem createCartItem(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
 			CartItem result = cartitemServiceImpl.createCartItem(requestBody, id);
@@ -57,7 +57,7 @@ public class CartItemResourceImpl extends CartItemResourceComponent{
 	
     @Route(url="call/keranjangbelanja/detail")
     public HashMap<String, Object> getCartItem(VMJExchange vmjExchange){
-		String idStr = vmjExchange.getGETParam("");
+		String idStr = vmjExchange.getGETParam("id_cart_item");
 		return cartitemServiceImpl.getCartItem(idStr);
 	}
 
@@ -81,13 +81,13 @@ public class CartItemResourceImpl extends CartItemResourceComponent{
 
 
 	
-	public boolean setProduct(int id_produk, int quantity) {
+	public boolean setProduct(UUID id_produk, int quantity) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
 	
-	public CartItemImpl getByKeranjang(int id_keranjang) {
+	public CartItemImpl getByKeranjang(UUID id_keranjang) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

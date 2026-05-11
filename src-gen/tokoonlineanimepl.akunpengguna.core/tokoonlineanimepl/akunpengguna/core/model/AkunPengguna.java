@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface AkunPengguna {
-	    public int getId_akun();
-	    public void setId_akun(int id_akun);
+	    public UUID getId_akun();
+	    public void setId_akun(UUID id_akun);
 	    public String getEmail();
 	    public void setEmail(String email);
 	    public String getNama();

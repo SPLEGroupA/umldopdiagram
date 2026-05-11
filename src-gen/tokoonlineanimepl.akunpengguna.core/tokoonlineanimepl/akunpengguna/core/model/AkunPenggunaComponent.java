@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="akunpengguna_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class AkunPenggunaComponent implements AkunPengguna{
+	@Id
+	protected UUID id_akun; 
 	protected String email;
 	protected String nama;
 	protected String alamat;
@@ -26,7 +28,7 @@ public abstract class AkunPenggunaComponent implements AkunPengguna{
 	} 
 
 	public AkunPenggunaComponent(
-        int id_akun, String email, String nama, String alamat, String no_telepon
+        UUID id_akun, String email, String nama, String alamat, String no_telepon
     ) {
         this.id_akun = id_akun;
         this.email = email;
@@ -35,11 +37,11 @@ public abstract class AkunPenggunaComponent implements AkunPengguna{
         this.no_telepon = no_telepon;
     }
 
-	public int getId_akun() {
+	public UUID getId_akun() {
 		return this.id_akun;
 	}
 
-	public void setId_akun(int id_akun) {
+	public void setId_akun(UUID id_akun) {
 		this.id_akun = id_akun;
 	}
 	public String getEmail() {

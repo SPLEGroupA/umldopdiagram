@@ -14,11 +14,11 @@ import tokoonlineanimepl.akunpengguna.core.service.AkunPenggunaServiceComponent;
 import tokoonlineanimepl.akunpengguna.sistempoinloyalitas.service.AkunPenggunaServiceImpl;
 
 public class AkunPenggunaResourceImpl extends AkunPenggunaResourceDecorator {
-	protected AkunPenggunaServiceComponent recordComponent;
-	private AkunPenggunaServiceImpl akunpenggunasistempoinloyalitasServiceImpl = new AkunPenggunaServiceImpl(recordComponent);
+	private AkunPenggunaServiceComponent akunpenggunasistempoinloyalitasServiceImpl;
 
-    public AkunPenggunaResourceImpl (AkunPenggunaResourceComponent record) {
+    public AkunPenggunaResourceImpl (AkunPenggunaResourceComponent record, AkunPenggunaServiceComponent recordService) {
         super(record);
+		this.akunpenggunasistempoinloyalitasServiceImpl = new AkunPenggunaServiceImpl(recordService);
     }
 
     
@@ -92,7 +92,7 @@ public class AkunPenggunaResourceImpl extends AkunPenggunaResourceDecorator {
 		return akunpenggunasistempoinloyalitasServiceImpl.deleteAkunPengguna(requestBody);
 	}
 
-	protected boolean redeemPoin(int jumlah_poin) {
+	protected boolean redeemPoin(UUID id_akun, int jumlah_poin) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

@@ -17,27 +17,25 @@ public abstract class OrderItemDecorator extends OrderItemComponent{
 
 	public OrderItemDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_order_item =  UUID.randomUUID();
 	}
 
-	public OrderItemDecorator (, OrderItemComponent record) {
-		this. =  ;
+	public OrderItemDecorator (UUID id_order_item, OrderItemComponent record) {
+		this.id_order_item =  id_order_item;
 		this.record = record;
 	}
 	
 	public OrderItemDecorator (OrderItemComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_order_item =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_order_item() {
+	public UUID getId_order_item() {
 		return record.getId_order_item();
 	}
-	public void setId_order_item(int id_order_item) {
+	public void setId_order_item(UUID id_order_item) {
 		record.setId_order_item(id_order_item);
 	}
 	public int getQuantity() {
@@ -53,7 +51,7 @@ public abstract class OrderItemDecorator extends OrderItemComponent{
 		record.setHarga_satuan(harga_satuan);
 	}
 
-	public OrderItemImpl getByPesanan(int id_pesanan) {
+	public OrderItemImpl getByPesanan(UUID id_pesanan) {
 		return record.getByPesanan(id_pesanan);
 	}
 

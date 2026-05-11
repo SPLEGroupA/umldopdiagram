@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="cartitem_impl")
 public class CartItemImpl extends CartItemComponent {
 
-	public CartItemImpl(int id_cart_item, int quantity, int harga_satuan, KeranjangBelanjaImpl keranjangBelanja, ProdukImpl produk) {
+	public CartItemImpl(UUID id_cart_item, int quantity, int harga_satuan, KeranjangBelanjaImpl keranjangBelanja, ProdukImpl produk) {
 		this.id_cart_item = id_cart_item;
 		this.quantity = quantity;
 		this.harga_satuan = harga_satuan;
@@ -28,9 +28,7 @@ public class CartItemImpl extends CartItemComponent {
 	}
 
 	public CartItemImpl(int quantity, int harga_satuan, KeranjangBelanjaImpl keranjangBelanja, ProdukImpl produk) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_cart_item = id_cart_item;
+		this.id_cart_item =  UUID.randomUUID();
 		this.quantity = quantity;
 		this.harga_satuan = harga_satuan;
 		this.keranjangBelanja = keranjangBelanja;
@@ -39,11 +37,11 @@ public class CartItemImpl extends CartItemComponent {
 
 	public CartItemImpl() { }
 
-	public int getId_cart_item() {
+	public UUID getId_cart_item() {
 		return this.id_cart_item;
 	}
 
-	public void setId_cart_item(int id_cart_item) {
+	public void setId_cart_item(UUID id_cart_item) {
 		this.id_cart_item = id_cart_item;
 	}
 	public int getQuantity() {
@@ -61,12 +59,12 @@ public class CartItemImpl extends CartItemComponent {
 		this.harga_satuan = harga_satuan;
 	}
 
-	public boolean setProduct(int id_produk, int quantity) {
+	public boolean setProduct(UUID id_produk, int quantity) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
-	public CartItemImpl getByKeranjang(int id_keranjang) {
+	public CartItemImpl getByKeranjang(UUID id_keranjang) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

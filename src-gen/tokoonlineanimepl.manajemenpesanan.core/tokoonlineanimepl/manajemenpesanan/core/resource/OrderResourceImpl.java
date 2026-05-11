@@ -34,7 +34,7 @@ public class OrderResourceImpl extends OrderResourceComponent{
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 	
-	public Order createOrder(VMJExchange vmjExchange, int id){
+    public Order createOrder(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
 			Order result = orderServiceImpl.createOrder(requestBody, id);
@@ -57,7 +57,7 @@ public class OrderResourceImpl extends OrderResourceComponent{
 	
     @Route(url="call/manajemenpesanan/detail")
     public HashMap<String, Object> getOrder(VMJExchange vmjExchange){
-		String idStr = vmjExchange.getGETParam("");
+		String idStr = vmjExchange.getGETParam("id_pesanan");
 		return orderServiceImpl.getOrder(idStr);
 	}
 

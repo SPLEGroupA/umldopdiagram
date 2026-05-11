@@ -23,8 +23,6 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class OrderItemServiceImpl extends OrderItemServiceComponent{
 
     public OrderItem createOrderItem(Map<String, Object> requestBody){
-		String id_order_itemStr = (String) requestBody.get("id_order_item");
-		int id_order_item = Integer.parseInt(id_order_itemStr);
 		String quantityStr = (String) requestBody.get("quantity");
 		int quantity = Integer.parseInt(quantityStr);
 		String harga_satuanStr = (String) requestBody.get("harga_satuan");
@@ -32,14 +30,13 @@ public class OrderItemServiceImpl extends OrderItemServiceComponent{
 		
 		//to do: fix association attributes
 		
-		OrderItem orderitem = OrderItemFactory.createOrderItem("tokoonlineanimepl.manajemenpesanan.core.model.OrderItemImpl", id_order_item, quantity, harga_satuan, pesanan, produk);
+		OrderItem orderitem = OrderItemFactory.createOrderItem("tokoonlineanimepl.manajemenpesanan.core.model.OrderItemImpl", quantity, harga_satuan, pesanan, produk);
 		Repository.saveObject(orderitem);
 		return orderitem;
 	}
 
-	public OrderItem createOrderItem(Map<String, Object> requestBody, int id){
-		String id_order_itemStr = (String) requestBody.get("id_order_item");
-		int id_order_item = Integer.parseInt(id_order_itemStr);
+    public OrderItem createOrderItem(Map<String, Object> requestBody, UUID id){	
+		UUID id_order_item = id;
 		String quantityStr = (String) requestBody.get("quantity");
 		int quantity = Integer.parseInt(quantityStr);
 		String harga_satuanStr = (String) requestBody.get("harga_satuan");
@@ -52,12 +49,9 @@ public class OrderItemServiceImpl extends OrderItemServiceComponent{
 	}
 
     public HashMap<String, Object> updateOrderItem(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_order_item");
+		UUID id = UUID.fromString(idStr);		
 		OrderItem orderitem = Repository.getObject(id);
-		
-		String id_order_itemStr = (String) requestBody.get("id_order_item");
-		orderitem.setId_order_item(Integer.parseInt(id_order_itemStr));
 		
 		String quantityStr = (String) requestBody.get("quantity");
 		orderitem.setQuantity(Integer.parseInt(quantityStr));
@@ -75,16 +69,16 @@ public class OrderItemServiceImpl extends OrderItemServiceComponent{
 	}
 
     public HashMap<String, Object> getOrderItem(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		OrderItem orderitem = Repository.getObject(id);
 		return orderitem.toHashMap();
 	}
 
-	public HashMap<String, Object> getOrderItemById(int id){
+	public HashMap<String, Object> getOrderItemById(UUID id){
 		List<HashMap<String, Object>> orderitemList = getAllOrderItem();
 		for (HashMap<String, Object> orderitem : orderitemList){
-			int record_id = ((Double) orderitem.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) orderitem.get("id_order_item"));
+			if (record_id.equals(id)){
 				return orderitem;
 			}
 		}
@@ -106,13 +100,13 @@ public class OrderItemServiceImpl extends OrderItemServiceComponent{
 	}
 
     public List<HashMap<String,Object>> deleteOrderItem(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_order_item"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllOrderItem();
 	}
 
-	public OrderItemImpl getByPesanan(int id_pesanan) {
+	public OrderItemImpl getByPesanan(UUID id_pesanan) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

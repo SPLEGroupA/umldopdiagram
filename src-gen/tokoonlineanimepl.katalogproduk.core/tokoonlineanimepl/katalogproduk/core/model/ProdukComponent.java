@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="produk_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class ProdukComponent implements Produk{
+	@Id
+	protected UUID id_produk; 
 	protected String nama;
 	protected int harga;
 	protected String kategori;
@@ -28,7 +30,7 @@ public abstract class ProdukComponent implements Produk{
 	} 
 
 	public ProdukComponent(
-        int id_produk, String nama, int harga, String kategori, String deskripsi, int stok, String gambar_url
+        UUID id_produk, String nama, int harga, String kategori, String deskripsi, int stok, String gambar_url
     ) {
         this.id_produk = id_produk;
         this.nama = nama;
@@ -39,11 +41,11 @@ public abstract class ProdukComponent implements Produk{
         this.gambar_url = gambar_url;
     }
 
-	public int getId_produk() {
+	public UUID getId_produk() {
 		return this.id_produk;
 	}
 
-	public void setId_produk(int id_produk) {
+	public void setId_produk(UUID id_produk) {
 		this.id_produk = id_produk;
 	}
 	public String getNama() {

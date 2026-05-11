@@ -23,8 +23,6 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class AkunPenggunaServiceImpl extends AkunPenggunaServiceComponent{
 
     public AkunPengguna createAkunPengguna(Map<String, Object> requestBody){
-		String id_akunStr = (String) requestBody.get("id_akun");
-		int id_akun = Integer.parseInt(id_akunStr);
 		String email = (String) requestBody.get("email");
 		String nama = (String) requestBody.get("nama");
 		String alamat = (String) requestBody.get("alamat");
@@ -32,14 +30,13 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceComponent{
 		
 		//to do: fix association attributes
 		
-		AkunPengguna akunpengguna = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.core.model.AkunPenggunaImpl", id_akun, email, nama, alamat, no_telepon);
+		AkunPengguna akunpengguna = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.core.model.AkunPenggunaImpl", email, nama, alamat, no_telepon);
 		Repository.saveObject(akunpengguna);
 		return akunpengguna;
 	}
 
-	public AkunPengguna createAkunPengguna(Map<String, Object> requestBody, int id){
-		String id_akunStr = (String) requestBody.get("id_akun");
-		int id_akun = Integer.parseInt(id_akunStr);
+    public AkunPengguna createAkunPengguna(Map<String, Object> requestBody, UUID id){	
+		UUID id_akun = id;
 		String email = (String) requestBody.get("email");
 		String nama = (String) requestBody.get("nama");
 		String alamat = (String) requestBody.get("alamat");
@@ -52,12 +49,9 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceComponent{
 	}
 
     public HashMap<String, Object> updateAkunPengguna(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_akun");
+		UUID id = UUID.fromString(idStr);		
 		AkunPengguna akunpengguna = Repository.getObject(id);
-		
-		String id_akunStr = (String) requestBody.get("id_akun");
-		akunpengguna.setId_akun(Integer.parseInt(id_akunStr));
 		
 		akunpengguna.setEmail((String) requestBody.get("email"));
 		akunpengguna.setNama((String) requestBody.get("nama"));
@@ -73,16 +67,16 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceComponent{
 	}
 
     public HashMap<String, Object> getAkunPengguna(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		AkunPengguna akunpengguna = Repository.getObject(id);
 		return akunpengguna.toHashMap();
 	}
 
-	public HashMap<String, Object> getAkunPenggunaById(int id){
+	public HashMap<String, Object> getAkunPenggunaById(UUID id){
 		List<HashMap<String, Object>> akunpenggunaList = getAllAkunPengguna();
 		for (HashMap<String, Object> akunpengguna : akunpenggunaList){
-			int record_id = ((Double) akunpengguna.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) akunpengguna.get("id_akun"));
+			if (record_id.equals(id)){
 				return akunpengguna;
 			}
 		}
@@ -104,8 +98,8 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceComponent{
 	}
 
     public List<HashMap<String,Object>> deleteAkunPengguna(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_akun"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllAkunPengguna();
 	}

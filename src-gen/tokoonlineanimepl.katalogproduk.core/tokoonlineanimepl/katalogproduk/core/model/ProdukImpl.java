@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="produk_impl")
 public class ProdukImpl extends ProdukComponent {
 
-	public ProdukImpl(int id_produk, String nama, int harga, String kategori, String deskripsi, int stok, String gambar_url) {
+	public ProdukImpl(UUID id_produk, String nama, int harga, String kategori, String deskripsi, int stok, String gambar_url) {
 		this.id_produk = id_produk;
 		this.nama = nama;
 		this.harga = harga;
@@ -30,9 +30,7 @@ public class ProdukImpl extends ProdukComponent {
 	}
 
 	public ProdukImpl(String nama, int harga, String kategori, String deskripsi, int stok, String gambar_url) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_produk = id_produk;
+		this.id_produk =  UUID.randomUUID();
 		this.nama = nama;
 		this.harga = harga;
 		this.kategori = kategori;
@@ -43,11 +41,11 @@ public class ProdukImpl extends ProdukComponent {
 
 	public ProdukImpl() { }
 
-	public int getId_produk() {
+	public UUID getId_produk() {
 		return this.id_produk;
 	}
 
-	public void setId_produk(int id_produk) {
+	public void setId_produk(UUID id_produk) {
 		this.id_produk = id_produk;
 	}
 	public String getNama() {

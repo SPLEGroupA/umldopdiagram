@@ -20,7 +20,7 @@ public abstract class KeranjangBelanjaResourceDecorator extends KeranjangBelanja
 		return record.createKeranjangBelanja(vmjExchange);
 	}
 	
-	public KeranjangBelanja createKeranjangBelanja(VMJExchange vmjExchange, int id){
+	public KeranjangBelanja createKeranjangBelanja(VMJExchange vmjExchange, UUID id){
 		return record.createKeranjangBelanja(vmjExchange, id);
 	}
 
@@ -44,7 +44,7 @@ public abstract class KeranjangBelanjaResourceDecorator extends KeranjangBelanja
 		return record.getByUser(email);
 	}
 
-	public boolean addItem(int id_cart_item) {
+	public boolean addItem(UUID id_cart_item) {
 		return record.addItem(id_cart_item);
 	}
 

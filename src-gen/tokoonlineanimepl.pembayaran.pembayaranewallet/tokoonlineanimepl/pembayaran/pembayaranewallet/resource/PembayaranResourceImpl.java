@@ -14,11 +14,11 @@ import tokoonlineanimepl.pembayaran.core.service.PembayaranServiceComponent;
 import tokoonlineanimepl.pembayaran.pembayaranewallet.service.PembayaranServiceImpl;
 
 public class PembayaranResourceImpl extends PembayaranResourceDecorator {
-	protected PembayaranServiceComponent recordComponent;
-	private PembayaranServiceImpl pembayaranpembayaranewalletServiceImpl = new PembayaranServiceImpl(recordComponent);
+	private PembayaranServiceComponent pembayaranpembayaranewalletServiceImpl;
 
-    public PembayaranResourceImpl (PembayaranResourceComponent record) {
+    public PembayaranResourceImpl (PembayaranResourceComponent record, PembayaranServiceComponent recordService) {
         super(record);
+		this.pembayaranpembayaranewalletServiceImpl = new PembayaranServiceImpl(recordService);
     }
 
     
@@ -92,7 +92,7 @@ public class PembayaranResourceImpl extends PembayaranResourceDecorator {
 		return pembayaranpembayaranewalletServiceImpl.deletePembayaran(requestBody);
 	}
 
-	protected boolean payWithEWallet(int amount) {
+	protected boolean payWithEWallet(UUID id_pembayaran, int amount) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

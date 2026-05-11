@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="pembayaran_impl")
 public class PembayaranImpl extends PembayaranComponent {
 
-	public PembayaranImpl(int id_pembayaran, String metode, int jumlah, String status, int id_pesanan) {
+	public PembayaranImpl(UUID id_pembayaran, String metode, int jumlah, String status, int id_pesanan) {
 		this.id_pembayaran = id_pembayaran;
 		this.metode = metode;
 		this.jumlah = jumlah;
@@ -28,9 +28,7 @@ public class PembayaranImpl extends PembayaranComponent {
 	}
 
 	public PembayaranImpl(String metode, int jumlah, String status) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_pembayaran = id_pembayaran;
+		this.id_pembayaran =  UUID.randomUUID();
 		this.metode = metode;
 		this.jumlah = jumlah;
 		this.status = status;
@@ -39,11 +37,11 @@ public class PembayaranImpl extends PembayaranComponent {
 
 	public PembayaranImpl() { }
 
-	public int getId_pembayaran() {
+	public UUID getId_pembayaran() {
 		return this.id_pembayaran;
 	}
 
-	public void setId_pembayaran(int id_pembayaran) {
+	public void setId_pembayaran(UUID id_pembayaran) {
 		this.id_pembayaran = id_pembayaran;
 	}
 	public String getMetode() {

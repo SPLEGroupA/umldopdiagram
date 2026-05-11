@@ -15,17 +15,17 @@ public abstract class KeranjangBelanjaServiceComponent implements KeranjangBelan
     }	
 
     public abstract KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody);
-	public abstract KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody, int id);
+	public abstract KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody, UUID id);
 	public abstract HashMap<String, Object> updateKeranjangBelanja(Map<String, Object> requestBody);
     public abstract HashMap<String, Object> getKeranjangBelanja(String idStr);
     public abstract List<HashMap<String,Object>> getAllKeranjangBelanja();
     public abstract List<HashMap<String,Object>> transformListToHashMap(List<KeranjangBelanja> List);
     public abstract List<HashMap<String,Object>> deleteKeranjangBelanja(Map<String, Object> requestBody);
-	public abstract HashMap<String, Object> getKeranjangBelanjaById(int id);
+	public abstract HashMap<String, Object> getKeranjangBelanjaById(UUID id);	
 
 	public abstract KeranjangBelanjaImpl getByUser(String email);
 
-	public abstract boolean addItem(int id_cart_item);
+	public abstract boolean addItem(UUID id_cart_item);
 
 	public abstract OrderImpl checkout();
 }

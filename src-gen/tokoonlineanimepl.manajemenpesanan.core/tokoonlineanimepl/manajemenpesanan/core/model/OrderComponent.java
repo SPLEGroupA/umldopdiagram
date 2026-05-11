@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="order_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class OrderComponent implements Order{
+	@Id
+	protected UUID id_pesanan; 
 	protected String status;
 	protected String tanggal_pesan;
 	protected int total_harga;
@@ -27,7 +29,7 @@ public abstract class OrderComponent implements Order{
 	} 
 
 	public OrderComponent(
-        int id_pesanan, String status, String tanggal_pesan, int total_harga, AkunPenggunaImpl akunPengguna
+        UUID id_pesanan, String status, String tanggal_pesan, int total_harga, AkunPenggunaImpl akunPengguna
     ) {
         this.id_pesanan = id_pesanan;
         this.status = status;
@@ -36,11 +38,11 @@ public abstract class OrderComponent implements Order{
         this.akunPengguna = akunPengguna;
     }
 
-	public int getId_pesanan() {
+	public UUID getId_pesanan() {
 		return this.id_pesanan;
 	}
 
-	public void setId_pesanan(int id_pesanan) {
+	public void setId_pesanan(UUID id_pesanan) {
 		this.id_pesanan = id_pesanan;
 	}
 	public String getStatus() {

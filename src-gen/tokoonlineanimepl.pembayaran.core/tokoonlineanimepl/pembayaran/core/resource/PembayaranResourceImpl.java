@@ -34,7 +34,7 @@ public class PembayaranResourceImpl extends PembayaranResourceComponent{
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 	
-	public Pembayaran createPembayaran(VMJExchange vmjExchange, int id){
+    public Pembayaran createPembayaran(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
 			Pembayaran result = pembayaranServiceImpl.createPembayaran(requestBody, id);
@@ -57,7 +57,7 @@ public class PembayaranResourceImpl extends PembayaranResourceComponent{
 	
     @Route(url="call/pembayaran/detail")
     public HashMap<String, Object> getPembayaran(VMJExchange vmjExchange){
-		String idStr = vmjExchange.getGETParam("");
+		String idStr = vmjExchange.getGETParam("id_pembayaran");
 		return pembayaranServiceImpl.getPembayaran(idStr);
 	}
 

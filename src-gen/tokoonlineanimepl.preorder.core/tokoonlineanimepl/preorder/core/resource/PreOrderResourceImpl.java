@@ -34,7 +34,7 @@ public class PreOrderResourceImpl extends PreOrderResourceComponent{
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 	
-	public PreOrder createPreOrder(VMJExchange vmjExchange, int id){
+    public PreOrder createPreOrder(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
 			PreOrder result = preorderServiceImpl.createPreOrder(requestBody, id);
@@ -57,7 +57,7 @@ public class PreOrderResourceImpl extends PreOrderResourceComponent{
 	
     @Route(url="call/preorder/detail")
     public HashMap<String, Object> getPreOrder(VMJExchange vmjExchange){
-		String idStr = vmjExchange.getGETParam("");
+		String idStr = vmjExchange.getGETParam("id_preorder");
 		return preorderServiceImpl.getPreOrder(idStr);
 	}
 

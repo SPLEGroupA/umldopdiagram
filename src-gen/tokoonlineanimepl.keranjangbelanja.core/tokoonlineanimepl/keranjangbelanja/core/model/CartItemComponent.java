@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="cartitem_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class CartItemComponent implements CartItem{
+	@Id
+	protected UUID id_cart_item; 
 	protected int quantity;
 	protected int harga_satuan;
 	@ManyToOne(targetEntity=tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaComponent.class)
@@ -28,7 +30,7 @@ public abstract class CartItemComponent implements CartItem{
 	} 
 
 	public CartItemComponent(
-        int id_cart_item, int quantity, int harga_satuan, KeranjangBelanjaImpl keranjangBelanja, ProdukImpl produk
+        UUID id_cart_item, int quantity, int harga_satuan, KeranjangBelanjaImpl keranjangBelanja, ProdukImpl produk
     ) {
         this.id_cart_item = id_cart_item;
         this.quantity = quantity;
@@ -37,11 +39,11 @@ public abstract class CartItemComponent implements CartItem{
         this.produk = produk;
     }
 
-	public int getId_cart_item() {
+	public UUID getId_cart_item() {
 		return this.id_cart_item;
 	}
 
-	public void setId_cart_item(int id_cart_item) {
+	public void setId_cart_item(UUID id_cart_item) {
 		this.id_cart_item = id_cart_item;
 	}
 	public int getQuantity() {
@@ -65,9 +67,9 @@ public abstract class CartItemComponent implements CartItem{
 	public abstract void setProduk(ProdukImpl produk);
 	
  
-	public abstract boolean setProduct(int id_produk, int quantity);
+	public abstract boolean setProduct(UUID id_produk, int quantity);
 
-	public abstract CartItemImpl getByKeranjang(int id_keranjang);
+	public abstract CartItemImpl getByKeranjang(UUID id_keranjang);
 
 	@Override
     public String toString() {

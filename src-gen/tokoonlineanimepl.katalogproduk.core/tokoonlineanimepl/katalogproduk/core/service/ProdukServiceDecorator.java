@@ -16,7 +16,7 @@ public abstract class ProdukServiceDecorator extends ProdukServiceComponent{
 		return record.createProduk(requestBody);
 	}
 	
-	public Produk createProduk(Map<String, Object> requestBody, int id){
+    public Produk createProduk(Map<String, Object> requestBody, UUID id){
 		return record.createProduk(requestBody, id);
 	}
 
@@ -40,7 +40,7 @@ public abstract class ProdukServiceDecorator extends ProdukServiceComponent{
 		return record.deleteProduk(requestBody);
 	}
 
-	public HashMap<String, Object> getProdukById(int id){
+	public HashMap<String, Object> getProdukById(UUID id){	
         return record.getProdukById(id);
     }
 

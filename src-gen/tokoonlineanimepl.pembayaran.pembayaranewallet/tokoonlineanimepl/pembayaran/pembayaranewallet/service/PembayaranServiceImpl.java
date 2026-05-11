@@ -19,8 +19,6 @@ public class PembayaranServiceImpl extends PembayaranServiceDecorator {
 
  	public Pembayaran createPembayaran(Map<String, Object> requestBody){
 		String ewallet_provider = (String) requestBody.get("ewallet_provider");
-		String id_pembayaranStr = (String) requestBody.get("id_pembayaran");
-		int id_pembayaran = Integer.parseInt(id_pembayaranStr);
 		String metode = (String) requestBody.get("metode");
 		String jumlahStr = (String) requestBody.get("jumlah");
 		int jumlah = Integer.parseInt(jumlahStr);
@@ -28,30 +26,23 @@ public class PembayaranServiceImpl extends PembayaranServiceDecorator {
 		String id_pesananStr = (String) requestBody.get("id_pesanan");
 		int id_pesanan = Integer.parseInt(id_pesananStr);
 		Pembayaran pembayaranpembayaranewallet = record.createPembayaran(requestBody);
-		Pembayaran pembayaranpembayaranewalletdeco = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.pembayaranewallet", pembayaranpembayaranewallet, id_pembayaran, metode, jumlah, status, id_pesanan, ewallet_provider);
+		Pembayaran pembayaranpembayaranewalletdeco = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.pembayaranewallet.model.PembayaranImpl", pembayaranpembayaranewallet, ewallet_provider);
 		Repository.saveObject(pembayaranpembayaranewalletdeco);
 		return pembayaranpembayaranewalletdeco;
 	}
 
-	public Pembayaran createPembayaran(Map<String, Object> requestBody, int id){
+    public Pembayaran createPembayaran(Map<String, Object> requestBody, UUID id){	
 		Pembayaran savedPembayaran = Repository.getObject(id);
 		String ewallet_provider = (String) requestBody.get("ewallet_provider");
-		String id_pembayaranStr = (String) requestBody.get("id_pembayaran");
-		int id_pembayaran = Integer.parseInt(id_pembayaranStr);
-		String metode = (String) requestBody.get("metode");
-		String jumlahStr = (String) requestBody.get("jumlah");
-		int jumlah = Integer.parseInt(jumlahStr);
-		String status = (String) requestBody.get("status");
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		int id_pesanan = Integer.parseInt(id_pesananStr);
-		UUID recordPembayaran = ((PembayaranDecorator) savedPembayaran).get();
-		Pembayaran Pembayaran = record.createPembayaran(requestBody, recordPembayaran);
-		Pembayaran pembayaranpembayaranewallet = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.pembayaranewallet.model.PembayaranImpl", Pembayaran, id_pembayaran, metode, jumlah, status, id_pesanan, ewallet_provider);
+		UUID recordPembayaranId_pembayaran = ((PembayaranDecorator) savedPembayaran).getId_pembayaran();
+		Pembayaran pembayaran = record.createPembayaran(requestBody, recordPembayaranId_pembayaran);
+		Pembayaran pembayaranpembayaranewallet = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.pembayaranewallet.PembayaranImpl", pembayaran, ewallet_provider);
 		return pembayaranpembayaranewallet;
 	}
 
     public HashMap<String, Object> updatePembayaran(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
+		String idStr = (String) requestBody.get("id_pembayaran");
+		UUID id = UUID.fromString(idStr);
 		
 		Pembayaran pembayaranpembayaranewallet = Repository.getObject(id);
 		pembayaranpembayaranewallet = createPembayaran(requestBody, id);
@@ -65,16 +56,16 @@ public class PembayaranServiceImpl extends PembayaranServiceDecorator {
 	}
 
 	public HashMap<String, Object> getPembayaran(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		Pembayaran pembayaranpembayaranewallet = Repository.getObject(id);
 		return pembayaranpembayaranewallet.toHashMap();
 	}
 
-	public HashMap<String, Object> getPembayaranById(int id){
+	public HashMap<String, Object> getPembayaranById(UUID id){
 		List<HashMap<String, Object>> pembayaranList = getAllPembayaran();
 		for (HashMap<String, Object> pembayaran : pembayaranList){
-			int pembayaran_id = ((Double) pembayaran.get("")).intValue();
-			if (pembayaran_id == id){
+			UUID pembayaran_id = UUID.fromString((String) pembayaran.get("id_pembayaran"));
+			if (pembayaran_id.equals(id)){
 				return pembayaran;
 			}
 		}
@@ -96,14 +87,14 @@ public class PembayaranServiceImpl extends PembayaranServiceDecorator {
 	}
 
     public List<HashMap<String,Object>> deletePembayaran(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_pembayaran"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllPembayaran();
 	}
 
 	
-	protected boolean payWithEWallet(int amount) {
+	protected boolean payWithEWallet(UUID id_pembayaran, int amount) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

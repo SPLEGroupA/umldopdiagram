@@ -17,27 +17,25 @@ public abstract class KeranjangBelanjaDecorator extends KeranjangBelanjaComponen
 
 	public KeranjangBelanjaDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_keranjang =  UUID.randomUUID();
 	}
 
-	public KeranjangBelanjaDecorator (, KeranjangBelanjaComponent record) {
-		this. =  ;
+	public KeranjangBelanjaDecorator (UUID id_keranjang, KeranjangBelanjaComponent record) {
+		this.id_keranjang =  id_keranjang;
 		this.record = record;
 	}
 	
 	public KeranjangBelanjaDecorator (KeranjangBelanjaComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_keranjang =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_keranjang() {
+	public UUID getId_keranjang() {
 		return record.getId_keranjang();
 	}
-	public void setId_keranjang(int id_keranjang) {
+	public void setId_keranjang(UUID id_keranjang) {
 		record.setId_keranjang(id_keranjang);
 	}
 
@@ -45,7 +43,7 @@ public abstract class KeranjangBelanjaDecorator extends KeranjangBelanjaComponen
 		return record.getByUser(email);
 	}
 
-	public boolean addItem(int id_cart_item) {
+	public boolean addItem(UUID id_cart_item) {
 		return record.addItem(id_cart_item);
 	}
 

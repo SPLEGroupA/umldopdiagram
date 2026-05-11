@@ -20,8 +20,7 @@ public class ProdukImpl extends ProdukDecorator {
 	protected int average_rating;
 	public ProdukImpl() {
         super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_produk = UUID.randomUUID();
         this.objectName = ProdukImpl.class.getName();
     }
 
@@ -39,14 +38,14 @@ public class ProdukImpl extends ProdukDecorator {
 		this.average_rating = average_rating;
 	}
 
-	protected boolean addReview(int rating) {
+	protected boolean addReview(UUID id_produk, int rating) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
-        map.put("", );
+        map.put("id_produk", id_produk);
 		map.put("average_rating", getAverage_rating());
 
         return map;

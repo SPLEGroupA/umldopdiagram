@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface CartItem {
-	    public int getId_cart_item();
-	    public void setId_cart_item(int id_cart_item);
+	    public UUID getId_cart_item();
+	    public void setId_cart_item(UUID id_cart_item);
 	    public int getQuantity();
 	    public void setQuantity(int quantity);
 	    public int getHarga_satuan();
@@ -15,7 +15,7 @@ public interface CartItem {
 	    public void setKeranjangBelanja(KeranjangBelanjaImpl keranjangBelanja);
 	    public ProdukImpl getProduk();
 	    public void setProduk(ProdukImpl produk);
-	public boolean setProduct(int id_produk, int quantity);
-	public CartItemImpl getByKeranjang(int id_keranjang);
+	public boolean setProduct(UUID id_produk, int quantity);
+	public CartItemImpl getByKeranjang(UUID id_keranjang);
 	HashMap<String, Object> toHashMap();
 }

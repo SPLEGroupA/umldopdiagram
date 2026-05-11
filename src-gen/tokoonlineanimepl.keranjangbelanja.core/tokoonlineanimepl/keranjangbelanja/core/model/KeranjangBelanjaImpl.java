@@ -19,25 +19,23 @@ import javax.persistence.OneToMany;
 @Table(name="keranjangbelanja_impl")
 public class KeranjangBelanjaImpl extends KeranjangBelanjaComponent {
 
-	public KeranjangBelanjaImpl(int id_keranjang, AkunPenggunaImpl akunPengguna) {
+	public KeranjangBelanjaImpl(UUID id_keranjang, AkunPenggunaImpl akunPengguna) {
 		this.id_keranjang = id_keranjang;
 		this.akunPengguna = akunPengguna;
 	}
 
 	public KeranjangBelanjaImpl(AkunPenggunaImpl akunPengguna) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_keranjang = id_keranjang;
+		this.id_keranjang =  UUID.randomUUID();
 		this.akunPengguna = akunPengguna;
 	}
 
 	public KeranjangBelanjaImpl() { }
 
-	public int getId_keranjang() {
+	public UUID getId_keranjang() {
 		return this.id_keranjang;
 	}
 
-	public void setId_keranjang(int id_keranjang) {
+	public void setId_keranjang(UUID id_keranjang) {
 		this.id_keranjang = id_keranjang;
 	}
 
@@ -46,7 +44,7 @@ public class KeranjangBelanjaImpl extends KeranjangBelanjaComponent {
 		throw new UnsupportedOperationException();
 	}
 
-	public boolean addItem(int id_cart_item) {
+	public boolean addItem(UUID id_cart_item) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

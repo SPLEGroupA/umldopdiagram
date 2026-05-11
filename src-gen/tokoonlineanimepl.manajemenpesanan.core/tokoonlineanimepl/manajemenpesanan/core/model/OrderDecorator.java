@@ -17,27 +17,25 @@ public abstract class OrderDecorator extends OrderComponent{
 
 	public OrderDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_pesanan =  UUID.randomUUID();
 	}
 
-	public OrderDecorator (, OrderComponent record) {
-		this. =  ;
+	public OrderDecorator (UUID id_pesanan, OrderComponent record) {
+		this.id_pesanan =  id_pesanan;
 		this.record = record;
 	}
 	
 	public OrderDecorator (OrderComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_pesanan =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_pesanan() {
+	public UUID getId_pesanan() {
 		return record.getId_pesanan();
 	}
-	public void setId_pesanan(int id_pesanan) {
+	public void setId_pesanan(UUID id_pesanan) {
 		record.setId_pesanan(id_pesanan);
 	}
 	public String getStatus() {

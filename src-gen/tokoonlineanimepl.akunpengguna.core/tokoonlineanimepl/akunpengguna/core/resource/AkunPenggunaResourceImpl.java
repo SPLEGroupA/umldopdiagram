@@ -34,7 +34,7 @@ public class AkunPenggunaResourceImpl extends AkunPenggunaResourceComponent{
 		throw new NotFoundException("Route tidak ditemukan");
 	}
 	
-	public AkunPengguna createAkunPengguna(VMJExchange vmjExchange, int id){
+    public AkunPengguna createAkunPengguna(VMJExchange vmjExchange, UUID id){
 		if (vmjExchange.getHttpMethod().equals("POST")) {
 		    Map<String, Object> requestBody = vmjExchange.getPayload(); 
 			AkunPengguna result = akunpenggunaServiceImpl.createAkunPengguna(requestBody, id);
@@ -57,7 +57,7 @@ public class AkunPenggunaResourceImpl extends AkunPenggunaResourceComponent{
 	
     @Route(url="call/akunpengguna/detail")
     public HashMap<String, Object> getAkunPengguna(VMJExchange vmjExchange){
-		String idStr = vmjExchange.getGETParam("");
+		String idStr = vmjExchange.getGETParam("id_akun");
 		return akunpenggunaServiceImpl.getAkunPengguna(idStr);
 	}
 

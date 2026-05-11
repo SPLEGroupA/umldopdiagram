@@ -16,7 +16,7 @@ public abstract class CartItemServiceDecorator extends CartItemServiceComponent{
 		return record.createCartItem(requestBody);
 	}
 	
-	public CartItem createCartItem(Map<String, Object> requestBody, int id){
+    public CartItem createCartItem(Map<String, Object> requestBody, UUID id){
 		return record.createCartItem(requestBody, id);
 	}
 
@@ -40,15 +40,15 @@ public abstract class CartItemServiceDecorator extends CartItemServiceComponent{
 		return record.deleteCartItem(requestBody);
 	}
 
-	public HashMap<String, Object> getCartItemById(int id){
+	public HashMap<String, Object> getCartItemById(UUID id){	
         return record.getCartItemById(id);
     }
 
-	public boolean setProduct(int id_produk, int quantity) {
+	public boolean setProduct(UUID id_produk, int quantity) {
 		return record.setProduct(id_produk, quantity);
 	}
 
-	public CartItemImpl getByKeranjang(int id_keranjang) {
+	public CartItemImpl getByKeranjang(UUID id_keranjang) {
 		return record.getByKeranjang(id_keranjang);
 	}
 }

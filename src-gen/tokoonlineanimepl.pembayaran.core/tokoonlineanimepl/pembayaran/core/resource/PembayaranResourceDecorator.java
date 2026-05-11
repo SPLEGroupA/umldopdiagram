@@ -20,7 +20,7 @@ public abstract class PembayaranResourceDecorator extends PembayaranResourceComp
 		return record.createPembayaran(vmjExchange);
 	}
 	
-	public Pembayaran createPembayaran(VMJExchange vmjExchange, int id){
+	public Pembayaran createPembayaran(VMJExchange vmjExchange, UUID id){
 		return record.createPembayaran(vmjExchange, id);
 	}
 

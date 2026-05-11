@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface PreOrder {
-	    public int getId_preorder();
-	    public void setId_preorder(int id_preorder);
+	    public UUID getId_preorder();
+	    public void setId_preorder(UUID id_preorder);
 	    public String getTanggal_rilis();
 	    public void setTanggal_rilis(String tanggal_rilis);
 	    public String getStatus();

@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="orderitem_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class OrderItemComponent implements OrderItem{
+	@Id
+	protected UUID id_order_item; 
 	protected int quantity;
 	protected int harga_satuan;
 	@ManyToOne(targetEntity=tokoonlineanimepl.order.core.model.OrderComponent.class)
@@ -28,7 +30,7 @@ public abstract class OrderItemComponent implements OrderItem{
 	} 
 
 	public OrderItemComponent(
-        int id_order_item, int quantity, int harga_satuan, OrderImpl pesanan, ProdukImpl produk
+        UUID id_order_item, int quantity, int harga_satuan, OrderImpl pesanan, ProdukImpl produk
     ) {
         this.id_order_item = id_order_item;
         this.quantity = quantity;
@@ -37,11 +39,11 @@ public abstract class OrderItemComponent implements OrderItem{
         this.produk = produk;
     }
 
-	public int getId_order_item() {
+	public UUID getId_order_item() {
 		return this.id_order_item;
 	}
 
-	public void setId_order_item(int id_order_item) {
+	public void setId_order_item(UUID id_order_item) {
 		this.id_order_item = id_order_item;
 	}
 	public int getQuantity() {
@@ -65,7 +67,7 @@ public abstract class OrderItemComponent implements OrderItem{
 	public abstract void setProduk(ProdukImpl produk);
 	
  
-	public abstract OrderItemImpl getByPesanan(int id_pesanan);
+	public abstract OrderItemImpl getByPesanan(UUID id_pesanan);
 
 	@Override
     public String toString() {

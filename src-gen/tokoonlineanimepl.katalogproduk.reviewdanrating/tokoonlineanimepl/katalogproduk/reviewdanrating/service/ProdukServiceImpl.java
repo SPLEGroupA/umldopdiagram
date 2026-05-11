@@ -20,8 +20,6 @@ public class ProdukServiceImpl extends ProdukServiceDecorator {
  	public Produk createProduk(Map<String, Object> requestBody){
 		String average_ratingStr = (String) requestBody.get("average_rating");
 		int average_rating = Integer.parseInt(average_ratingStr);
-		String id_produkStr = (String) requestBody.get("id_produk");
-		int id_produk = Integer.parseInt(id_produkStr);
 		String nama = (String) requestBody.get("nama");
 		String hargaStr = (String) requestBody.get("harga");
 		int harga = Integer.parseInt(hargaStr);
@@ -31,33 +29,24 @@ public class ProdukServiceImpl extends ProdukServiceDecorator {
 		int stok = Integer.parseInt(stokStr);
 		String gambar_url = (String) requestBody.get("gambar_url");
 		Produk katalogprodukreviewdanrating = record.createProduk(requestBody);
-		Produk katalogprodukreviewdanratingdeco = ProdukFactory.createProduk("tokoonlineanimepl.katalogproduk.reviewdanrating", katalogprodukreviewdanrating, id_produk, nama, harga, kategori, deskripsi, stok, gambar_url, average_rating);
+		Produk katalogprodukreviewdanratingdeco = ProdukFactory.createProduk("tokoonlineanimepl.katalogproduk.reviewdanrating.model.ProdukImpl", katalogprodukreviewdanrating, average_rating);
 		Repository.saveObject(katalogprodukreviewdanratingdeco);
 		return katalogprodukreviewdanratingdeco;
 	}
 
-	public Produk createProduk(Map<String, Object> requestBody, int id){
+    public Produk createProduk(Map<String, Object> requestBody, UUID id){	
 		Produk savedProduk = Repository.getObject(id);
 		String average_ratingStr = (String) requestBody.get("average_rating");
 		int average_rating = Integer.parseInt(average_ratingStr);
-		String id_produkStr = (String) requestBody.get("id_produk");
-		int id_produk = Integer.parseInt(id_produkStr);
-		String nama = (String) requestBody.get("nama");
-		String hargaStr = (String) requestBody.get("harga");
-		int harga = Integer.parseInt(hargaStr);
-		String kategori = (String) requestBody.get("kategori");
-		String deskripsi = (String) requestBody.get("deskripsi");
-		String stokStr = (String) requestBody.get("stok");
-		int stok = Integer.parseInt(stokStr);
-		String gambar_url = (String) requestBody.get("gambar_url");
-		UUID recordProduk = ((ProdukDecorator) savedProduk).get();
-		Produk Produk = record.createProduk(requestBody, recordProduk);
-		Produk katalogprodukreviewdanrating = ProdukFactory.createProduk("tokoonlineanimepl.katalogproduk.reviewdanrating.model.ProdukImpl", Produk, id_produk, nama, harga, kategori, deskripsi, stok, gambar_url, average_rating);
+		UUID recordProdukId_produk = ((ProdukDecorator) savedProduk).getId_produk();
+		Produk produk = record.createProduk(requestBody, recordProdukId_produk);
+		Produk katalogprodukreviewdanrating = ProdukFactory.createProduk("tokoonlineanimepl.katalogproduk.reviewdanrating.ProdukImpl", produk, average_rating);
 		return katalogprodukreviewdanrating;
 	}
 
     public HashMap<String, Object> updateProduk(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
+		String idStr = (String) requestBody.get("id_produk");
+		UUID id = UUID.fromString(idStr);
 		
 		Produk katalogprodukreviewdanrating = Repository.getObject(id);
 		katalogprodukreviewdanrating = createProduk(requestBody, id);
@@ -71,16 +60,16 @@ public class ProdukServiceImpl extends ProdukServiceDecorator {
 	}
 
 	public HashMap<String, Object> getProduk(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		Produk katalogprodukreviewdanrating = Repository.getObject(id);
 		return katalogprodukreviewdanrating.toHashMap();
 	}
 
-	public HashMap<String, Object> getProdukById(int id){
+	public HashMap<String, Object> getProdukById(UUID id){
 		List<HashMap<String, Object>> produkList = getAllProduk();
 		for (HashMap<String, Object> produk : produkList){
-			int produk_id = ((Double) produk.get("")).intValue();
-			if (produk_id == id){
+			UUID produk_id = UUID.fromString((String) produk.get("id_produk"));
+			if (produk_id.equals(id)){
 				return produk;
 			}
 		}
@@ -102,14 +91,14 @@ public class ProdukServiceImpl extends ProdukServiceDecorator {
 	}
 
     public List<HashMap<String,Object>> deleteProduk(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_produk"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllProduk();
 	}
 
 	
-	protected boolean addReview(int rating) {
+	protected boolean addReview(UUID id_produk, int rating) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

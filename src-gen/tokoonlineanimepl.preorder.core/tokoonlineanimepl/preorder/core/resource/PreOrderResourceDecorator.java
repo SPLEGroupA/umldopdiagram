@@ -20,7 +20,7 @@ public abstract class PreOrderResourceDecorator extends PreOrderResourceComponen
 		return record.createPreOrder(vmjExchange);
 	}
 	
-	public PreOrder createPreOrder(VMJExchange vmjExchange, int id){
+	public PreOrder createPreOrder(VMJExchange vmjExchange, UUID id){
 		return record.createPreOrder(vmjExchange, id);
 	}
 

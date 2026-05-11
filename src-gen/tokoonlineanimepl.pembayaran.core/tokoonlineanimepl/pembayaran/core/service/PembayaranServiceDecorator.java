@@ -16,7 +16,7 @@ public abstract class PembayaranServiceDecorator extends PembayaranServiceCompon
 		return record.createPembayaran(requestBody);
 	}
 	
-	public Pembayaran createPembayaran(Map<String, Object> requestBody, int id){
+    public Pembayaran createPembayaran(Map<String, Object> requestBody, UUID id){
 		return record.createPembayaran(requestBody, id);
 	}
 
@@ -40,7 +40,7 @@ public abstract class PembayaranServiceDecorator extends PembayaranServiceCompon
 		return record.deletePembayaran(requestBody);
 	}
 
-	public HashMap<String, Object> getPembayaranById(int id){
+	public HashMap<String, Object> getPembayaranById(UUID id){	
         return record.getPembayaranById(id);
     }
 

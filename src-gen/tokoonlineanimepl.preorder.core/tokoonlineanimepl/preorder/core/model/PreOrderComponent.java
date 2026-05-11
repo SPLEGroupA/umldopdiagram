@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="preorder_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class PreOrderComponent implements PreOrder{
+	@Id
+	protected UUID id_preorder; 
 	protected String tanggal_rilis;
 	protected String status;
 	@ManyToOne(targetEntity=tokoonlineanimepl.produk.core.model.ProdukComponent.class)
@@ -28,7 +30,7 @@ public abstract class PreOrderComponent implements PreOrder{
 	} 
 
 	public PreOrderComponent(
-        int id_preorder, String tanggal_rilis, String status, ProdukImpl produk, AkunPenggunaImpl akunPengguna
+        UUID id_preorder, String tanggal_rilis, String status, ProdukImpl produk, AkunPenggunaImpl akunPengguna
     ) {
         this.id_preorder = id_preorder;
         this.tanggal_rilis = tanggal_rilis;
@@ -37,11 +39,11 @@ public abstract class PreOrderComponent implements PreOrder{
         this.akunPengguna = akunPengguna;
     }
 
-	public int getId_preorder() {
+	public UUID getId_preorder() {
 		return this.id_preorder;
 	}
 
-	public void setId_preorder(int id_preorder) {
+	public void setId_preorder(UUID id_preorder) {
 		this.id_preorder = id_preorder;
 	}
 	public String getTanggal_rilis() {

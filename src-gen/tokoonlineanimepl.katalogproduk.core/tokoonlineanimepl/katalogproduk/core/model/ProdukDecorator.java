@@ -17,27 +17,25 @@ public abstract class ProdukDecorator extends ProdukComponent{
 
 	public ProdukDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_produk =  UUID.randomUUID();
 	}
 
-	public ProdukDecorator (, ProdukComponent record) {
-		this. =  ;
+	public ProdukDecorator (UUID id_produk, ProdukComponent record) {
+		this.id_produk =  id_produk;
 		this.record = record;
 	}
 	
 	public ProdukDecorator (ProdukComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_produk =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_produk() {
+	public UUID getId_produk() {
 		return record.getId_produk();
 	}
-	public void setId_produk(int id_produk) {
+	public void setId_produk(UUID id_produk) {
 		record.setId_produk(id_produk);
 	}
 	public String getNama() {

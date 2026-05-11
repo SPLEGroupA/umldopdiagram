@@ -20,7 +20,7 @@ public abstract class AkunPenggunaResourceDecorator extends AkunPenggunaResource
 		return record.createAkunPengguna(vmjExchange);
 	}
 	
-	public AkunPengguna createAkunPengguna(VMJExchange vmjExchange, int id){
+	public AkunPengguna createAkunPengguna(VMJExchange vmjExchange, UUID id){
 		return record.createAkunPengguna(vmjExchange, id);
 	}
 

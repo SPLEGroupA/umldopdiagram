@@ -15,12 +15,12 @@ public abstract class AkunPenggunaServiceComponent implements AkunPenggunaServic
     }	
 
     public abstract AkunPengguna createAkunPengguna(Map<String, Object> requestBody);
-	public abstract AkunPengguna createAkunPengguna(Map<String, Object> requestBody, int id);
+	public abstract AkunPengguna createAkunPengguna(Map<String, Object> requestBody, UUID id);
 	public abstract HashMap<String, Object> updateAkunPengguna(Map<String, Object> requestBody);
     public abstract HashMap<String, Object> getAkunPengguna(String idStr);
     public abstract List<HashMap<String,Object>> getAllAkunPengguna();
     public abstract List<HashMap<String,Object>> transformListToHashMap(List<AkunPengguna> List);
     public abstract List<HashMap<String,Object>> deleteAkunPengguna(Map<String, Object> requestBody);
-	public abstract HashMap<String, Object> getAkunPenggunaById(int id);
+	public abstract HashMap<String, Object> getAkunPenggunaById(UUID id);	
 
 }

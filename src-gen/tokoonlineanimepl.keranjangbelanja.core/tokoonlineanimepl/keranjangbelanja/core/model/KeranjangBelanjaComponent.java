@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @Table(name="keranjangbelanja_comp")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class KeranjangBelanjaComponent implements KeranjangBelanja{
+	@Id
+	protected UUID id_keranjang; 
 	@ManyToOne(targetEntity=tokoonlineanimepl.akunpengguna.core.model.AkunPenggunaComponent.class)
 	public AkunPengguna akunPengguna;
 	protected String objectName = KeranjangBelanjaComponent.class.getName();
@@ -24,17 +26,17 @@ public abstract class KeranjangBelanjaComponent implements KeranjangBelanja{
 	} 
 
 	public KeranjangBelanjaComponent(
-        int id_keranjang, AkunPenggunaImpl akunPengguna
+        UUID id_keranjang, AkunPenggunaImpl akunPengguna
     ) {
         this.id_keranjang = id_keranjang;
         this.akunPengguna = akunPengguna;
     }
 
-	public int getId_keranjang() {
+	public UUID getId_keranjang() {
 		return this.id_keranjang;
 	}
 
-	public void setId_keranjang(int id_keranjang) {
+	public void setId_keranjang(UUID id_keranjang) {
 		this.id_keranjang = id_keranjang;
 	}
 	public abstract AkunPenggunaImpl getAkunPengguna();
@@ -43,7 +45,7 @@ public abstract class KeranjangBelanjaComponent implements KeranjangBelanja{
  
 	public abstract KeranjangBelanjaImpl getByUser(String email);
 
-	public abstract boolean addItem(int id_cart_item);
+	public abstract boolean addItem(UUID id_cart_item);
 
 	public abstract OrderImpl checkout();
 

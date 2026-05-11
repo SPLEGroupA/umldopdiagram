@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="orderitem_impl")
 public class OrderItemImpl extends OrderItemComponent {
 
-	public OrderItemImpl(int id_order_item, int quantity, int harga_satuan, OrderImpl pesanan, ProdukImpl produk) {
+	public OrderItemImpl(UUID id_order_item, int quantity, int harga_satuan, OrderImpl pesanan, ProdukImpl produk) {
 		this.id_order_item = id_order_item;
 		this.quantity = quantity;
 		this.harga_satuan = harga_satuan;
@@ -28,9 +28,7 @@ public class OrderItemImpl extends OrderItemComponent {
 	}
 
 	public OrderItemImpl(int quantity, int harga_satuan, OrderImpl pesanan, ProdukImpl produk) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_order_item = id_order_item;
+		this.id_order_item =  UUID.randomUUID();
 		this.quantity = quantity;
 		this.harga_satuan = harga_satuan;
 		this.pesanan = pesanan;
@@ -39,11 +37,11 @@ public class OrderItemImpl extends OrderItemComponent {
 
 	public OrderItemImpl() { }
 
-	public int getId_order_item() {
+	public UUID getId_order_item() {
 		return this.id_order_item;
 	}
 
-	public void setId_order_item(int id_order_item) {
+	public void setId_order_item(UUID id_order_item) {
 		this.id_order_item = id_order_item;
 	}
 	public int getQuantity() {
@@ -61,7 +59,7 @@ public class OrderItemImpl extends OrderItemComponent {
 		this.harga_satuan = harga_satuan;
 	}
 
-	public OrderItemImpl getByPesanan(int id_pesanan) {
+	public OrderItemImpl getByPesanan(UUID id_pesanan) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

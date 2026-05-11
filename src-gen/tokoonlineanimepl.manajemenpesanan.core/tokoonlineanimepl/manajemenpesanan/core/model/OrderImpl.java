@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="order_impl")
 public class OrderImpl extends OrderComponent {
 
-	public OrderImpl(int id_pesanan, String status, String tanggal_pesan, int total_harga, AkunPenggunaImpl akunPengguna) {
+	public OrderImpl(UUID id_pesanan, String status, String tanggal_pesan, int total_harga, AkunPenggunaImpl akunPengguna) {
 		this.id_pesanan = id_pesanan;
 		this.status = status;
 		this.tanggal_pesan = tanggal_pesan;
@@ -28,9 +28,7 @@ public class OrderImpl extends OrderComponent {
 	}
 
 	public OrderImpl(String status, String tanggal_pesan, int total_harga, AkunPenggunaImpl akunPengguna) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_pesanan = id_pesanan;
+		this.id_pesanan =  UUID.randomUUID();
 		this.status = status;
 		this.tanggal_pesan = tanggal_pesan;
 		this.total_harga = total_harga;
@@ -39,11 +37,11 @@ public class OrderImpl extends OrderComponent {
 
 	public OrderImpl() { }
 
-	public int getId_pesanan() {
+	public UUID getId_pesanan() {
 		return this.id_pesanan;
 	}
 
-	public void setId_pesanan(int id_pesanan) {
+	public void setId_pesanan(UUID id_pesanan) {
 		this.id_pesanan = id_pesanan;
 	}
 	public String getStatus() {

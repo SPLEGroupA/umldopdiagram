@@ -15,15 +15,15 @@ public abstract class CartItemServiceComponent implements CartItemService{
     }	
 
     public abstract CartItem createCartItem(Map<String, Object> requestBody);
-	public abstract CartItem createCartItem(Map<String, Object> requestBody, int id);
+	public abstract CartItem createCartItem(Map<String, Object> requestBody, UUID id);
 	public abstract HashMap<String, Object> updateCartItem(Map<String, Object> requestBody);
     public abstract HashMap<String, Object> getCartItem(String idStr);
     public abstract List<HashMap<String,Object>> getAllCartItem();
     public abstract List<HashMap<String,Object>> transformListToHashMap(List<CartItem> List);
     public abstract List<HashMap<String,Object>> deleteCartItem(Map<String, Object> requestBody);
-	public abstract HashMap<String, Object> getCartItemById(int id);
+	public abstract HashMap<String, Object> getCartItemById(UUID id);	
 
-	public abstract boolean setProduct(int id_produk, int quantity);
+	public abstract boolean setProduct(UUID id_produk, int quantity);
 
-	public abstract CartItemImpl getByKeranjang(int id_keranjang);
+	public abstract CartItemImpl getByKeranjang(UUID id_keranjang);
 }

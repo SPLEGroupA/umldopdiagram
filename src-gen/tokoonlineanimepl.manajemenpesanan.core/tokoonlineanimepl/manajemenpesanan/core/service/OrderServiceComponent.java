@@ -15,13 +15,13 @@ public abstract class OrderServiceComponent implements OrderService{
     }	
 
     public abstract Order createOrder(Map<String, Object> requestBody);
-	public abstract Order createOrder(Map<String, Object> requestBody, int id);
+	public abstract Order createOrder(Map<String, Object> requestBody, UUID id);
 	public abstract HashMap<String, Object> updateOrder(Map<String, Object> requestBody);
     public abstract HashMap<String, Object> getOrder(String idStr);
     public abstract List<HashMap<String,Object>> getAllOrder();
     public abstract List<HashMap<String,Object>> transformListToHashMap(List<Order> List);
     public abstract List<HashMap<String,Object>> deleteOrder(Map<String, Object> requestBody);
-	public abstract HashMap<String, Object> getOrderById(int id);
+	public abstract HashMap<String, Object> getOrderById(UUID id);	
 
 	public abstract OrderImpl getByUser(String email);
 }

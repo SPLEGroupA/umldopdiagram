@@ -20,8 +20,7 @@ public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 	protected String membership_level;
 	public AkunPenggunaImpl() {
         super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_akun = UUID.randomUUID();
         this.objectName = AkunPenggunaImpl.class.getName();
     }
 
@@ -39,14 +38,14 @@ public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 		this.membership_level = membership_level;
 	}
 
-	protected String checkMembership() {
+	protected String checkMembership(UUID id_akun) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
-        map.put("", );
+        map.put("id_akun", id_akun);
 		map.put("membership_level", getMembership_level());
 
         return map;

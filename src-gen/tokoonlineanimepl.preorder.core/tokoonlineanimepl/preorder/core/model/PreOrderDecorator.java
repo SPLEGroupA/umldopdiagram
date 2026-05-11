@@ -17,27 +17,25 @@ public abstract class PreOrderDecorator extends PreOrderComponent{
 
 	public PreOrderDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_preorder =  UUID.randomUUID();
 	}
 
-	public PreOrderDecorator (, PreOrderComponent record) {
-		this. =  ;
+	public PreOrderDecorator (UUID id_preorder, PreOrderComponent record) {
+		this.id_preorder =  id_preorder;
 		this.record = record;
 	}
 	
 	public PreOrderDecorator (PreOrderComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_preorder =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_preorder() {
+	public UUID getId_preorder() {
 		return record.getId_preorder();
 	}
-	public void setId_preorder(int id_preorder) {
+	public void setId_preorder(UUID id_preorder) {
 		record.setId_preorder(id_preorder);
 	}
 	public String getTanggal_rilis() {

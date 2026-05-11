@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="preorder_impl")
 public class PreOrderImpl extends PreOrderComponent {
 
-	public PreOrderImpl(int id_preorder, String tanggal_rilis, String status, ProdukImpl produk, AkunPenggunaImpl akunPengguna) {
+	public PreOrderImpl(UUID id_preorder, String tanggal_rilis, String status, ProdukImpl produk, AkunPenggunaImpl akunPengguna) {
 		this.id_preorder = id_preorder;
 		this.tanggal_rilis = tanggal_rilis;
 		this.status = status;
@@ -28,9 +28,7 @@ public class PreOrderImpl extends PreOrderComponent {
 	}
 
 	public PreOrderImpl(String tanggal_rilis, String status, ProdukImpl produk, AkunPenggunaImpl akunPengguna) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_preorder = id_preorder;
+		this.id_preorder =  UUID.randomUUID();
 		this.tanggal_rilis = tanggal_rilis;
 		this.status = status;
 		this.produk = produk;
@@ -39,11 +37,11 @@ public class PreOrderImpl extends PreOrderComponent {
 
 	public PreOrderImpl() { }
 
-	public int getId_preorder() {
+	public UUID getId_preorder() {
 		return this.id_preorder;
 	}
 
-	public void setId_preorder(int id_preorder) {
+	public void setId_preorder(UUID id_preorder) {
 		this.id_preorder = id_preorder;
 	}
 	public String getTanggal_rilis() {

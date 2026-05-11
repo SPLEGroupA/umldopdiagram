@@ -17,27 +17,25 @@ public abstract class PembayaranDecorator extends PembayaranComponent{
 
 	public PembayaranDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_pembayaran =  UUID.randomUUID();
 	}
 
-	public PembayaranDecorator (, PembayaranComponent record) {
-		this. =  ;
+	public PembayaranDecorator (UUID id_pembayaran, PembayaranComponent record) {
+		this.id_pembayaran =  id_pembayaran;
 		this.record = record;
 	}
 	
 	public PembayaranDecorator (PembayaranComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_pembayaran =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_pembayaran() {
+	public UUID getId_pembayaran() {
 		return record.getId_pembayaran();
 	}
-	public void setId_pembayaran(int id_pembayaran) {
+	public void setId_pembayaran(UUID id_pembayaran) {
 		record.setId_pembayaran(id_pembayaran);
 	}
 	public String getMetode() {

@@ -15,13 +15,13 @@ public abstract class OrderItemServiceComponent implements OrderItemService{
     }	
 
     public abstract OrderItem createOrderItem(Map<String, Object> requestBody);
-	public abstract OrderItem createOrderItem(Map<String, Object> requestBody, int id);
+	public abstract OrderItem createOrderItem(Map<String, Object> requestBody, UUID id);
 	public abstract HashMap<String, Object> updateOrderItem(Map<String, Object> requestBody);
     public abstract HashMap<String, Object> getOrderItem(String idStr);
     public abstract List<HashMap<String,Object>> getAllOrderItem();
     public abstract List<HashMap<String,Object>> transformListToHashMap(List<OrderItem> List);
     public abstract List<HashMap<String,Object>> deleteOrderItem(Map<String, Object> requestBody);
-	public abstract HashMap<String, Object> getOrderItemById(int id);
+	public abstract HashMap<String, Object> getOrderItemById(UUID id);	
 
-	public abstract OrderItemImpl getByPesanan(int id_pesanan);
+	public abstract OrderItemImpl getByPesanan(UUID id_pesanan);
 }

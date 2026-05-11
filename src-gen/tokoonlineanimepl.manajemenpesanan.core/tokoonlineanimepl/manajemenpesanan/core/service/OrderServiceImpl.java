@@ -23,8 +23,6 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class OrderServiceImpl extends OrderServiceComponent{
 
     public Order createOrder(Map<String, Object> requestBody){
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		int id_pesanan = Integer.parseInt(id_pesananStr);
 		String status = (String) requestBody.get("status");
 		String tanggal_pesan = (String) requestBody.get("tanggal_pesan");
 		String total_hargaStr = (String) requestBody.get("total_harga");
@@ -32,14 +30,13 @@ public class OrderServiceImpl extends OrderServiceComponent{
 		
 		//to do: fix association attributes
 		
-		Order order = OrderFactory.createOrder("tokoonlineanimepl.manajemenpesanan.core.model.OrderImpl", id_pesanan, status, tanggal_pesan, total_harga, akunPengguna);
+		Order order = OrderFactory.createOrder("tokoonlineanimepl.manajemenpesanan.core.model.OrderImpl", status, tanggal_pesan, total_harga, akunPengguna);
 		Repository.saveObject(order);
 		return order;
 	}
 
-	public Order createOrder(Map<String, Object> requestBody, int id){
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		int id_pesanan = Integer.parseInt(id_pesananStr);
+    public Order createOrder(Map<String, Object> requestBody, UUID id){	
+		UUID id_pesanan = id;
 		String status = (String) requestBody.get("status");
 		String tanggal_pesan = (String) requestBody.get("tanggal_pesan");
 		String total_hargaStr = (String) requestBody.get("total_harga");
@@ -52,12 +49,9 @@ public class OrderServiceImpl extends OrderServiceComponent{
 	}
 
     public HashMap<String, Object> updateOrder(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_pesanan");
+		UUID id = UUID.fromString(idStr);		
 		Order order = Repository.getObject(id);
-		
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		order.setId_pesanan(Integer.parseInt(id_pesananStr));
 		
 		order.setStatus((String) requestBody.get("status"));
 		order.setTanggal_pesan((String) requestBody.get("tanggal_pesan"));
@@ -74,16 +68,16 @@ public class OrderServiceImpl extends OrderServiceComponent{
 	}
 
     public HashMap<String, Object> getOrder(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		Order order = Repository.getObject(id);
 		return order.toHashMap();
 	}
 
-	public HashMap<String, Object> getOrderById(int id){
+	public HashMap<String, Object> getOrderById(UUID id){
 		List<HashMap<String, Object>> orderList = getAllOrder();
 		for (HashMap<String, Object> order : orderList){
-			int record_id = ((Double) order.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) order.get("id_pesanan"));
+			if (record_id.equals(id)){
 				return order;
 			}
 		}
@@ -105,8 +99,8 @@ public class OrderServiceImpl extends OrderServiceComponent{
 	}
 
     public List<HashMap<String,Object>> deleteOrder(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_pesanan"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllOrder();
 	}

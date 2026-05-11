@@ -15,12 +15,12 @@ public abstract class ProdukServiceComponent implements ProdukService{
     }	
 
     public abstract Produk createProduk(Map<String, Object> requestBody);
-	public abstract Produk createProduk(Map<String, Object> requestBody, int id);
+	public abstract Produk createProduk(Map<String, Object> requestBody, UUID id);
 	public abstract HashMap<String, Object> updateProduk(Map<String, Object> requestBody);
     public abstract HashMap<String, Object> getProduk(String idStr);
     public abstract List<HashMap<String,Object>> getAllProduk();
     public abstract List<HashMap<String,Object>> transformListToHashMap(List<Produk> List);
     public abstract List<HashMap<String,Object>> deleteProduk(Map<String, Object> requestBody);
-	public abstract HashMap<String, Object> getProdukById(int id);
+	public abstract HashMap<String, Object> getProdukById(UUID id);	
 
 }

@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface KeranjangBelanja {
-	    public int getId_keranjang();
-	    public void setId_keranjang(int id_keranjang);
+	    public UUID getId_keranjang();
+	    public void setId_keranjang(UUID id_keranjang);
 	    public AkunPenggunaImpl getAkunPengguna();
 	    public void setAkunPengguna(AkunPenggunaImpl akunPengguna);
 	public KeranjangBelanjaImpl getByUser(String email);

@@ -20,8 +20,7 @@ public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 	protected int poin;
 	public AkunPenggunaImpl() {
         super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_akun = UUID.randomUUID();
         this.objectName = AkunPenggunaImpl.class.getName();
     }
 
@@ -39,14 +38,14 @@ public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 		this.poin = poin;
 	}
 
-	protected boolean redeemPoin(int jumlah_poin) {
+	protected boolean redeemPoin(UUID id_akun, int jumlah_poin) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
-        map.put("", );
+        map.put("id_akun", id_akun);
 		map.put("poin", getPoin());
 
         return map;

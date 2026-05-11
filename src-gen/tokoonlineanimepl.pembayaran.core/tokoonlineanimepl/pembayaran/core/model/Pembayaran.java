@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface Pembayaran {
-	    public int getId_pembayaran();
-	    public void setId_pembayaran(int id_pembayaran);
+	    public UUID getId_pembayaran();
+	    public void setId_pembayaran(UUID id_pembayaran);
 	    public String getMetode();
 	    public void setMetode(String metode);
 	    public int getJumlah();

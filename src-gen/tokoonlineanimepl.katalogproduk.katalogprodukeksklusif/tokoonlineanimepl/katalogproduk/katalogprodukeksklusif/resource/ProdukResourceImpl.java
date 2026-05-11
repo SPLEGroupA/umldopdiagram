@@ -14,11 +14,11 @@ import tokoonlineanimepl.katalogproduk.core.service.ProdukServiceComponent;
 import tokoonlineanimepl.katalogproduk.katalogprodukeksklusif.service.ProdukServiceImpl;
 
 public class ProdukResourceImpl extends ProdukResourceDecorator {
-	protected ProdukServiceComponent recordComponent;
-	private ProdukServiceImpl katalogprodukkatalogprodukeksklusifServiceImpl = new ProdukServiceImpl(recordComponent);
+	private ProdukServiceComponent katalogprodukkatalogprodukeksklusifServiceImpl;
 
-    public ProdukResourceImpl (ProdukResourceComponent record) {
+    public ProdukResourceImpl (ProdukResourceComponent record, ProdukServiceComponent recordService) {
         super(record);
+		this.katalogprodukkatalogprodukeksklusifServiceImpl = new ProdukServiceImpl(recordService);
     }
 
     
@@ -92,7 +92,7 @@ public class ProdukResourceImpl extends ProdukResourceDecorator {
 		return katalogprodukkatalogprodukeksklusifServiceImpl.deleteProduk(requestBody);
 	}
 
-	protected boolean checkEksklusif() {
+	protected boolean checkEksklusif(UUID id_produk) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

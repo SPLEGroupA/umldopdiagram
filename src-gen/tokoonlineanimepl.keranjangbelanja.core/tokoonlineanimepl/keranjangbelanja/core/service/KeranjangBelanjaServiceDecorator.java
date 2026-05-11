@@ -16,7 +16,7 @@ public abstract class KeranjangBelanjaServiceDecorator extends KeranjangBelanjaS
 		return record.createKeranjangBelanja(requestBody);
 	}
 	
-	public KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody, int id){
+    public KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody, UUID id){
 		return record.createKeranjangBelanja(requestBody, id);
 	}
 
@@ -40,7 +40,7 @@ public abstract class KeranjangBelanjaServiceDecorator extends KeranjangBelanjaS
 		return record.deleteKeranjangBelanja(requestBody);
 	}
 
-	public HashMap<String, Object> getKeranjangBelanjaById(int id){
+	public HashMap<String, Object> getKeranjangBelanjaById(UUID id){	
         return record.getKeranjangBelanjaById(id);
     }
 
@@ -48,7 +48,7 @@ public abstract class KeranjangBelanjaServiceDecorator extends KeranjangBelanjaS
 		return record.getByUser(email);
 	}
 
-	public boolean addItem(int id_cart_item) {
+	public boolean addItem(UUID id_cart_item) {
 		return record.addItem(id_cart_item);
 	}
 

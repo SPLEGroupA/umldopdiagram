@@ -23,8 +23,6 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class PembayaranServiceImpl extends PembayaranServiceComponent{
 
     public Pembayaran createPembayaran(Map<String, Object> requestBody){
-		String id_pembayaranStr = (String) requestBody.get("id_pembayaran");
-		int id_pembayaran = Integer.parseInt(id_pembayaranStr);
 		String metode = (String) requestBody.get("metode");
 		String jumlahStr = (String) requestBody.get("jumlah");
 		int jumlah = Integer.parseInt(jumlahStr);
@@ -34,14 +32,13 @@ public class PembayaranServiceImpl extends PembayaranServiceComponent{
 		
 		//to do: fix association attributes
 		
-		Pembayaran pembayaran = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.core.model.PembayaranImpl", id_pembayaran, metode, jumlah, status, id_pesanan);
+		Pembayaran pembayaran = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.core.model.PembayaranImpl", metode, jumlah, status, id_pesanan);
 		Repository.saveObject(pembayaran);
 		return pembayaran;
 	}
 
-	public Pembayaran createPembayaran(Map<String, Object> requestBody, int id){
-		String id_pembayaranStr = (String) requestBody.get("id_pembayaran");
-		int id_pembayaran = Integer.parseInt(id_pembayaranStr);
+    public Pembayaran createPembayaran(Map<String, Object> requestBody, UUID id){	
+		UUID id_pembayaran = id;
 		String metode = (String) requestBody.get("metode");
 		String jumlahStr = (String) requestBody.get("jumlah");
 		int jumlah = Integer.parseInt(jumlahStr);
@@ -56,12 +53,9 @@ public class PembayaranServiceImpl extends PembayaranServiceComponent{
 	}
 
     public HashMap<String, Object> updatePembayaran(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_pembayaran");
+		UUID id = UUID.fromString(idStr);		
 		Pembayaran pembayaran = Repository.getObject(id);
-		
-		String id_pembayaranStr = (String) requestBody.get("id_pembayaran");
-		pembayaran.setId_pembayaran(Integer.parseInt(id_pembayaranStr));
 		
 		pembayaran.setMetode((String) requestBody.get("metode"));
 		String jumlahStr = (String) requestBody.get("jumlah");
@@ -81,16 +75,16 @@ public class PembayaranServiceImpl extends PembayaranServiceComponent{
 	}
 
     public HashMap<String, Object> getPembayaran(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		Pembayaran pembayaran = Repository.getObject(id);
 		return pembayaran.toHashMap();
 	}
 
-	public HashMap<String, Object> getPembayaranById(int id){
+	public HashMap<String, Object> getPembayaranById(UUID id){
 		List<HashMap<String, Object>> pembayaranList = getAllPembayaran();
 		for (HashMap<String, Object> pembayaran : pembayaranList){
-			int record_id = ((Double) pembayaran.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) pembayaran.get("id_pembayaran"));
+			if (record_id.equals(id)){
 				return pembayaran;
 			}
 		}
@@ -112,8 +106,8 @@ public class PembayaranServiceImpl extends PembayaranServiceComponent{
 	}
 
     public List<HashMap<String,Object>> deletePembayaran(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_pembayaran"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllPembayaran();
 	}

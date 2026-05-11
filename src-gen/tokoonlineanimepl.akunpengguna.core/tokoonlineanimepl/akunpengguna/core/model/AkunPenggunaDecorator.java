@@ -17,27 +17,25 @@ public abstract class AkunPenggunaDecorator extends AkunPenggunaComponent{
 
 	public AkunPenggunaDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_akun =  UUID.randomUUID();
 	}
 
-	public AkunPenggunaDecorator (, AkunPenggunaComponent record) {
-		this. =  ;
+	public AkunPenggunaDecorator (UUID id_akun, AkunPenggunaComponent record) {
+		this.id_akun =  id_akun;
 		this.record = record;
 	}
 	
 	public AkunPenggunaDecorator (AkunPenggunaComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_akun =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_akun() {
+	public UUID getId_akun() {
 		return record.getId_akun();
 	}
-	public void setId_akun(int id_akun) {
+	public void setId_akun(UUID id_akun) {
 		record.setId_akun(id_akun);
 	}
 	public String getEmail() {

@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
 @Table(name="akunpengguna_impl")
 public class AkunPenggunaImpl extends AkunPenggunaComponent {
 
-	public AkunPenggunaImpl(int id_akun, String email, String nama, String alamat, String no_telepon) {
+	public AkunPenggunaImpl(UUID id_akun, String email, String nama, String alamat, String no_telepon) {
 		this.id_akun = id_akun;
 		this.email = email;
 		this.nama = nama;
@@ -28,9 +28,7 @@ public class AkunPenggunaImpl extends AkunPenggunaComponent {
 	}
 
 	public AkunPenggunaImpl(String email, String nama, String alamat, String no_telepon) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
-		this.id_akun = id_akun;
+		this.id_akun =  UUID.randomUUID();
 		this.email = email;
 		this.nama = nama;
 		this.alamat = alamat;
@@ -39,11 +37,11 @@ public class AkunPenggunaImpl extends AkunPenggunaComponent {
 
 	public AkunPenggunaImpl() { }
 
-	public int getId_akun() {
+	public UUID getId_akun() {
 		return this.id_akun;
 	}
 
-	public void setId_akun(int id_akun) {
+	public void setId_akun(UUID id_akun) {
 		this.id_akun = id_akun;
 	}
 	public String getEmail() {

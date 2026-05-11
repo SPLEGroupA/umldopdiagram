@@ -12,7 +12,7 @@ public abstract class PreOrderResourceComponent implements PreOrderResource{
  
     public abstract List<HashMap<String,Object>> savePreOrder(VMJExchange vmjExchange);
     public abstract PreOrder createPreOrder(VMJExchange vmjExchange);
-	public abstract PreOrder createPreOrder(VMJExchange vmjExchange, int id);
+	public abstract PreOrder createPreOrder(VMJExchange vmjExchange, UUID id);
 	public abstract HashMap<String, Object> updatePreOrder(VMJExchange vmjExchange);
     public abstract HashMap<String, Object> getPreOrder(VMJExchange vmjExchange);
     public abstract List<HashMap<String,Object>> getAllPreOrder(VMJExchange vmjExchange);

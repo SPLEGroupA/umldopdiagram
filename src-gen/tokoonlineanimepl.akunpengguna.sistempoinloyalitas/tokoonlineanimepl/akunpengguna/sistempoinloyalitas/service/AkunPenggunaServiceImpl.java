@@ -20,36 +20,29 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceDecorator {
  	public AkunPengguna createAkunPengguna(Map<String, Object> requestBody){
 		String poinStr = (String) requestBody.get("poin");
 		int poin = Integer.parseInt(poinStr);
-		String id_akunStr = (String) requestBody.get("id_akun");
-		int id_akun = Integer.parseInt(id_akunStr);
 		String email = (String) requestBody.get("email");
 		String nama = (String) requestBody.get("nama");
 		String alamat = (String) requestBody.get("alamat");
 		String no_telepon = (String) requestBody.get("no_telepon");
 		AkunPengguna akunpenggunasistempoinloyalitas = record.createAkunPengguna(requestBody);
-		AkunPengguna akunpenggunasistempoinloyalitasdeco = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.sistempoinloyalitas", akunpenggunasistempoinloyalitas, id_akun, email, nama, alamat, no_telepon, poin);
+		AkunPengguna akunpenggunasistempoinloyalitasdeco = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.sistempoinloyalitas.model.AkunPenggunaImpl", akunpenggunasistempoinloyalitas, poin);
 		Repository.saveObject(akunpenggunasistempoinloyalitasdeco);
 		return akunpenggunasistempoinloyalitasdeco;
 	}
 
-	public AkunPengguna createAkunPengguna(Map<String, Object> requestBody, int id){
+    public AkunPengguna createAkunPengguna(Map<String, Object> requestBody, UUID id){	
 		AkunPengguna savedAkunPengguna = Repository.getObject(id);
 		String poinStr = (String) requestBody.get("poin");
 		int poin = Integer.parseInt(poinStr);
-		String id_akunStr = (String) requestBody.get("id_akun");
-		int id_akun = Integer.parseInt(id_akunStr);
-		String email = (String) requestBody.get("email");
-		String nama = (String) requestBody.get("nama");
-		String alamat = (String) requestBody.get("alamat");
-		String no_telepon = (String) requestBody.get("no_telepon");
-		UUID recordAkunPengguna = ((AkunPenggunaDecorator) savedAkunPengguna).get();
-		AkunPengguna AkunPengguna = record.createAkunPengguna(requestBody, recordAkunPengguna);
-		AkunPengguna akunpenggunasistempoinloyalitas = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.sistempoinloyalitas.model.AkunPenggunaImpl", AkunPengguna, id_akun, email, nama, alamat, no_telepon, poin);
+		UUID recordAkunPenggunaId_akun = ((AkunPenggunaDecorator) savedAkunPengguna).getId_akun();
+		AkunPengguna akunpengguna = record.createAkunPengguna(requestBody, recordAkunPenggunaId_akun);
+		AkunPengguna akunpenggunasistempoinloyalitas = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.sistempoinloyalitas.AkunPenggunaImpl", akunpengguna, poin);
 		return akunpenggunasistempoinloyalitas;
 	}
 
     public HashMap<String, Object> updateAkunPengguna(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
+		String idStr = (String) requestBody.get("id_akun");
+		UUID id = UUID.fromString(idStr);
 		
 		AkunPengguna akunpenggunasistempoinloyalitas = Repository.getObject(id);
 		akunpenggunasistempoinloyalitas = createAkunPengguna(requestBody, id);
@@ -63,16 +56,16 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceDecorator {
 	}
 
 	public HashMap<String, Object> getAkunPengguna(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		AkunPengguna akunpenggunasistempoinloyalitas = Repository.getObject(id);
 		return akunpenggunasistempoinloyalitas.toHashMap();
 	}
 
-	public HashMap<String, Object> getAkunPenggunaById(int id){
+	public HashMap<String, Object> getAkunPenggunaById(UUID id){
 		List<HashMap<String, Object>> akunpenggunaList = getAllAkunPengguna();
 		for (HashMap<String, Object> akunpengguna : akunpenggunaList){
-			int akunpengguna_id = ((Double) akunpengguna.get("")).intValue();
-			if (akunpengguna_id == id){
+			UUID akunpengguna_id = UUID.fromString((String) akunpengguna.get("id_akun"));
+			if (akunpengguna_id.equals(id)){
 				return akunpengguna;
 			}
 		}
@@ -94,14 +87,14 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceDecorator {
 	}
 
     public List<HashMap<String,Object>> deleteAkunPengguna(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_akun"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllAkunPengguna();
 	}
 
 	
-	protected boolean redeemPoin(int jumlah_poin) {
+	protected boolean redeemPoin(UUID id_akun, int jumlah_poin) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

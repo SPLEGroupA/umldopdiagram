@@ -16,7 +16,7 @@ public abstract class PreOrderServiceDecorator extends PreOrderServiceComponent{
 		return record.createPreOrder(requestBody);
 	}
 	
-	public PreOrder createPreOrder(Map<String, Object> requestBody, int id){
+    public PreOrder createPreOrder(Map<String, Object> requestBody, UUID id){
 		return record.createPreOrder(requestBody, id);
 	}
 
@@ -40,7 +40,7 @@ public abstract class PreOrderServiceDecorator extends PreOrderServiceComponent{
 		return record.deletePreOrder(requestBody);
 	}
 
-	public HashMap<String, Object> getPreOrderById(int id){
+	public HashMap<String, Object> getPreOrderById(UUID id){	
         return record.getPreOrderById(id);
     }
 

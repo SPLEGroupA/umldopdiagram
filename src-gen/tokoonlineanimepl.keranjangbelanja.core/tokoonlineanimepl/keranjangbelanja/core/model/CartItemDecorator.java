@@ -17,27 +17,25 @@ public abstract class CartItemDecorator extends CartItemComponent{
 
 	public CartItemDecorator () {
 		super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_cart_item =  UUID.randomUUID();
 	}
 
-	public CartItemDecorator (, CartItemComponent record) {
-		this. =  ;
+	public CartItemDecorator (UUID id_cart_item, CartItemComponent record) {
+		this.id_cart_item =  id_cart_item;
 		this.record = record;
 	}
 	
 	public CartItemDecorator (CartItemComponent record, String objectName) {
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_cart_item =  UUID.randomUUID();
 		this.record = record;
 		this.objectName=objectName;
 	}
 
 
-	public int getId_cart_item() {
+	public UUID getId_cart_item() {
 		return record.getId_cart_item();
 	}
-	public void setId_cart_item(int id_cart_item) {
+	public void setId_cart_item(UUID id_cart_item) {
 		record.setId_cart_item(id_cart_item);
 	}
 	public int getQuantity() {
@@ -53,11 +51,11 @@ public abstract class CartItemDecorator extends CartItemComponent{
 		record.setHarga_satuan(harga_satuan);
 	}
 
-	public boolean setProduct(int id_produk, int quantity) {
+	public boolean setProduct(UUID id_produk, int quantity) {
 		return record.setProduct(id_produk, quantity);
 	}
 
-	public CartItemImpl getByKeranjang(int id_keranjang) {
+	public CartItemImpl getByKeranjang(UUID id_keranjang) {
 		return record.getByKeranjang(id_keranjang);
 	}
 

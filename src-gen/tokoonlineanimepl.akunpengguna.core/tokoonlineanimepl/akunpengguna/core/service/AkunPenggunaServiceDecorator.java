@@ -16,7 +16,7 @@ public abstract class AkunPenggunaServiceDecorator extends AkunPenggunaServiceCo
 		return record.createAkunPengguna(requestBody);
 	}
 	
-	public AkunPengguna createAkunPengguna(Map<String, Object> requestBody, int id){
+    public AkunPengguna createAkunPengguna(Map<String, Object> requestBody, UUID id){
 		return record.createAkunPengguna(requestBody, id);
 	}
 
@@ -40,7 +40,7 @@ public abstract class AkunPenggunaServiceDecorator extends AkunPenggunaServiceCo
 		return record.deleteAkunPengguna(requestBody);
 	}
 
-	public HashMap<String, Object> getAkunPenggunaById(int id){
+	public HashMap<String, Object> getAkunPenggunaById(UUID id){	
         return record.getAkunPenggunaById(id);
     }
 

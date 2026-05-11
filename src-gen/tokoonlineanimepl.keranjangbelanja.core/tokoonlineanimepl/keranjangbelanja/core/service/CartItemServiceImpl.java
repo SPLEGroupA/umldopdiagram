@@ -23,8 +23,6 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class CartItemServiceImpl extends CartItemServiceComponent{
 
     public CartItem createCartItem(Map<String, Object> requestBody){
-		String id_cart_itemStr = (String) requestBody.get("id_cart_item");
-		int id_cart_item = Integer.parseInt(id_cart_itemStr);
 		String quantityStr = (String) requestBody.get("quantity");
 		int quantity = Integer.parseInt(quantityStr);
 		String harga_satuanStr = (String) requestBody.get("harga_satuan");
@@ -32,14 +30,13 @@ public class CartItemServiceImpl extends CartItemServiceComponent{
 		
 		//to do: fix association attributes
 		
-		CartItem cartitem = CartItemFactory.createCartItem("tokoonlineanimepl.keranjangbelanja.core.model.CartItemImpl", id_cart_item, quantity, harga_satuan, keranjangBelanja, produk);
+		CartItem cartitem = CartItemFactory.createCartItem("tokoonlineanimepl.keranjangbelanja.core.model.CartItemImpl", quantity, harga_satuan, keranjangBelanja, produk);
 		Repository.saveObject(cartitem);
 		return cartitem;
 	}
 
-	public CartItem createCartItem(Map<String, Object> requestBody, int id){
-		String id_cart_itemStr = (String) requestBody.get("id_cart_item");
-		int id_cart_item = Integer.parseInt(id_cart_itemStr);
+    public CartItem createCartItem(Map<String, Object> requestBody, UUID id){	
+		UUID id_cart_item = id;
 		String quantityStr = (String) requestBody.get("quantity");
 		int quantity = Integer.parseInt(quantityStr);
 		String harga_satuanStr = (String) requestBody.get("harga_satuan");
@@ -52,12 +49,9 @@ public class CartItemServiceImpl extends CartItemServiceComponent{
 	}
 
     public HashMap<String, Object> updateCartItem(Map<String, Object> requestBody){
-		String idStr = (String) requestBody.get("");
-		int id = Integer.parseInt(idStr);
+		String idStr = (String) requestBody.get("id_cart_item");
+		UUID id = UUID.fromString(idStr);		
 		CartItem cartitem = Repository.getObject(id);
-		
-		String id_cart_itemStr = (String) requestBody.get("id_cart_item");
-		cartitem.setId_cart_item(Integer.parseInt(id_cart_itemStr));
 		
 		String quantityStr = (String) requestBody.get("quantity");
 		cartitem.setQuantity(Integer.parseInt(quantityStr));
@@ -75,16 +69,16 @@ public class CartItemServiceImpl extends CartItemServiceComponent{
 	}
 
     public HashMap<String, Object> getCartItem(String idStr){
-		int id = Integer.parseInt(idStr);
+		UUID id = UUID.fromString(idStr);		
 		CartItem cartitem = Repository.getObject(id);
 		return cartitem.toHashMap();
 	}
 
-	public HashMap<String, Object> getCartItemById(int id){
+	public HashMap<String, Object> getCartItemById(UUID id){
 		List<HashMap<String, Object>> cartitemList = getAllCartItem();
 		for (HashMap<String, Object> cartitem : cartitemList){
-			int record_id = ((Double) cartitem.get("")).intValue();
-			if (record_id == id){
+			UUID record_id = UUID.fromString((String) cartitem.get("id_cart_item"));
+			if (record_id.equals(id)){
 				return cartitem;
 			}
 		}
@@ -106,18 +100,18 @@ public class CartItemServiceImpl extends CartItemServiceComponent{
 	}
 
     public List<HashMap<String,Object>> deleteCartItem(Map<String, Object> requestBody){
-		String idStr = ((String) requestBody.get(""));
-		int id = Integer.parseInt(idStr);
+		String idStr = ((String) requestBody.get("id_cart_item"));
+		UUID id = UUID.fromString(idStr);
 		Repository.deleteObject(id);
 		return getAllCartItem();
 	}
 
-	public boolean setProduct(int id_produk, int quantity) {
+	public boolean setProduct(UUID id_produk, int quantity) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
-	public CartItemImpl getByKeranjang(int id_keranjang) {
+	public CartItemImpl getByKeranjang(UUID id_keranjang) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

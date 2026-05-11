@@ -19,8 +19,7 @@ public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 
 	public AkunPenggunaImpl() {
         super();
-		Random r = new Random();
-		this. = Math.abs(r.nextInt());
+		this.id_akun = UUID.randomUUID();
         this.objectName = AkunPenggunaImpl.class.getName();
     }
 
@@ -30,19 +29,19 @@ public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 	}
 
 
-	protected boolean addToWishlist(int id_produk) {
+	protected boolean addToWishlist(UUID id_akun, UUID id_produk) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
-	protected boolean removeFromWishlist(int id_produk) {
+	protected boolean removeFromWishlist(UUID id_akun, UUID id_produk) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
 
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
-        map.put("", );
+        map.put("id_akun", id_akun);
 
         return map;
     }

@@ -12,11 +12,11 @@ public abstract class OrderItemResourceComponent implements OrderItemResource{
  
     public abstract List<HashMap<String,Object>> saveOrderItem(VMJExchange vmjExchange);
     public abstract OrderItem createOrderItem(VMJExchange vmjExchange);
-	public abstract OrderItem createOrderItem(VMJExchange vmjExchange, int id);
+	public abstract OrderItem createOrderItem(VMJExchange vmjExchange, UUID id);
 	public abstract HashMap<String, Object> updateOrderItem(VMJExchange vmjExchange);
     public abstract HashMap<String, Object> getOrderItem(VMJExchange vmjExchange);
     public abstract List<HashMap<String,Object>> getAllOrderItem(VMJExchange vmjExchange);
     public abstract List<HashMap<String,Object>> deleteOrderItem(VMJExchange vmjExchange);
 
-	public abstract OrderItemImpl getByPesanan(int id_pesanan);
+	public abstract OrderItemImpl getByPesanan(UUID id_pesanan);
 }

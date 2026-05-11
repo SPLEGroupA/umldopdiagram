@@ -5,8 +5,8 @@ import java.util.*;
 import java.lang.*;
 
 public interface OrderItem {
-	    public int getId_order_item();
-	    public void setId_order_item(int id_order_item);
+	    public UUID getId_order_item();
+	    public void setId_order_item(UUID id_order_item);
 	    public int getQuantity();
 	    public void setQuantity(int quantity);
 	    public int getHarga_satuan();
@@ -15,6 +15,6 @@ public interface OrderItem {
 	    public void setPesanan(OrderImpl pesanan);
 	    public ProdukImpl getProduk();
 	    public void setProduk(ProdukImpl produk);
-	public OrderItemImpl getByPesanan(int id_pesanan);
+	public OrderItemImpl getByPesanan(UUID id_pesanan);
 	HashMap<String, Object> toHashMap();
 }

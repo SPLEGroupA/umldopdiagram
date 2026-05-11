@@ -20,7 +20,7 @@ public abstract class CartItemResourceDecorator extends CartItemResourceComponen
 		return record.createCartItem(vmjExchange);
 	}
 	
-	public CartItem createCartItem(VMJExchange vmjExchange, int id){
+	public CartItem createCartItem(VMJExchange vmjExchange, UUID id){
 		return record.createCartItem(vmjExchange, id);
 	}
 
@@ -40,11 +40,11 @@ public abstract class CartItemResourceDecorator extends CartItemResourceComponen
 		return record.deleteCartItem(vmjExchange);
 	}
 
-	public boolean setProduct(int id_produk, int quantity) {
+	public boolean setProduct(UUID id_produk, int quantity) {
 		return record.setProduct(id_produk, quantity);
 	}
 
-	public CartItemImpl getByKeranjang(int id_keranjang) {
+	public CartItemImpl getByKeranjang(UUID id_keranjang) {
 		return record.getByKeranjang(id_keranjang);
 	}
 }
