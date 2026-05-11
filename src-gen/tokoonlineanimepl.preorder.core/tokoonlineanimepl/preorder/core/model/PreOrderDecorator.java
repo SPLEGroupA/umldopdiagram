@@ -50,6 +50,18 @@ public abstract class PreOrderDecorator extends PreOrderComponent{
 	public void setStatus(String status) {
 		record.setStatus(status);
 	}
+	public String getProduk_ref() {
+		return record.getProduk_ref();
+	}
+	public void setProduk_ref(String produk_ref) {
+		record.setProduk_ref(produk_ref);
+	}
+	public String getAkun_ref() {
+		return record.getAkun_ref();
+	}
+	public void setAkun_ref(String akun_ref) {
+		record.setAkun_ref(akun_ref);
+	}
 
 
 	public HashMap<String, Object> toHashMap() {

@@ -20,6 +20,7 @@ public abstract class PembayaranComponent implements Pembayaran{
 	protected String metode;
 	protected int jumlah;
 	protected String status;
+	protected String pesanan_ref;
 	protected String objectName = PembayaranComponent.class.getName();
 
 	public PembayaranComponent() {
@@ -27,13 +28,13 @@ public abstract class PembayaranComponent implements Pembayaran{
 	} 
 
 	public PembayaranComponent(
-        UUID id_pembayaran, String metode, int jumlah, String status, int id_pesanan
+        UUID id_pembayaran, String metode, int jumlah, String status, String pesanan_ref
     ) {
         this.id_pembayaran = id_pembayaran;
         this.metode = metode;
         this.jumlah = jumlah;
         this.status = status;
-        this.id_pesanan = id_pesanan;
+        this.pesanan_ref = pesanan_ref;
     }
 
 	public UUID getId_pembayaran() {
@@ -64,12 +65,12 @@ public abstract class PembayaranComponent implements Pembayaran{
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public int getId_pesanan() {
-		return this.id_pesanan;
+	public String getPesanan_ref() {
+		return this.pesanan_ref;
 	}
 
-	public void setId_pesanan(int id_pesanan) {
-		this.id_pesanan = id_pesanan;
+	public void setPesanan_ref(String pesanan_ref) {
+		this.pesanan_ref = pesanan_ref;
 	}
  
 
@@ -80,7 +81,7 @@ public abstract class PembayaranComponent implements Pembayaran{
             " metode='" + getMetode() + "'" +
             " jumlah='" + getJumlah() + "'" +
             " status='" + getStatus() + "'" +
-            " id_pesanan='" + getId_pesanan() + "'" +
+            " pesanan_ref='" + getPesanan_ref() + "'" +
             "}";
     }
 	

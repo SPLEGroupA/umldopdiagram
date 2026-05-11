@@ -27,12 +27,11 @@ public class PembayaranServiceImpl extends PembayaranServiceComponent{
 		String jumlahStr = (String) requestBody.get("jumlah");
 		int jumlah = Integer.parseInt(jumlahStr);
 		String status = (String) requestBody.get("status");
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		int id_pesanan = Integer.parseInt(id_pesananStr);
+		String pesanan_ref = (String) requestBody.get("pesanan_ref");
 		
 		//to do: fix association attributes
 		
-		Pembayaran pembayaran = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.core.model.PembayaranImpl", metode, jumlah, status, id_pesanan);
+		Pembayaran pembayaran = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.core.model.PembayaranImpl", metode, jumlah, status, pesanan_ref);
 		Repository.saveObject(pembayaran);
 		return pembayaran;
 	}
@@ -43,11 +42,10 @@ public class PembayaranServiceImpl extends PembayaranServiceComponent{
 		String jumlahStr = (String) requestBody.get("jumlah");
 		int jumlah = Integer.parseInt(jumlahStr);
 		String status = (String) requestBody.get("status");
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		int id_pesanan = Integer.parseInt(id_pesananStr);
+		String pesanan_ref = (String) requestBody.get("pesanan_ref");
 		
 		//to do: fix association attributes
-		Pembayaran pembayaran = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.core.model.PembayaranImpl",id_pembayaran, metode, jumlah, status, id_pesanan);
+		Pembayaran pembayaran = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.core.model.PembayaranImpl",id_pembayaran, metode, jumlah, status, pesanan_ref);
 		Repository.saveObject(pembayaran);
 		return pembayaran;
 	}
@@ -62,9 +60,7 @@ public class PembayaranServiceImpl extends PembayaranServiceComponent{
 		pembayaran.setJumlah(Integer.parseInt(jumlahStr));
 		
 		pembayaran.setStatus((String) requestBody.get("status"));
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		pembayaran.setId_pesanan(Integer.parseInt(id_pesananStr));
-		
+		pembayaran.setPesanan_ref((String) requestBody.get("pesanan_ref"));
 		
 		Repository.updateObject(pembayaran);
 		

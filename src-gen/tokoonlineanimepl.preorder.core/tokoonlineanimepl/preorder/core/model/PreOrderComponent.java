@@ -19,10 +19,8 @@ public abstract class PreOrderComponent implements PreOrder{
 	protected UUID id_preorder; 
 	protected String tanggal_rilis;
 	protected String status;
-	@ManyToOne(targetEntity=tokoonlineanimepl.produk.core.model.ProdukComponent.class)
-	public Produk produk;
-	@ManyToOne(targetEntity=tokoonlineanimepl.akunpengguna.core.model.AkunPenggunaComponent.class)
-	public AkunPengguna akunPengguna;
+	protected String produk_ref;
+	protected String akun_ref;
 	protected String objectName = PreOrderComponent.class.getName();
 
 	public PreOrderComponent() {
@@ -30,13 +28,13 @@ public abstract class PreOrderComponent implements PreOrder{
 	} 
 
 	public PreOrderComponent(
-        UUID id_preorder, String tanggal_rilis, String status, ProdukImpl produk, AkunPenggunaImpl akunPengguna
+        UUID id_preorder, String tanggal_rilis, String status, String produk_ref, String akun_ref
     ) {
         this.id_preorder = id_preorder;
         this.tanggal_rilis = tanggal_rilis;
         this.status = status;
-        this.produk = produk;
-        this.akunPengguna = akunPengguna;
+        this.produk_ref = produk_ref;
+        this.akun_ref = akun_ref;
     }
 
 	public UUID getId_preorder() {
@@ -60,12 +58,20 @@ public abstract class PreOrderComponent implements PreOrder{
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public abstract ProdukImpl getProduk();
-	public abstract void setProduk(ProdukImpl produk);
-	
-	public abstract AkunPenggunaImpl getAkunPengguna();
-	public abstract void setAkunPengguna(AkunPenggunaImpl akunPengguna);
-	
+	public String getProduk_ref() {
+		return this.produk_ref;
+	}
+
+	public void setProduk_ref(String produk_ref) {
+		this.produk_ref = produk_ref;
+	}
+	public String getAkun_ref() {
+		return this.akun_ref;
+	}
+
+	public void setAkun_ref(String akun_ref) {
+		this.akun_ref = akun_ref;
+	}
  
 
 	@Override
@@ -74,8 +80,8 @@ public abstract class PreOrderComponent implements PreOrder{
             " id_preorder='" + getId_preorder() + "'" +
             " tanggal_rilis='" + getTanggal_rilis() + "'" +
             " status='" + getStatus() + "'" +
-            " produk='" + getProduk() + "'" +
-            " akunPengguna='" + getAkunPengguna() + "'" +
+            " produk_ref='" + getProduk_ref() + "'" +
+            " akun_ref='" + getAkun_ref() + "'" +
             "}";
     }
 	

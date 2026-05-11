@@ -23,8 +23,7 @@ public class PembayaranServiceImpl extends PembayaranServiceDecorator {
 		String jumlahStr = (String) requestBody.get("jumlah");
 		int jumlah = Integer.parseInt(jumlahStr);
 		String status = (String) requestBody.get("status");
-		String id_pesananStr = (String) requestBody.get("id_pesanan");
-		int id_pesanan = Integer.parseInt(id_pesananStr);
+		String pesanan_ref = (String) requestBody.get("pesanan_ref");
 		Pembayaran pembayaranpembayaranewallet = record.createPembayaran(requestBody);
 		Pembayaran pembayaranpembayaranewalletdeco = PembayaranFactory.createPembayaran("tokoonlineanimepl.pembayaran.pembayaranewallet.model.PembayaranImpl", pembayaranpembayaranewallet, ewallet_provider);
 		Repository.saveObject(pembayaranpembayaranewalletdeco);

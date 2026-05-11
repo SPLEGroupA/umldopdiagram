@@ -38,8 +38,14 @@ public abstract class KeranjangBelanjaDecorator extends KeranjangBelanjaComponen
 	public void setId_keranjang(UUID id_keranjang) {
 		record.setId_keranjang(id_keranjang);
 	}
+	public String getAkun_ref() {
+		return record.getAkun_ref();
+	}
+	public void setAkun_ref(String akun_ref) {
+		record.setAkun_ref(akun_ref);
+	}
 
-	public KeranjangBelanjaImpl getByUser(String email) {
+	public boolean getByUser(String email) {
 		return record.getByUser(email);
 	}
 
@@ -47,7 +53,7 @@ public abstract class KeranjangBelanjaDecorator extends KeranjangBelanjaComponen
 		return record.addItem(id_cart_item);
 	}
 
-	public OrderImpl checkout() {
+	public boolean checkout() {
 		return record.checkout();
 	}
 

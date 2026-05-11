@@ -1,7 +1,4 @@
 module tokoonlineanimepl.manajemenpesanan.core {
-	requires tokoonlineanimepl.akunpengguna.core;
-	requires tokoonlineanimepl.manajemenpesanan.core;
-	requires tokoonlineanimepl.katalogproduk.core;
 	exports tokoonlineanimepl.manajemenpesanan;
 	exports tokoonlineanimepl.manajemenpesanan.core.model;
 	exports tokoonlineanimepl.manajemenpesanan.core.resource;

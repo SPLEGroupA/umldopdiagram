@@ -11,9 +11,9 @@ public interface PreOrder {
 	    public void setTanggal_rilis(String tanggal_rilis);
 	    public String getStatus();
 	    public void setStatus(String status);
-	    public ProdukImpl getProduk();
-	    public void setProduk(ProdukImpl produk);
-	    public AkunPenggunaImpl getAkunPengguna();
-	    public void setAkunPengguna(AkunPenggunaImpl akunPengguna);
+	    public String getProduk_ref();
+	    public void setProduk_ref(String produk_ref);
+	    public String getAkun_ref();
+	    public void setAkun_ref(String akun_ref);
 	HashMap<String, Object> toHashMap();
 }

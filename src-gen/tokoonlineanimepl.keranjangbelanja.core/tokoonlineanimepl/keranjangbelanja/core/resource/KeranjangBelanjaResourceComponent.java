@@ -18,9 +18,9 @@ public abstract class KeranjangBelanjaResourceComponent implements KeranjangBela
     public abstract List<HashMap<String,Object>> getAllKeranjangBelanja(VMJExchange vmjExchange);
     public abstract List<HashMap<String,Object>> deleteKeranjangBelanja(VMJExchange vmjExchange);
 
-	public abstract KeranjangBelanjaImpl getByUser(String email);
+	public abstract boolean getByUser(String email);
 
 	public abstract boolean addItem(UUID id_cart_item);
 
-	public abstract OrderImpl checkout();
+	public abstract boolean checkout();
 }

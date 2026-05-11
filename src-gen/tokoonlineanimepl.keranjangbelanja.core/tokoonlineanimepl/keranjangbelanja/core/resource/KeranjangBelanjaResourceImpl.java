@@ -81,7 +81,7 @@ public class KeranjangBelanjaResourceImpl extends KeranjangBelanjaResourceCompon
 
 
 	
-	public KeranjangBelanjaImpl getByUser(String email) {
+	public boolean getByUser(String email) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
@@ -93,7 +93,7 @@ public class KeranjangBelanjaResourceImpl extends KeranjangBelanjaResourceCompon
 	}
 
 	
-	public OrderImpl checkout() {
+	public boolean checkout() {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

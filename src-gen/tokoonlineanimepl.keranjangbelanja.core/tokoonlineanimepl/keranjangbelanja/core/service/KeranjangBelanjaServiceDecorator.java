@@ -44,7 +44,7 @@ public abstract class KeranjangBelanjaServiceDecorator extends KeranjangBelanjaS
         return record.getKeranjangBelanjaById(id);
     }
 
-	public KeranjangBelanjaImpl getByUser(String email) {
+	public boolean getByUser(String email) {
 		return record.getByUser(email);
 	}
 
@@ -52,7 +52,7 @@ public abstract class KeranjangBelanjaServiceDecorator extends KeranjangBelanjaS
 		return record.addItem(id_cart_item);
 	}
 
-	public OrderImpl checkout() {
+	public boolean checkout() {
 		return record.checkout();
 	}
 }

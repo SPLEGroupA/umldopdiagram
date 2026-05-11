@@ -13,7 +13,7 @@ public interface Pembayaran {
 	    public void setJumlah(int jumlah);
 	    public String getStatus();
 	    public void setStatus(String status);
-	    public int getId_pesanan();
-	    public void setId_pesanan(int id_pesanan);
+	    public String getPesanan_ref();
+	    public void setPesanan_ref(String pesanan_ref);
 	HashMap<String, Object> toHashMap();
 }

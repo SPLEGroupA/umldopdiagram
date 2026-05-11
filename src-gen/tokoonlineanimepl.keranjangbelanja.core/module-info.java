@@ -1,7 +1,4 @@
 module tokoonlineanimepl.keranjangbelanja.core {
-	requires tokoonlineanimepl.akunpengguna.core;
-	requires tokoonlineanimepl.keranjangbelanja.core;
-	requires tokoonlineanimepl.katalogproduk.core;
 	exports tokoonlineanimepl.keranjangbelanja;
 	exports tokoonlineanimepl.keranjangbelanja.core.model;
 	exports tokoonlineanimepl.keranjangbelanja.core.resource;

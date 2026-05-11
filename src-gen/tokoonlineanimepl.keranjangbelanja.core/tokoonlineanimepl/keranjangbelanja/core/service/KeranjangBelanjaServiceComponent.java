@@ -23,9 +23,9 @@ public abstract class KeranjangBelanjaServiceComponent implements KeranjangBelan
     public abstract List<HashMap<String,Object>> deleteKeranjangBelanja(Map<String, Object> requestBody);
 	public abstract HashMap<String, Object> getKeranjangBelanjaById(UUID id);	
 
-	public abstract KeranjangBelanjaImpl getByUser(String email);
+	public abstract boolean getByUser(String email);
 
 	public abstract boolean addItem(UUID id_cart_item);
 
-	public abstract OrderImpl checkout();
+	public abstract boolean checkout();
 }

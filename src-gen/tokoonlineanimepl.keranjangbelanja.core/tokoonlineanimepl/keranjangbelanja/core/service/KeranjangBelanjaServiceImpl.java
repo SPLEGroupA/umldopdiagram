@@ -23,19 +23,21 @@ import id.ac.ui.cs.prices.winvmj.auth.annotations.Restricted;
 public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponent{
 
     public KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody){
+		String akun_ref = (String) requestBody.get("akun_ref");
 		
 		//to do: fix association attributes
 		
-		KeranjangBelanja keranjangbelanja = KeranjangBelanjaFactory.createKeranjangBelanja("tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaImpl", akunPengguna);
+		KeranjangBelanja keranjangbelanja = KeranjangBelanjaFactory.createKeranjangBelanja("tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaImpl", akun_ref);
 		Repository.saveObject(keranjangbelanja);
 		return keranjangbelanja;
 	}
 
     public KeranjangBelanja createKeranjangBelanja(Map<String, Object> requestBody, UUID id){	
 		UUID id_keranjang = id;
+		String akun_ref = (String) requestBody.get("akun_ref");
 		
 		//to do: fix association attributes
-		KeranjangBelanja keranjangbelanja = KeranjangBelanjaFactory.createKeranjangBelanja("tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaImpl",id_keranjang, akunPengguna);
+		KeranjangBelanja keranjangbelanja = KeranjangBelanjaFactory.createKeranjangBelanja("tokoonlineanimepl.keranjangbelanja.core.model.KeranjangBelanjaImpl",id_keranjang, akun_ref);
 		Repository.saveObject(keranjangbelanja);
 		return keranjangbelanja;
 	}
@@ -45,6 +47,7 @@ public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponen
 		UUID id = UUID.fromString(idStr);		
 		KeranjangBelanja keranjangbelanja = Repository.getObject(id);
 		
+		keranjangbelanja.setAkun_ref((String) requestBody.get("akun_ref"));
 		
 		Repository.updateObject(keranjangbelanja);
 		
@@ -92,7 +95,7 @@ public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponen
 		return getAllKeranjangBelanja();
 	}
 
-	public KeranjangBelanjaImpl getByUser(String email) {
+	public boolean getByUser(String email) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
@@ -102,7 +105,7 @@ public class KeranjangBelanjaServiceImpl extends KeranjangBelanjaServiceComponen
 		throw new UnsupportedOperationException();
 	}
 
-	public OrderImpl checkout() {
+	public boolean checkout() {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}

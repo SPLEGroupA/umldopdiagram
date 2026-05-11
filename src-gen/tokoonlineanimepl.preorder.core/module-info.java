@@ -1,6 +1,4 @@
 module tokoonlineanimepl.preorder.core {
-	requires tokoonlineanimepl.katalogproduk.core;
-	requires tokoonlineanimepl.akunpengguna.core;
 	exports tokoonlineanimepl.preorder;
 	exports tokoonlineanimepl.preorder.core.model;
 	exports tokoonlineanimepl.preorder.core.resource;

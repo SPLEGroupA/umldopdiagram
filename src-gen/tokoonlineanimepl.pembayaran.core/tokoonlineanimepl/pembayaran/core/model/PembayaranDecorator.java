@@ -56,11 +56,11 @@ public abstract class PembayaranDecorator extends PembayaranComponent{
 	public void setStatus(String status) {
 		record.setStatus(status);
 	}
-	public int getId_pesanan() {
-		return record.getId_pesanan();
+	public String getPesanan_ref() {
+		return record.getPesanan_ref();
 	}
-	public void setId_pesanan(int id_pesanan) {
-		record.setId_pesanan(id_pesanan);
+	public void setPesanan_ref(String pesanan_ref) {
+		record.setPesanan_ref(pesanan_ref);
 	}
 
 

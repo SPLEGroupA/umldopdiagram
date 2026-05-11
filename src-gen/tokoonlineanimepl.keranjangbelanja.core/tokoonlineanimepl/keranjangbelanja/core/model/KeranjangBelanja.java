@@ -7,9 +7,10 @@ import java.lang.*;
 public interface KeranjangBelanja {
 	    public UUID getId_keranjang();
 	    public void setId_keranjang(UUID id_keranjang);
-	    public AkunPenggunaImpl getAkunPengguna();
-	    public void setAkunPengguna(AkunPenggunaImpl akunPengguna);
-	public KeranjangBelanjaImpl getByUser(String email);
-	public OrderImpl checkout();
+	    public String getAkun_ref();
+	    public void setAkun_ref(String akun_ref);
+	public boolean getByUser(String email);
+	public boolean addItem(UUID id_cart_item);
+	public boolean checkout();
 	HashMap<String, Object> toHashMap();
 }

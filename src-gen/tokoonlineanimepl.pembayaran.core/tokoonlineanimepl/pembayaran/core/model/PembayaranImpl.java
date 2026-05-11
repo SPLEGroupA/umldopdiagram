@@ -19,20 +19,20 @@ import javax.persistence.OneToMany;
 @Table(name="pembayaran_impl")
 public class PembayaranImpl extends PembayaranComponent {
 
-	public PembayaranImpl(UUID id_pembayaran, String metode, int jumlah, String status, int id_pesanan) {
+	public PembayaranImpl(UUID id_pembayaran, String metode, int jumlah, String status, String pesanan_ref) {
 		this.id_pembayaran = id_pembayaran;
 		this.metode = metode;
 		this.jumlah = jumlah;
 		this.status = status;
-		this.id_pesanan = id_pesanan;
+		this.pesanan_ref = pesanan_ref;
 	}
 
-	public PembayaranImpl(String metode, int jumlah, String status) {
+	public PembayaranImpl(String metode, int jumlah, String status, String pesanan_ref) {
 		this.id_pembayaran =  UUID.randomUUID();
 		this.metode = metode;
 		this.jumlah = jumlah;
 		this.status = status;
-		this.id_pesanan = id_pesanan;
+		this.pesanan_ref = pesanan_ref;
 	}
 
 	public PembayaranImpl() { }
@@ -65,12 +65,12 @@ public class PembayaranImpl extends PembayaranComponent {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public int getId_pesanan() {
-		return this.id_pesanan;
+	public String getPesanan_ref() {
+		return this.pesanan_ref;
 	}
 
-	public void setId_pesanan(int id_pesanan) {
-		this.id_pesanan = id_pesanan;
+	public void setPesanan_ref(String pesanan_ref) {
+		this.pesanan_ref = pesanan_ref;
 	}
 
 	
@@ -80,7 +80,7 @@ public class PembayaranImpl extends PembayaranComponent {
 		pembayaranMap.put("metode",getMetode());
 		pembayaranMap.put("jumlah",getJumlah());
 		pembayaranMap.put("status",getStatus());
-		pembayaranMap.put("id_pesanan",getId_pesanan());
+		pembayaranMap.put("pesanan_ref",getPesanan_ref());
 
         return pembayaranMap;
     }

@@ -19,14 +19,14 @@ import javax.persistence.OneToMany;
 @Table(name="keranjangbelanja_impl")
 public class KeranjangBelanjaImpl extends KeranjangBelanjaComponent {
 
-	public KeranjangBelanjaImpl(UUID id_keranjang, AkunPenggunaImpl akunPengguna) {
+	public KeranjangBelanjaImpl(UUID id_keranjang, String akun_ref) {
 		this.id_keranjang = id_keranjang;
-		this.akunPengguna = akunPengguna;
+		this.akun_ref = akun_ref;
 	}
 
-	public KeranjangBelanjaImpl(AkunPenggunaImpl akunPengguna) {
+	public KeranjangBelanjaImpl(String akun_ref) {
 		this.id_keranjang =  UUID.randomUUID();
-		this.akunPengguna = akunPengguna;
+		this.akun_ref = akun_ref;
 	}
 
 	public KeranjangBelanjaImpl() { }
@@ -38,8 +38,15 @@ public class KeranjangBelanjaImpl extends KeranjangBelanjaComponent {
 	public void setId_keranjang(UUID id_keranjang) {
 		this.id_keranjang = id_keranjang;
 	}
+	public String getAkun_ref() {
+		return this.akun_ref;
+	}
 
-	public KeranjangBelanjaImpl getByUser(String email) {
+	public void setAkun_ref(String akun_ref) {
+		this.akun_ref = akun_ref;
+	}
+
+	public boolean getByUser(String email) {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
@@ -49,7 +56,7 @@ public class KeranjangBelanjaImpl extends KeranjangBelanjaComponent {
 		throw new UnsupportedOperationException();
 	}
 
-	public OrderImpl checkout() {
+	public boolean checkout() {
 		// TODO: implement this method
 		throw new UnsupportedOperationException();
 	}
@@ -57,7 +64,7 @@ public class KeranjangBelanjaImpl extends KeranjangBelanjaComponent {
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> keranjangbelanjaMap = new HashMap<String,Object>();
 		keranjangbelanjaMap.put("id_keranjang",getId_keranjang());
-		keranjangbelanjaMap.put("akunPengguna",getAkunPengguna());
+		keranjangbelanjaMap.put("akun_ref",getAkun_ref());
 
         return keranjangbelanjaMap;
     }

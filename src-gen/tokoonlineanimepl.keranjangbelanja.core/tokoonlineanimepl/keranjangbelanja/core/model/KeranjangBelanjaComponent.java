@@ -17,8 +17,7 @@ import javax.persistence.Table;
 public abstract class KeranjangBelanjaComponent implements KeranjangBelanja{
 	@Id
 	protected UUID id_keranjang; 
-	@ManyToOne(targetEntity=tokoonlineanimepl.akunpengguna.core.model.AkunPenggunaComponent.class)
-	public AkunPengguna akunPengguna;
+	protected String akun_ref;
 	protected String objectName = KeranjangBelanjaComponent.class.getName();
 
 	public KeranjangBelanjaComponent() {
@@ -26,10 +25,10 @@ public abstract class KeranjangBelanjaComponent implements KeranjangBelanja{
 	} 
 
 	public KeranjangBelanjaComponent(
-        UUID id_keranjang, AkunPenggunaImpl akunPengguna
+        UUID id_keranjang, String akun_ref
     ) {
         this.id_keranjang = id_keranjang;
-        this.akunPengguna = akunPengguna;
+        this.akun_ref = akun_ref;
     }
 
 	public UUID getId_keranjang() {
@@ -39,21 +38,25 @@ public abstract class KeranjangBelanjaComponent implements KeranjangBelanja{
 	public void setId_keranjang(UUID id_keranjang) {
 		this.id_keranjang = id_keranjang;
 	}
-	public abstract AkunPenggunaImpl getAkunPengguna();
-	public abstract void setAkunPengguna(AkunPenggunaImpl akunPengguna);
-	
+	public String getAkun_ref() {
+		return this.akun_ref;
+	}
+
+	public void setAkun_ref(String akun_ref) {
+		this.akun_ref = akun_ref;
+	}
  
-	public abstract KeranjangBelanjaImpl getByUser(String email);
+	public abstract boolean getByUser(String email);
 
 	public abstract boolean addItem(UUID id_cart_item);
 
-	public abstract OrderImpl checkout();
+	public abstract boolean checkout();
 
 	@Override
     public String toString() {
         return "{" +
             " id_keranjang='" + getId_keranjang() + "'" +
-            " akunPengguna='" + getAkunPengguna() + "'" +
+            " akun_ref='" + getAkun_ref() + "'" +
             "}";
     }
 	
