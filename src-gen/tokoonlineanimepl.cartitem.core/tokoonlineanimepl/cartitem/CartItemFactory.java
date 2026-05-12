@@ -1,7 +1,7 @@
 package tokoonlineanimepl.cartitem;
 
 import tokoonlineanimepl.cartitem.core.model.CartItem;
-import tokoonlineanimepl.cartitem.core.model.invalid;
+import tokoonlineanimepl.cartitem.core.model.CartItemImpl;
 import java.lang.reflect.Constructor;
 import java.util.logging.Logger;
 

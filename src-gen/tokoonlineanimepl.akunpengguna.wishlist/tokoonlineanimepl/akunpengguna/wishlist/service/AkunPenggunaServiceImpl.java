@@ -18,21 +18,23 @@ public class AkunPenggunaServiceImpl extends AkunPenggunaServiceDecorator {
     }
 
  	public AkunPengguna createAkunPengguna(Map<String, Object> requestBody){
+		String wishlist_items = (String) requestBody.get("wishlist_items");
 		String email = (String) requestBody.get("email");
 		String nama = (String) requestBody.get("nama");
 		String alamat = (String) requestBody.get("alamat");
 		String no_telepon = (String) requestBody.get("no_telepon");
 		AkunPengguna akunpenggunawishlist = record.createAkunPengguna(requestBody);
-		AkunPengguna akunpenggunawishlistdeco = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.wishlist.model.AkunPenggunaImpl", akunpenggunawishlist, );
+		AkunPengguna akunpenggunawishlistdeco = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.wishlist.model.AkunPenggunaImpl", akunpenggunawishlist, wishlist_items);
 		Repository.saveObject(akunpenggunawishlistdeco);
 		return akunpenggunawishlistdeco;
 	}
 
     public AkunPengguna createAkunPengguna(Map<String, Object> requestBody, UUID id){	
 		AkunPengguna savedAkunPengguna = Repository.getObject(id);
+		String wishlist_items = (String) requestBody.get("wishlist_items");
 		UUID recordAkunPenggunaId_akun = ((AkunPenggunaDecorator) savedAkunPengguna).getId_akun();
 		AkunPengguna akunpengguna = record.createAkunPengguna(requestBody, recordAkunPenggunaId_akun);
-		AkunPengguna akunpenggunawishlist = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.wishlist.AkunPenggunaImpl", akunpengguna, );
+		AkunPengguna akunpenggunawishlist = AkunPenggunaFactory.createAkunPengguna("tokoonlineanimepl.akunpengguna.wishlist.AkunPenggunaImpl", akunpengguna, wishlist_items);
 		return akunpenggunawishlist;
 	}
 

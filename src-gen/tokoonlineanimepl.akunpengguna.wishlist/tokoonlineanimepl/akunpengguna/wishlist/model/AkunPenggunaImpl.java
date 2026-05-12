@@ -17,17 +17,26 @@ import tokoonlineanimepl.akunpengguna.core.model.AkunPenggunaComponent;
 @Table(name="akunpengguna_wishlist")
 public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 
+	protected String wishlist_items;
 	public AkunPenggunaImpl() {
         super();
 		this.id_akun = UUID.randomUUID();
         this.objectName = AkunPenggunaImpl.class.getName();
     }
 
-	public AkunPenggunaImpl(AkunPenggunaComponent record) {
+	public AkunPenggunaImpl(AkunPenggunaComponent record, String wishlist_items) {
 		super(record, AkunPenggunaImpl.class.getName());
+		this.wishlist_items = wishlist_items;
 		this.objectName = AkunPenggunaImpl.class.getName();
 	}
 
+	public String getWishlist_items() {
+		return this.wishlist_items;
+	}
+
+	public void setWishlist_items(String wishlist_items) {
+		this.wishlist_items = wishlist_items;
+	}
 
 	protected boolean addToWishlist(UUID id_akun, UUID id_produk) {
 		// TODO: implement this method
@@ -42,6 +51,7 @@ public class AkunPenggunaImpl extends AkunPenggunaDecorator {
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
         map.put("id_akun", id_akun);
+		map.put("wishlist_items", getWishlist_items());
 
         return map;
     }

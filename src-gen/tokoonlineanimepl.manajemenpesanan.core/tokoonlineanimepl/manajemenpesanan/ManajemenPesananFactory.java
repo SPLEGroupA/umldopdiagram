@@ -1,7 +1,7 @@
 package tokoonlineanimepl.manajemenpesanan;
 
 import tokoonlineanimepl.manajemenpesanan.core.model.ManajemenPesanan;
-import tokoonlineanimepl.manajemenpesanan.core.model.invalid;
+import tokoonlineanimepl.manajemenpesanan.core.model.ManajemenPesananImpl;
 import java.lang.reflect.Constructor;
 import java.util.logging.Logger;
 

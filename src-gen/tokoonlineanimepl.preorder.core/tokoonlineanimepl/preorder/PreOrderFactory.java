@@ -1,7 +1,7 @@
 package tokoonlineanimepl.preorder;
 
 import tokoonlineanimepl.preorder.core.model.PreOrder;
-import tokoonlineanimepl.preorder.core.model.invalid;
+import tokoonlineanimepl.preorder.core.model.PreOrderImpl;
 import java.lang.reflect.Constructor;
 import java.util.logging.Logger;
 
