@@ -404,6 +404,9 @@
       <!-- Delta 4: DWishlist -->
       <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE04" name="DWishlist">
         <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE04_cls" name="AkunPenggunaImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE04_a1" name="wishlist_items" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE04_aa" name="akunPengguna" type="_TOA_M_AKN" association="_TOA_AS04">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE04_aa_lv"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE04_aa_uv" value="1"/>
@@ -555,6 +558,7 @@
   <umlvmprofile:adds xmi:id="_TOA_ST_ad02" base_Property="_TOA_DE02_a1"/>
   <umlvmprofile:adds xmi:id="_TOA_ST_ad03" base_Property="_TOA_DE03_a1"/>
   <umlvmprofile:adds xmi:id="_TOA_ST_ad04" base_Property="_TOA_DE05_a1"/>
+  <umlvmprofile:adds xmi:id="_TOA_ST_ad04b" base_Property="_TOA_DE04_a1"/>
   <umlvmprofile:adds xmi:id="_TOA_ST_ad05" base_Property="_TOA_DE06_a1"/>
   <umlvmprofile:adds xmi:id="_TOA_ST_ad06" base_Property="_TOA_DE07_a1"/>
   <umlvmprofile:adds xmi:id="_TOA_ST_ao01" base_Operation="_TOA_DE01_op1"/>
