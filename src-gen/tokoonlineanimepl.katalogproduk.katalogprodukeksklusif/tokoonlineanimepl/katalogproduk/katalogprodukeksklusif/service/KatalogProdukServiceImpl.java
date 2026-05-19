@@ -18,7 +18,7 @@ public class KatalogProdukServiceImpl extends KatalogProdukServiceDecorator {
     }
 
  	public KatalogProduk createKatalogProduk(Map<String, Object> requestBody){
-		boolean is_eksklusif = (boolean) requestBody.get("is_eksklusif");
+		String label_eksklusif = (String) requestBody.get("label_eksklusif");
 		String nama = (String) requestBody.get("nama");
 		String hargaStr = (String) requestBody.get("harga");
 		int harga = Integer.parseInt(hargaStr);
@@ -28,17 +28,17 @@ public class KatalogProdukServiceImpl extends KatalogProdukServiceDecorator {
 		int stok = Integer.parseInt(stokStr);
 		String gambar_url = (String) requestBody.get("gambar_url");
 		KatalogProduk katalogprodukkatalogprodukeksklusif = record.createKatalogProduk(requestBody);
-		KatalogProduk katalogprodukkatalogprodukeksklusifdeco = KatalogProdukFactory.createKatalogProduk("tokoonlineanimepl.katalogproduk.katalogprodukeksklusif.model.KatalogProdukImpl", katalogprodukkatalogprodukeksklusif, is_eksklusif);
+		KatalogProduk katalogprodukkatalogprodukeksklusifdeco = KatalogProdukFactory.createKatalogProduk("tokoonlineanimepl.katalogproduk.katalogprodukeksklusif.model.KatalogProdukImpl", katalogprodukkatalogprodukeksklusif, label_eksklusif);
 		Repository.saveObject(katalogprodukkatalogprodukeksklusifdeco);
 		return katalogprodukkatalogprodukeksklusifdeco;
 	}
 
     public KatalogProduk createKatalogProduk(Map<String, Object> requestBody, UUID id){	
 		KatalogProduk savedKatalogProduk = Repository.getObject(id);
-		boolean is_eksklusif = (boolean) requestBody.get("is_eksklusif");
+		String label_eksklusif = (String) requestBody.get("label_eksklusif");
 		UUID recordKatalogProdukId_produk = ((KatalogProdukDecorator) savedKatalogProduk).getId_produk();
 		KatalogProduk katalogproduk = record.createKatalogProduk(requestBody, recordKatalogProdukId_produk);
-		KatalogProduk katalogprodukkatalogprodukeksklusif = KatalogProdukFactory.createKatalogProduk("tokoonlineanimepl.katalogproduk.katalogprodukeksklusif.KatalogProdukImpl", katalogproduk, is_eksklusif);
+		KatalogProduk katalogprodukkatalogprodukeksklusif = KatalogProdukFactory.createKatalogProduk("tokoonlineanimepl.katalogproduk.katalogprodukeksklusif.KatalogProdukImpl", katalogproduk, label_eksklusif);
 		return katalogprodukkatalogprodukeksklusif;
 	}
 

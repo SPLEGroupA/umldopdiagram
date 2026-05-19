@@ -4,7 +4,14 @@
 
 ```
 tokoonlineanimepl  «vm»
-├── MTokoOnlineAnime  «module»        ← core/mandatory
+├── MKatalogProduk       «module»     ← mandatory
+├── MKeranjangBelanja    «module»     ← mandatory
+├── MCartItem            «module»     ← mandatory
+├── MAkunPengguna        «module»     ← mandatory
+├── MPembayaran          «module»     ← mandatory
+├── MManajemenPesanan    «module»     ← mandatory
+├── MOrderItem           «module»     ← mandatory
+├── MPreOrder            «module»     ← mandatory
 ├── DKatalogProdukEksklusif  «delta»  ← optional
 ├── DKatalogProdukPreOwned   «delta»  ← optional
 ├── DPembayaranEWallet       «delta»  ← optional
@@ -32,11 +39,11 @@ Setiap core class di module secara otomatis mendapatkan operasi CRUD berikut dar
 
 ---
 
-## 2. Module: MTokoOnlineAnime «module»
+## 2. Core Modules «module»
 
-Berisi semua class dan interface **mandatory** (core features).
+Berisi class dan interface **mandatory** (core features). Pada UML aktual, setiap fitur mandatory dipisah ke package module masing-masing.
 
-### 2.1 ProdukImpl → implements Produk ✅
+### 2.1 MKatalogProduk: KatalogProdukImpl → implements KatalogProduk ✅
 
 | Atribut | Tipe | Visibility |
 |---------|------|------------|
@@ -52,39 +59,39 @@ Berisi semua class dan interface **mandatory** (core features).
 
 ---
 
-### 2.2 KeranjangBelanjaImpl → implements KeranjangBelanja ✅
+### 2.2 MKeranjangBelanja: KeranjangBelanjaImpl → implements KeranjangBelanja ✅
 
 | Atribut | Tipe | Visibility | Keterangan |
 |---------|------|------------|------------|
 | id_keranjang | Integer | protected | |
-| akunPengguna | AkunPenggunaImpl [1] | — | Relasi ke pemilik keranjang |
+| akun_ref | String | protected | Referensi ke pemilik keranjang |
 
 | Operasi | Parameter | Return |
 |---------|-----------|--------|
-| getByUser() | email: String | KeranjangBelanjaImpl |
+| getByUser() | email: String | Boolean |
 | addItem() | id_cart_item: Integer | Boolean |
-| checkout() | — | OrderImpl |
+| checkout() | — | Boolean |
 
 ---
 
-### 2.3 CartItemImpl → implements CartItem ✅
+### 2.3 MCartItem: CartItemImpl → implements CartItem ✅
 
 | Atribut | Tipe | Visibility | Keterangan |
 |---------|------|------------|------------|
 | id_cart_item | Integer | protected | |
 | quantity | Integer | protected | Jumlah produk |
 | harga_satuan | Integer | protected | Harga snapshot saat ditambahkan |
-| keranjangBelanja | KeranjangBelanjaImpl [1] | — | Relasi ke keranjang |
-| produk | ProdukImpl [1] | — | Relasi ke produk |
+| keranjang_ref | String | protected | Referensi ke keranjang |
+| produk_ref | String | protected | Referensi ke produk |
 
 | Operasi | Parameter | Return |
 |---------|-----------|--------|
 | setProduct() | id_produk: Integer, quantity: Integer | Boolean |
-| getByKeranjang() | id_keranjang: Integer | CartItemImpl [*] |
+| getByKeranjang() | id_keranjang: Integer | Boolean |
 
 ---
 
-### 2.4 AkunPenggunaImpl → implements AkunPengguna ✅
+### 2.4 MAkunPengguna: AkunPenggunaImpl → implements AkunPengguna ✅
 
 | Atribut | Tipe | Visibility |
 |---------|------|------------|
@@ -98,7 +105,7 @@ Berisi semua class dan interface **mandatory** (core features).
 
 ---
 
-### 2.5 PembayaranImpl → implements Pembayaran ✅
+### 2.5 MPembayaran: PembayaranImpl → implements Pembayaran ✅
 
 | Atribut | Tipe | Visibility | Keterangan |
 |---------|------|------------|------------|
@@ -106,13 +113,13 @@ Berisi semua class dan interface **mandatory** (core features).
 | metode | String | protected | Kartu kredit (default mandatory) |
 | jumlah | Integer | protected | |
 | status | String | protected | Status pembayaran |
-| id_pesanan | Integer | protected | Relasi ke pesanan |
+| pesanan_ref | String | protected | Referensi ke pesanan |
 
 > Tidak ada operasi custom — cukup CRUD standar. Pembayaran di-create saat checkout.
 
 ---
 
-### 2.6 OrderImpl → implements Order ✅
+### 2.6 MManajemenPesanan: ManajemenPesananImpl → implements ManajemenPesanan ✅
 
 | Atribut | Tipe | Visibility | Keterangan |
 |---------|------|------------|------------|
@@ -120,39 +127,39 @@ Berisi semua class dan interface **mandatory** (core features).
 | status | String | protected | Status pesanan (pending, shipped, dll) |
 | tanggal_pesan | String | protected | |
 | total_harga | Integer | protected | |
-| akunPengguna | AkunPenggunaImpl [1] | — | Relasi ke pemilik pesanan |
+| akun_ref | String | protected | Referensi ke pemilik pesanan |
 
 | Operasi | Parameter | Return |
 |---------|-----------|--------|
-| getByUser() | email: String | OrderImpl [*] |
+| getByUser() | email: String | Boolean |
 
 ---
 
-### 2.7 OrderItemImpl → implements OrderItem ✅
+### 2.7 MOrderItem: OrderItemImpl → implements OrderItem ✅
 
 | Atribut | Tipe | Visibility | Keterangan |
 |---------|------|------------|------------|
 | id_order_item | Integer | protected | |
 | quantity | Integer | protected | Jumlah produk |
 | harga_satuan | Integer | protected | Harga locked saat checkout |
-| pesanan | OrderImpl [1] | — | Relasi ke pesanan |
-| produk | ProdukImpl [1] | — | Relasi ke produk |
+| pesanan_ref | String | protected | Referensi ke pesanan |
+| produk_ref | String | protected | Referensi ke produk |
 
 | Operasi | Parameter | Return |
 |---------|-----------|--------|
-| getByPesanan() | id_pesanan: Integer | OrderItemImpl [*] |
+| getByPesanan() | id_pesanan: Integer | Boolean |
 
 ---
 
-### 2.8 PreOrderImpl → implements PreOrder ✅
+### 2.8 MPreOrder: PreOrderImpl → implements PreOrder ✅
 
 | Atribut | Tipe | Visibility | Keterangan |
 |---------|------|------------|------------|
 | id_preorder | Integer | protected | |
 | tanggal_rilis | String | protected | Estimasi rilis produk |
 | status | String | protected | Status pre-order |
-| produk | ProdukImpl [1] | — | Relasi ke produk yang di-preorder |
-| akunPengguna | AkunPenggunaImpl [1] | — | Relasi ke user yang pre-order |
+| produk_ref | String | protected | Referensi ke produk yang di-preorder |
+| akun_ref | String | protected | Referensi ke user yang pre-order |
 
 > Tidak ada operasi custom — cukup CRUD standar.
 
@@ -164,18 +171,18 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 ### 3.1 DKatalogProdukEksklusif «delta»
 
-**Modifies:** ProdukImpl
+**Modifies:** MKatalogProduk::KatalogProdukImpl
 
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
-| Atribut | is_eksklusif | Boolean, protected | «adds» |
+| Atribut | label_eksklusif | String, protected | «adds» |
 | Operasi | checkEksklusif() | return Boolean | «adds» |
 
 ---
 
 ### 3.2 DKatalogProdukPreOwned «delta»
 
-**Modifies:** ProdukImpl
+**Modifies:** MKatalogProduk::KatalogProdukImpl
 
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
@@ -186,7 +193,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 ### 3.3 DPembayaranEWallet «delta»
 
-**Modifies:** PembayaranImpl
+**Modifies:** MPembayaran::PembayaranImpl
 
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
@@ -197,7 +204,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 ### 3.4 DWishlist «delta»
 
-**Modifies:** AkunPenggunaImpl
+**Modifies:** MAkunPengguna::AkunPenggunaImpl
 
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
@@ -208,7 +215,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 ### 3.5 DReviewDanRating «delta»
 
-**Modifies:** ProdukImpl
+**Modifies:** MKatalogProduk::KatalogProdukImpl
 
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
@@ -219,7 +226,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 ### 3.6 DSistemMembership «delta»
 
-**Modifies:** AkunPenggunaImpl
+**Modifies:** MAkunPengguna::AkunPenggunaImpl
 
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
@@ -230,7 +237,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 ### 3.7 DSistemPoinLoyalitas «delta»
 
-**Modifies:** AkunPenggunaImpl
+**Modifies:** MAkunPengguna::AkunPenggunaImpl
 
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
@@ -243,11 +250,11 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 | Delta | Target Class | Adds Attributes | Adds Operations |
 |-------|-------------|-----------------|-----------------|
-| DKatalogProdukEksklusif | ProdukImpl | is_eksklusif | checkEksklusif() |
-| DKatalogProdukPreOwned | ProdukImpl | kondisi | checkPreOwned() |
+| DKatalogProdukEksklusif | KatalogProdukImpl | label_eksklusif | checkEksklusif() |
+| DKatalogProdukPreOwned | KatalogProdukImpl | kondisi | checkPreOwned() |
 | DPembayaranEWallet | PembayaranImpl | ewallet_provider | payWithEWallet() |
 | DWishlist | AkunPenggunaImpl | — | addToWishlist(), removeFromWishlist() |
-| DReviewDanRating | ProdukImpl | average_rating | addReview() |
+| DReviewDanRating | KatalogProdukImpl | average_rating | addReview() |
 | DSistemMembership | AkunPenggunaImpl | membership_level | checkMembership() |
 | DSistemPoinLoyalitas | AkunPenggunaImpl | poin | redeemPoin() |
 
@@ -257,12 +264,14 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 | Feature (UVL) | Tipe | Package DOP | Stereotip |
 |---------------|------|-------------|-----------|
-| KatalogProduk | mandatory | MTokoOnlineAnime | «module» |
-| KeranjangBelanja | mandatory | MTokoOnlineAnime | «module» |
-| AkunPengguna | mandatory | MTokoOnlineAnime | «module» |
-| PembayaranKartuKredit | mandatory | MTokoOnlineAnime | «module» |
-| ManajemenPesanan (Order) | mandatory | MTokoOnlineAnime | «module» |
-| PreOrderProduk | mandatory | MTokoOnlineAnime | «module» |
+| KatalogProduk | mandatory | MKatalogProduk | «module» |
+| KeranjangBelanja | mandatory | MKeranjangBelanja | «module» |
+| CartItem | mandatory | MCartItem | «module» |
+| AkunPengguna | mandatory | MAkunPengguna | «module» |
+| PembayaranKartuKredit | mandatory | MPembayaran | «module» |
+| ManajemenPesanan | mandatory | MManajemenPesanan | «module» |
+| OrderItem | mandatory | MOrderItem | «module» |
+| PreOrderProduk | mandatory | MPreOrder | «module» |
 | KatalogProdukEksklusif | optional | DKatalogProdukEksklusif | «delta» |
 | KatalogProdukPreOwned | optional | DKatalogProdukPreOwned | «delta» |
 | PembayaranEWallet | optional | DPembayaranEWallet | «delta» |
@@ -275,27 +284,28 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 ## 6. Asosiasi (Relasi)
 
-### 6.1 Relasi antar Module Class
+### 6.1 Referensi antar Core Module Class
 
-| Dari | Ke | Multiplicity | Keterangan |
-|------|-----|-------------|------------|
-| KeranjangBelanjaImpl | AkunPenggunaImpl | [1] | Setiap keranjang milik satu user |
-| CartItemImpl | KeranjangBelanjaImpl | [1] | Setiap item milik satu keranjang |
-| CartItemImpl | ProdukImpl | [1] | Setiap item merujuk ke satu produk |
-| OrderImpl | AkunPenggunaImpl | [1] | Setiap pesanan milik satu user |
-| OrderItemImpl | OrderImpl | [1] | Setiap order item milik satu pesanan |
-| OrderItemImpl | ProdukImpl | [1] | Setiap order item merujuk ke satu produk |
-| PreOrderImpl | ProdukImpl | [1] | Setiap pre-order merujuk ke satu produk |
-| PreOrderImpl | AkunPenggunaImpl | [1] | Setiap pre-order milik satu user |
+| Class | Reference Attribute | Tipe | Keterangan |
+|-------|---------------------|------|------------|
+| KeranjangBelanjaImpl | akun_ref | String | Setiap keranjang merujuk ke satu user |
+| CartItemImpl | keranjang_ref | String | Setiap item merujuk ke satu keranjang |
+| CartItemImpl | produk_ref | String | Setiap item merujuk ke satu produk |
+| PembayaranImpl | pesanan_ref | String | Setiap pembayaran merujuk ke satu pesanan |
+| ManajemenPesananImpl | akun_ref | String | Setiap pesanan merujuk ke satu user |
+| OrderItemImpl | pesanan_ref | String | Setiap order item merujuk ke satu pesanan |
+| OrderItemImpl | produk_ref | String | Setiap order item merujuk ke satu produk |
+| PreOrderImpl | produk_ref | String | Setiap pre-order merujuk ke satu produk |
+| PreOrderImpl | akun_ref | String | Setiap pre-order merujuk ke satu user |
 
 ### 6.2 Relasi Delta → Module (modifies)
 
 | Dari (Delta) | Ke (Module) | Stereotip |
 |-------------|-------------|-----------|
-| DKatalogProdukEksklusif::ProdukImpl | MTokoOnlineAnime::ProdukImpl | «modifies» |
-| DKatalogProdukPreOwned::ProdukImpl | MTokoOnlineAnime::ProdukImpl | «modifies» |
-| DPembayaranEWallet::PembayaranImpl | MTokoOnlineAnime::PembayaranImpl | «modifies» |
-| DWishlist::AkunPenggunaImpl | MTokoOnlineAnime::AkunPenggunaImpl | «modifies» |
-| DReviewDanRating::ProdukImpl | MTokoOnlineAnime::ProdukImpl | «modifies» |
-| DSistemMembership::AkunPenggunaImpl | MTokoOnlineAnime::AkunPenggunaImpl | «modifies» |
-| DSistemPoinLoyalitas::AkunPenggunaImpl | MTokoOnlineAnime::AkunPenggunaImpl | «modifies» |
+| DKatalogProdukEksklusif::KatalogProdukImpl | MKatalogProduk::KatalogProdukImpl | «modifies» |
+| DKatalogProdukPreOwned::KatalogProdukImpl | MKatalogProduk::KatalogProdukImpl | «modifies» |
+| DPembayaranEWallet::PembayaranImpl | MPembayaran::PembayaranImpl | «modifies» |
+| DWishlist::AkunPenggunaImpl | MAkunPengguna::AkunPenggunaImpl | «modifies» |
+| DReviewDanRating::KatalogProdukImpl | MKatalogProduk::KatalogProdukImpl | «modifies» |
+| DSistemMembership::AkunPenggunaImpl | MAkunPengguna::AkunPenggunaImpl | «modifies» |
+| DSistemPoinLoyalitas::AkunPenggunaImpl | MAkunPengguna::AkunPenggunaImpl | «modifies» |

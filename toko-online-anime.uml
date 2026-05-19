@@ -341,8 +341,8 @@
       <!-- Delta 1: DKatalogProdukEksklusif -->
       <packagedElement xmi:type="uml:Package" xmi:id="_TOA_DE01" name="DKatalogProdukEksklusif">
         <packagedElement xmi:type="uml:Class" xmi:id="_TOA_DE01_cls" name="KatalogProdukImpl">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE01_a1" name="is_eksklusif" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE01_a1" name="label_eksklusif" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_DE01_aa" name="produk" type="_TOA_M_PRD" association="_TOA_AS01">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE01_aa_lv"/>
