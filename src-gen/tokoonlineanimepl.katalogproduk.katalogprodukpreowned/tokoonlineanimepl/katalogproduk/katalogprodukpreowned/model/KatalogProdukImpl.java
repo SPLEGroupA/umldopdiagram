@@ -38,11 +38,6 @@ public class KatalogProdukImpl extends KatalogProdukDecorator {
 		this.kondisi = kondisi;
 	}
 
-	protected boolean checkPreOwned(UUID id_produk) {
-		// TODO: implement this method
-		throw new UnsupportedOperationException();
-	}
-
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
         map.put("id_produk", id_produk);

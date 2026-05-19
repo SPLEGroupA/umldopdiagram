@@ -38,15 +38,18 @@ public class KatalogProdukImpl extends KatalogProdukDecorator {
 		this.label_eksklusif = label_eksklusif;
 	}
 
-	protected boolean checkEksklusif(UUID id_produk) {
-		// TODO: implement this method
-		throw new UnsupportedOperationException();
+	protected String getKeteranganEksklusif() {
+		if (this.label_eksklusif == null || this.label_eksklusif.trim().isEmpty()) {
+			return "Produk Eksklusif";
+		}
+		return this.label_eksklusif;
 	}
 
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> map = record.toHashMap();
         map.put("id_produk", id_produk);
 		map.put("label_eksklusif", getLabel_eksklusif());
+		map.put("keterangan_eksklusif", getKeteranganEksklusif());
 
         return map;
     }

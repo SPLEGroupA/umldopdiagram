@@ -92,9 +92,4 @@ public class KatalogProdukResourceImpl extends KatalogProdukResourceDecorator {
 		return katalogprodukkatalogprodukpreownedServiceImpl.deleteKatalogProduk(requestBody);
 	}
 
-	protected boolean checkPreOwned(UUID id_produk) {
-		// TODO: implement this method
-		throw new UnsupportedOperationException();
-	}
-	
 }

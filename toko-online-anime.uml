@@ -348,12 +348,9 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE01_aa_lv"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE01_aa_uv" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE01_op1" name="checkEksklusif" visibility="protected">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE01_op1_p1" name="id_produk">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_YUMDgJLQEfCAWq8aS9tuLQ"/>
-            </ownedParameter>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE01_op1" name="getKeteranganEksklusif" visibility="protected">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE01_op1_r" name="result" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>
@@ -368,12 +365,9 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOA_DE02_aa_lv"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOA_DE02_aa_uv" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE02_op1" name="checkPreOwned" visibility="protected">
-            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE02_op1_p1" name="id_produk">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_YUMDgJLQEfCAWq8aS9tuLQ"/>
-            </ownedParameter>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TOA_DE02_op1" name="getKondisi" visibility="protected">
             <ownedParameter xmi:type="uml:Parameter" xmi:id="_TOA_DE02_op1_r" name="result" direction="return">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
           </ownedOperation>
         </packagedElement>

@@ -176,7 +176,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
 | Atribut | label_eksklusif | String, protected | «adds» |
-| Operasi | checkEksklusif() | return Boolean | «adds» |
+| Operasi | getKeteranganEksklusif() | return String | «adds» |
 
 ---
 
@@ -187,7 +187,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 | Elemen | Nama | Detail | Stereotip |
 |--------|------|--------|-----------|
 | Atribut | kondisi | String, protected | «adds» |
-| Operasi | checkPreOwned() | return Boolean | «adds» |
+| Operasi | getKondisi() | return String | «adds» |
 
 ---
 
@@ -250,8 +250,8 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 
 | Delta | Target Class | Adds Attributes | Adds Operations |
 |-------|-------------|-----------------|-----------------|
-| DKatalogProdukEksklusif | KatalogProdukImpl | label_eksklusif | checkEksklusif() |
-| DKatalogProdukPreOwned | KatalogProdukImpl | kondisi | checkPreOwned() |
+| DKatalogProdukEksklusif | KatalogProdukImpl | label_eksklusif | getKeteranganEksklusif() |
+| DKatalogProdukPreOwned | KatalogProdukImpl | kondisi | getKondisi() |
 | DPembayaranEWallet | PembayaranImpl | ewallet_provider | payWithEWallet() |
 | DWishlist | AkunPenggunaImpl | — | addToWishlist(), removeFromWishlist() |
 | DReviewDanRating | KatalogProdukImpl | average_rating | addReview() |

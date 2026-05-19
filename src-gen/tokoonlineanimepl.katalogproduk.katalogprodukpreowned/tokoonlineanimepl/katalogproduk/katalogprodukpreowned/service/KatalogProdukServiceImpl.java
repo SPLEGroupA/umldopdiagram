@@ -96,8 +96,4 @@ public class KatalogProdukServiceImpl extends KatalogProdukServiceDecorator {
 	}
 
 	
-	protected boolean checkPreOwned(UUID id_produk) {
-		// TODO: implement this method
-		throw new UnsupportedOperationException();
-	}
 }
