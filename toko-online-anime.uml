@@ -323,16 +323,19 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a1" name="id_preorder" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_YUMDgJLQEfCAWq8aS9tuLQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a2" name="tanggal_rilis" visibility="protected">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a2" name="tanggal_preorder" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a3" name="status" visibility="protected">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a3" name="status_preorder" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a4" name="produk_ref" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a5" name="akun_ref" visibility="protected">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a5" name="customer_email" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TOA_M_PO_a6" name="nama_pelanggan" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           </ownedAttribute>
           <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TOA_M_PO_ir" client="_TOA_M_PO" supplier="_TOA_IF_PO" contract="_TOA_IF_PO"/>

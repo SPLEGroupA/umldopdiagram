@@ -156,12 +156,13 @@ Berisi class dan interface **mandatory** (core features). Pada UML aktual, setia
 | Atribut | Tipe | Visibility | Keterangan |
 |---------|------|------------|------------|
 | id_preorder | Integer | protected | |
-| tanggal_rilis | String | protected | Estimasi rilis produk |
-| status | String | protected | Status pre-order |
+| tanggal_preorder | String | protected | Tanggal customer membuat pre-order |
+| status_preorder | String | protected | Status pre-order, misalnya PENDING, CONFIRMED, CANCELLED, COMPLETED |
 | produk_ref | String | protected | Referensi ke produk yang di-preorder |
-| akun_ref | String | protected | Referensi ke user yang pre-order |
+| customer_email | String | protected | Identifier customer tanpa dependensi langsung ke modul AkunPengguna |
+| nama_pelanggan | String | protected | Nama pelanggan untuk kebutuhan manajemen pre-order |
 
-> Tidak ada operasi custom — cukup CRUD standar.
+> Tidak ada operasi custom — cukup CRUD standar. PreOrder sengaja hanya menyimpan `customer_email` sebagai identity boundary agar tidak bergantung langsung pada fitur AkunPengguna.
 
 ---
 
@@ -296,7 +297,7 @@ Setiap delta memodifikasi class yang ada di module dengan menambahkan atribut/op
 | OrderItemImpl | pesanan_ref | String | Setiap order item merujuk ke satu pesanan |
 | OrderItemImpl | produk_ref | String | Setiap order item merujuk ke satu produk |
 | PreOrderImpl | produk_ref | String | Setiap pre-order merujuk ke satu produk |
-| PreOrderImpl | akun_ref | String | Setiap pre-order merujuk ke satu user |
+| PreOrderImpl | customer_email | String | Setiap pre-order menyimpan identifier customer berbasis email |
 
 ### 6.2 Relasi Delta → Module (modifies)
 
